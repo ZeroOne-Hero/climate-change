@@ -1,0 +1,9 @@
+.gallery {
+    height: 130vh;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px); background-image: url('../../assets/cloudBGXL.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 15px black;
+}

@@ -1,0 +1,68 @@
+.drops-main {
+}
+
+.drops-container {
+    display: flex;
+}
+
+.drop, .drop2, .drop3 {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+}
+
+.drop {
+    right: 20px;
+}
+
+.drop2 {
+    right: 60px;
+}
+
+.drop3 {
+    right: 350px;
+}
+.drop img, .drop2 img, .drop3 img{
+    height: 20px;
+}
+
+@keyframes slideDown {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    60% {
+        transform: translateY(450px);
+        opacity: 0;
+    }
+    61%, 100% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+}
+
+
+.drop:nth-child(1) {
+    animation: slideDown 10s infinite linear 1s;
+}
+
+.drop:nth-child(2) {
+    animation: slideDown 10s infinite linear 6s;
+}
+
+.drop2:nth-child(1) {
+    animation: slideDown 10s infinite linear 3s;
+}
+
+.drop2:nth-child(2) {
+    animation: slideDown 10s infinite linear 8s;
+}
+
+.drop3:nth-child(1) {
+    animation: slideDown 10s infinite linear 2s;
+}
+
+.drop3:nth-child(2) {
+    animation: slideDown 10s infinite linear 7s;
+}
+

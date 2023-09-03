@@ -1,0 +1,146 @@
+.calculator {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 7px 30px 30px 30px;
+    height: 40vh;
+    min-height:400px;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 0 0 10px rgba(66, 65, 65, 0.52);
+    /*background-color: rgba(237, 151, 72, 0.23);*/
+    background-image: url('../../assets/cloudBG.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.calc-logo {
+    height: 120px;
+}
+.calculator-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    padding: 10px 30px;
+    background: linear-gradient(45deg, rgba(193, 70, 5, 0.92), rgba(220, 143, 20, 0.86));
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(66, 65, 65, 0.52);
+}
+.calc-button-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.calculator-buttons button {
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.calc-form form label{
+    margin: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.calc-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+}
+
+input, select {
+    background: linear-gradient(45deg, rgba(192, 60, 10, 0.9), rgba(199, 124, 22, 0.9));
+    border: none;
+    height: 25px;
+    padding-left: 7px;
+    border-radius: 5px;
+    font-size: 12px;
+    box-sizing: border-box;
+    width: 200px;
+    margin-top: 2px;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-family: Arial;
+    text-transform: uppercase;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.31);
+    cursor: pointer;
+
+}
+.calc-form form button {
+    margin: 10px;
+    font-size: 16px;
+    height: 35px;
+    width: 200px;
+    min-width: fit-content;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(45deg, rgba(192, 60, 10, 0.9), rgba(199, 124, 22, 0.9));
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.31);
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+
+}
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+    margin: 0;
+}
+
+.calc-form form button:hover, select:hover {
+    background: linear-gradient(45deg, rgba(220, 108, 20, 0.9), rgba(213, 85, 8, 0.9));
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+input:focus {
+    background: linear-gradient(45deg, rgba(220, 108, 20, 0.9), rgba(213, 85, 8, 0.9));
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.calc-results {
+    width: 60%;
+    padding: 20px 70px;
+    background: linear-gradient(45deg, rgba(189, 66, 22, 0.8), rgba(199, 124, 22, 0.8));
+    height:80%;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
