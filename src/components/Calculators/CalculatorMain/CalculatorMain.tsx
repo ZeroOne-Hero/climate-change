@@ -8,7 +8,7 @@ import foot1 from "../../../assets/footprint1.jpg"
 import foot2 from "../../../assets/footprint2.jpg"
 import cloud from "../../../assets/cloud.jpg"
 const CalculatorMain = () => {
-    const [activeCalculator, setActiveCalculator] = useState('plastic');
+    const [activeCalculator, setActiveCalculator] = useState('flights');
 
     useEffect(() => {
         const resetAnimation = () => {
@@ -32,8 +32,8 @@ const CalculatorMain = () => {
             <h1>CO2 FOOTPRINT CALCULATOR</h1>
             <div className="calc-button-wrapper">
             <div className="calculator-buttons">
+                <button onClick={() => setActiveCalculator('flights')}>Flights Taken</button>
                 <button onClick={() => setActiveCalculator('plastic')}>Plastic Waste</button>
-            <button onClick={() => setActiveCalculator('flights')}>Flights Taken</button>
             <button onClick={() => setActiveCalculator('meat')}>Meat Consumption</button>
             </div>
             {activeCalculator === 'flights' && <CalculatorFlights />}

@@ -1,0 +1,10 @@
+.information {
+    background-color: rgba(213, 178, 150, 0.42);
+    background-image: url('../../assets/cloudBGXL.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    box-shadow: 0 0 15px black;
+
+}
+

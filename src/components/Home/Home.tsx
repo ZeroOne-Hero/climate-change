@@ -6,9 +6,8 @@ import dLogo2 from "../../assets/bLogo2.jpg";
 import dLogo3 from "../../assets/bLogo3.jpg";
 import Drops from "../Drops/Drops";
 import WildFire from "../WildFire/WildFire";
-import Statistics from "../Statistics/Statistics";
+import Information from "../Information/Information";
 import SlideThrough from "../SlideThrough/SlideThrough";
-import Gallery from "../Gallery/Gallery";
 
 const Home: React.FC = () => {
     return (
@@ -39,10 +38,8 @@ const Home: React.FC = () => {
         </section>
             <SlideThrough/>
             <About/>
-            <Gallery/>
-            {/*<SlideThrough/>*/}
+            <Information/>
             <WildFire/>
-            <Statistics/>
         </div>
     );
 };

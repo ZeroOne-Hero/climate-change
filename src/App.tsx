@@ -4,10 +4,11 @@ import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
-import Statistics from "./components/Statistics/Statistics";
+import Information from "./components/Information/Information";
 import WildFire from "./components/WildFire/WildFire";
 import CalculatorMain from "./components/Calculators/CalculatorMain/CalculatorMain";
 import "./App.css";
+import Gallery from "./components/Gallery/Gallery";
 
 const App: React.FC = () => {
     const [isLoaded, setIsLoaded] = useState(false);
@@ -22,9 +23,6 @@ const App: React.FC = () => {
                 <Header />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/statistics" element={<Statistics />} />
-                    <Route path="/wildfire" element={<WildFire />} />
                     <Route path="/calculator" element={<CalculatorMain />} />
                 </Routes>
                 <Footer />

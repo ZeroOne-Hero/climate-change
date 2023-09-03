@@ -1,5 +1,5 @@
 .header{
-    box-shadow:  0 0 15px black;
+    box-shadow:  0 0 15px rgba(32, 31, 31, 0.73);
     height: 80px;
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
@@ -10,6 +10,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    /*background-color: rgba(240, 248, 255, 0.58);*/
+    /*background-image: url('../../assets/header-drops.jpg');*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+
+
 }
 .earth-logo {
     left: 0;
@@ -30,14 +37,22 @@
 }
 
 .nav-list li, .link {
-    margin: 20px;
+    margin: 15px;
     color: aliceblue;
     list-style: none;
-    font-size: 18px;
+    font-size: 1.25em;
     cursor: pointer;
-    font-family: 'Raleway', sans-serif;
     text-decoration: none;
-
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+    transition: transform 0.3s ease-in-out;
+}
+.nav-list li:hover, .link:hover {
+    transform: scale(1.2);
+}
+.drops-container {
+    position: absolute;
+    left: 600px;
 }
 
 
