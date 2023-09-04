@@ -6,8 +6,9 @@ import dLogo2 from "../../assets/bLogo2.jpg";
 import dLogo3 from "../../assets/bLogo3.jpg";
 import Drops from "../Drops/Drops";
 import WildFire from "../WildFire/WildFire";
-import Information from "../Information/Information";
 import SlideThrough from "../SlideThrough/SlideThrough";
+import Information from "../Information/Information";
+import Solution from "../Solution/Solution";
 
 const Home: React.FC = () => {
     return (
@@ -40,6 +41,7 @@ const Home: React.FC = () => {
             <About/>
             <Information/>
             <WildFire/>
+            <Solution/>
         </div>
     );
 };

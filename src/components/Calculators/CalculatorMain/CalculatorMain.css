@@ -25,7 +25,7 @@
     -webkit-text-stroke: 1px black;
 }
 .cloud img {
-   height: 350px;
+   height: 250px;
 }
 @keyframes float {
     0%, 100% {
@@ -39,7 +39,7 @@
 .cloud {
     position: absolute;
     left: 30px;
-    top: 10px;
+    top: 70px;
     animation: float 5s ease-in-out infinite;
     z-index: 1;
 }
@@ -61,7 +61,7 @@
 }
 
 .foot img {
-    height: 90px;
+    height: 80px;
 }
 
 @keyframes fade-in-out {

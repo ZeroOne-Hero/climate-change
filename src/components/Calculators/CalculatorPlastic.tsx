@@ -10,7 +10,7 @@ const CalculatorPlastic = () => {
     const weeksInAYear = 52;
 
     const bottleArea = 0.012;
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         const lifetimeBottles = bottlesPerWeek * weeksInAYear * averageHumanLifespan;
@@ -29,7 +29,8 @@ const CalculatorPlastic = () => {
             <form onSubmit={handleSubmit}>
                 <label>
                     Bottles per week:
-                    <input type="number" value={bottlesPerWeek} onChange={e => setBottlesPerWeek(e.target.value)} />
+                    <input type="number" value={bottlesPerWeek} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setBottlesPerWeek(Number(e.target.value))}/>.
+
                 </label>
                 <button type="submit">Calculate</button>
             </form>

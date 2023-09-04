@@ -1,4 +1,41 @@
 .slide {
-    height: 60vh;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+}
 
+.slider1 img, .slider2 img {
+    height: 50vh;
+    position: absolute;
+    opacity: 0;
+}
+
+.animate-slider1 {
+    animation: slideInFromRight 1500ms ease-out forwards;
+}
+
+.animate-slider2 {
+    animation: slideInFromLeft 1500ms ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        right: -100%;
+    }
+    to {
+        opacity: 1;
+        right: 0;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        left: -100%;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
 }

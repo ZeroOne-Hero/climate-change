@@ -1,0 +1,31 @@
+.statistics {
+
+}
+
+.graph-wrapper {
+    background-color: rgba(237, 234, 227, 0.8);
+    box-shadow: 0 0 10px rgba(69, 67, 67, 0.48);
+
+}
+
+.custom-tooltip {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 10px;
+    box-shadow: 0 0 3px rgba(69, 67, 67, 0.48);
+
+}
+.custom-tooltip p {
+    margin: 5px;
+    padding: 0;
+    font-family: Arial, serif;
+}
+
+.tooltip-label {
+    font-weight: bold;
+    color: black;
+}
+
+.tooltip-value {
+    color: black;
+}

@@ -14,9 +14,11 @@ const CalculatorMain = () => {
         const resetAnimation = () => {
             for (let i = 1; i <= 10; i++) {
                 const foot = document.getElementById(`foot${i}`);
-                foot.style.animation = 'none';
-                void foot.offsetWidth;
-                foot.style.animation = `fade-in-out 5s 1 ${i}s, wait 6s infinite`;
+                if (foot) {
+                    foot.style.animation = 'none';
+                    void foot.offsetWidth;
+                    foot.style.animation = `fade-in-out 5s 1 ${i}s, wait 6s infinite`;
+                }
             }
         };
 

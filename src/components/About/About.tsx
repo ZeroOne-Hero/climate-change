@@ -4,49 +4,42 @@ import "./About.css";
 import Drops from "../Drops/Drops";
 import earth from "../../assets/earthAbout.jpg"
 const About = () => {
-    const headerRef = useRef(null);
-    const infoRefs = useRef([]);
+    const headerRef = useRef<HTMLDivElement | null>(null);
+    const infoRefs = useRef<HTMLDivElement[]>([]);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             entries => {
                 entries.forEach(entry => {
-                    console.log("observed:", entry);
-                    if (entry.isIntersecting) {
-                        if (entry.target.id === 'about-header') {
-                            entry.target.classList.add('slide-from-right');
-                        } else if (entry.target.classList.contains('info')) {
-                            entry.target.classList.add('slide-from-left');
+                    if (entry.target.id === 'about' && entry.intersectionRatio >= 0.7) {
+                        if (headerRef.current) {
+                            headerRef.current.classList.add('slide-from-right');
                         }
+                        infoRefs.current.forEach(infoRef => {
+                            if (infoRef) {
+                                infoRef.classList.add('slide-from-left');
+                            }
+                        });
                     }
                 });
             },
             {
-                threshold: 0.8
+                threshold: 0.7,
             }
         );
 
-        if (headerRef.current) {
-            observer.observe(headerRef.current);
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            observer.observe(aboutSection);
         }
 
-        infoRefs.current.forEach(infoRef => {
-            if (infoRef) {
-                observer.observe(infoRef);
-            }
-        });
-
         return () => {
-            if (headerRef.current) {
-                observer.unobserve(headerRef.current);
+            if (aboutSection) {
+                observer.unobserve(aboutSection);
             }
-            infoRefs.current.forEach(infoRef => {
-                if (infoRef) {
-                    observer.unobserve(infoRef);
-                }
-            });
         };
     }, []);
+
 
 
 
@@ -59,13 +52,13 @@ const About = () => {
                         The Earth Called. It Wants Its Cool Back.
                     </h1>
                 </div>
-                <div className="info" ref={el => infoRefs.current[0] = el}>
+                <div className="info" ref={el => infoRefs.current[0] = el as HTMLDivElement}>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
-                    <Drops/>
+                    {/*<Drops/>*/}
                 </div>
-                <div className="info" ref={el => infoRefs.current[1] = el}>
+                <div className="info" ref={el => infoRefs.current[1] = el as HTMLDivElement}>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -74,7 +67,7 @@ const About = () => {
                 </div>
             </div>
             <div className="earth-about">
-                <img src={earth}/>
+                <img src={earth} alt="earth"/>
             </div>
         </div>
     );

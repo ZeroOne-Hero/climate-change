@@ -1,18 +1,17 @@
-import React, { useState } from 'react';
+import React, {ChangeEvent, FormEvent, useState} from 'react';
 import axios from 'axios';
 import flightsLogo from "../../assets/flightLogo.jpg";
 const CalculatorFlights = () => {
-    const [from, setFrom] = useState('');
-    const [to, setTo] = useState('');
-    const [passengers, setPassengers] = useState(1);
-    const [flightClass, setFlightClass] = useState('unknown');
-    const [result, setResult] = useState(null);
-    const [customerResult, setCustomerResult] = useState(null);
-
+    const [from, setFrom] = useState<string>('');
+    const [to, setTo] = useState<string>('');
+    const [passengers, setPassengers] = useState<number>(1);
+    const [flightClass, setFlightClass] = useState<string>('unknown');
+    // const [result, setResult] = useState<any>(null);
+    const [customerResult, setCustomerResult] = useState<any>(null);
     const airportCodes = ['JFK', 'LAX', 'ORD', 'SFO', 'ATL', 'DFW', 'SEA', 'MIA', 'DEN', 'BOS'];
-    const handleSubmit = async (e) => {
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        setResult(null);
+        // setResult(null);
         setCustomerResult(null);
 
         const API_KEY = '23YHF80V1AMCY4GQW64ZHKSF5R30';
@@ -22,7 +21,7 @@ const CalculatorFlights = () => {
                 {
                     from,
                     to,
-                    passengers: parseInt(passengers, 10),
+                    passengers: parseInt(String(passengers), 10),
                     class: flightClass,
                 },
             ],
@@ -54,7 +53,7 @@ const CalculatorFlights = () => {
             <form onSubmit={handleSubmit}>
                 <label>
                     From:
-                    <select value={from} onChange={(e) => setFrom(e.target.value)}>
+                    <select value={from} onChange={(e: ChangeEvent<HTMLSelectElement>) => setFrom(e.target.value)}>
                         <option value="">Select</option>
                         {airportCodes.map(code => (
                             <option key={code} value={code}>{code}</option>
@@ -72,7 +71,7 @@ const CalculatorFlights = () => {
                 </label>
                 <label>
                     Passengers:
-                    <input type="number" value={passengers} onChange={(e) => setPassengers(e.target.value)} />
+                    <input type="number" value={passengers}  onChange={(e: ChangeEvent<HTMLInputElement>) => setPassengers(Number(e.target.value))}  />
                 </label>
                 <label>
                     Class:

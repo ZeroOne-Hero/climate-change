@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {ChangeEvent, useState} from 'react';
 import meatLogo from "../../assets/meatLogo.jpg";
 const CalculatorMeat = () => {
     const [meatPerWeek, setMeatPerWeek] = useState(0);
@@ -10,7 +10,7 @@ const CalculatorMeat = () => {
     const weeksInAYear = 52;
     const gramsPerOunce = 28.3495;
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
         let meatPerWeekInKg;
@@ -38,12 +38,13 @@ const CalculatorMeat = () => {
                     <input
                         type="number"
                         value={meatPerWeek}
-                        onChange={e => setMeatPerWeek(e.target.value)}
+                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setMeatPerWeek(Number(e.target.value))}
+
                     />
                 </label>
                 <label>
                     Unit:
-                    <select value={unit} onChange={e => setUnit(e.target.value)}>
+                    <select value={unit} onChange={(e: ChangeEvent<HTMLSelectElement>) => setUnit(e.target.value)}>
                         <option value="grams">Grams</option>
                         <option value="ounces">Ounces</option>
                     </select>

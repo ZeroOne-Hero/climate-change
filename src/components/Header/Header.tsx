@@ -2,8 +2,7 @@ import React from 'react';
 import "./Header.css"
 import { Link, useLocation } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
-import earth from "../../assets/earthLogo.jpg"
-import Drops from "../Drops/Drops";
+
 
 const Header: React.FC = () => {
     const location = useLocation();
@@ -58,7 +57,7 @@ const Header: React.FC = () => {
                             </ScrollLink>
                         </li>
                         <li>
-                            <ScrollLink className="link" to="info" smooth={true} duration={500}>
+                            <ScrollLink className="link" to="information" smooth={true} duration={500}>
                                 INFO
                             </ScrollLink>
                         </li>
