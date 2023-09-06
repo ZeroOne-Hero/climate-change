@@ -4,22 +4,31 @@
     box-sizing: border-box;
 }
 
+
 html {
     font-size: 16px;
 }
 
-.app-with-home {
-    background-image: url('./assets/backgroundMain.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
+.app {
+    background-image: url('./assets/homePage5.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
 }
 
-.app-without-home {
-    background-image: url('./assets/homePage.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-}
+/*.app-with-home {*/
+/*    background-image: url('./assets/homePage5.jpg');*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    background-attachment: fixed;*/
+/*}*/
+
+/*.app-without-home {*/
+/*    background-image: url('./assets/homePage.jpg');*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    background-attachment: fixed;*/
+/*}*/

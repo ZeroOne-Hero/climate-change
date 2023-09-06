@@ -1,12 +1,12 @@
-.header{
-    box-shadow:  0 0 15px rgba(32, 31, 31, 0.73);
+.header {
+    box-shadow: 0 0 15px rgba(32, 31, 31, 0.73);
     height: 80px;
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 50;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 50;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,17 +15,20 @@
     /*background-size: cover;*/
     /*background-repeat: no-repeat;*/
     /*background-position: center;*/
-
+    overflow: hidden;
 
 }
+
 .earth-logo {
     left: 0;
     position: fixed;
 
 }
+
 .earth-logo img {
     height: 70px
 }
+
 .nav-list {
     display: flex;
     justify-content: center;
@@ -47,9 +50,11 @@
     text-transform: uppercase;
     transition: transform 0.3s ease-in-out;
 }
+
 .nav-list li:hover, .link:hover {
     transform: scale(1.2);
 }
+
 .drops-container {
     position: absolute;
     left: 600px;

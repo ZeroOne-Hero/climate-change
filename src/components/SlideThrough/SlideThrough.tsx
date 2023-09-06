@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+import React, {useEffect, useRef} from 'react';
+
 import './SlideThrough.css';
 import slider1 from '../../assets/slider-cloud1.jpg';
 import slider2 from '../../assets/slider-cloud2.jpg';
@@ -24,7 +25,7 @@ const SlideThrough = () => {
                 });
             },
             {
-                threshold: 0.3,
+                threshold: 0.5,
             }
         );
 
@@ -38,20 +39,15 @@ const SlideThrough = () => {
             }
         };
     }, []);
-
-
-
-
     return (
-        <section className="slide" ref={slideRef}>
+        <section className="slide"  ref={slideRef}>
             <div className="slider1">
-                <img src={slider1} alt="Slider 1" />
+                <img src={slider1} alt="Slider 1"/>
             </div>
             <div className="slider2">
-                <img src={slider2} alt="Slider 2" />
+                <img src={slider2} alt="Slider 2"/>
             </div>
         </section>
     );
 };
-
 export default SlideThrough;

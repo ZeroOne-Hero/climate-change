@@ -1,7 +1,7 @@
 .wild-fire {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 55vh;
     background-image: url("../../assets/greenTree.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .wildfire-warning {
@@ -23,7 +24,7 @@
 }
 
 .wildfire-warning h1 {
-    font-size: 45px;
+    font-size: 2.3em;
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
     color: #f90404;
@@ -35,20 +36,21 @@
 
 
 .wildfire-image img {
-    height: 220px;
+    height: 190px;
 }
+
 .fire-animation {
     position: absolute;
-    bottom: -350;
     width: 100%;
     height: fit-content;
     opacity: 0;
     z-index: 1;
+}
 
+.fire-animation img {
+    height: 150px;
 }
-.fire-animation img{
-    height:200px;
-}
+
 .burnt-layer {
     position: absolute;
     top: 0;
@@ -61,6 +63,7 @@
     opacity: 0;
     z-index: 0;
 }
+
 .dark-overlay {
     position: absolute;
     top: 0;
@@ -83,7 +86,7 @@
 }
 
 
-@keyframes animateFire  {
+@keyframes animateFire {
     0%, 100% {
         bottom: -350px;
         opacity: 0;
@@ -121,14 +124,17 @@
 }
 
 .wildfire-warning.revealed {
-    animation: fadeInWarning 2s forwards 5s;
+    animation: fadeInWarning 2s forwards 4500ms;
 }
+
 .fire-animation.revealed {
-    animation: animateFire 6s forwards ease-in-out;
+    animation: animateFire 5s forwards ease-in-out;
 }
+
 .burnt-layer.revealed {
     animation: fadein 6s forwards 1s;
 }
+
 .dark-overlay.revealed {
-    animation: darken 2s forwards 5500ms;
+    animation: darken 2s forwards 4500ms;
 }

@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, {useState} from 'react';
 import plasticLogo from "../../assets/plasticLogo.jpg";
+
 const CalculatorPlastic = () => {
     const [bottlesPerWeek, setBottlesPerWeek] = useState(0);
     const [totalCO2e, setTotalCO2e] = useState(0);
@@ -19,21 +20,22 @@ const CalculatorPlastic = () => {
         const lifetimeArea = lifetimeBottles * bottleArea;
 
         setTotalCO2e(lifetimeCO2e / 1000);
-        setTotalArea(lifetimeArea );
+        setTotalArea(lifetimeArea);
     };
 
     return (
         <div className="calculator">
             <div className="calc-form">
                 <img className="calc-logo" src={plasticLogo}/>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Bottles per week:
-                    <input type="number" value={bottlesPerWeek} onChange={(e: React.ChangeEvent<HTMLInputElement>) => setBottlesPerWeek(Number(e.target.value))}/>.
+                <form onSubmit={handleSubmit}>
+                    <label>
+                        Bottles per week:
+                        <input type="number" value={bottlesPerWeek}
+                               onChange={(e: React.ChangeEvent<HTMLInputElement>) => setBottlesPerWeek(Number(e.target.value))}/>.
 
-                </label>
-                <button type="submit">Calculate</button>
-            </form>
+                    </label>
+                    <button type="submit">Calculate</button>
+                </form>
             </div>
             {totalCO2e > 0 && (
                 <div className="calc-results">

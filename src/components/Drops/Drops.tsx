@@ -1,6 +1,7 @@
 import React from 'react';
 import drop from "../../assets/waterDrop.jpg";
 import "./Drops.css";
+
 const Drops = () => {
     return (
         <div className="drops-main">

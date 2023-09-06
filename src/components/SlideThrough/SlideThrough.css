@@ -2,6 +2,13 @@
     height: 50vh;
     position: relative;
     overflow: hidden;
+    background-image: url('../../assets/backgroundMain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /*box-shadow: 0 15px  0 black;*/
+
 }
 
 .slider1 img, .slider2 img {

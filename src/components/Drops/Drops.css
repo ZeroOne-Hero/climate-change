@@ -22,8 +22,9 @@
 .drop3 {
     right: 350px;
 }
-.drop img, .drop2 img, .drop3 img{
-    height: 20px;
+
+.drop img, .drop2 img, .drop3 img {
+    height: 17px;
 }
 
 @keyframes slideDown {

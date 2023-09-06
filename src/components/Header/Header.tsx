@@ -1,18 +1,18 @@
 import React from 'react';
 import "./Header.css"
-import { Link, useLocation } from 'react-router-dom';
-import { Link as ScrollLink } from 'react-scroll';
+import {Link, useLocation} from 'react-router-dom';
+import {Link as ScrollLink} from 'react-scroll';
 
 
 const Header: React.FC = () => {
     const location = useLocation();
     const isHomePage = location.pathname === '/';
-    const isCalculatorPage = location.pathname === '/calculator';
+    // const isCalculatorPage = location.pathname === '/calculator';
     const isBlogPage = location.pathname === '/blog';
 
     return (
         <nav className="header">
-         {/*<div className="drops-container">   <Drops/></div>*/}
+            {/*<div className="drops-container">   <Drops/></div>*/}
             <div className="earth-logo">
                 <Link className="link" to="/">
                     {/*<img src={earth} alt="Earth" />*/}
@@ -31,13 +31,13 @@ const Header: React.FC = () => {
                     )}
                 </li>
 
-                {isCalculatorPage && (
-                    <li>
-                        <Link className="link" to="/blog">
-                            BLOG
-                        </Link>
-                    </li>
-                )}
+                {/*{isCalculatorPage && (*/}
+                {/*    <li>*/}
+                {/*        <Link className="link" to="/blog">*/}
+                {/*            BLOG*/}
+                {/*        </Link>*/}
+                {/*    </li>*/}
+                {/*)}*/}
 
                 {isBlogPage && (
                     <>
@@ -66,11 +66,11 @@ const Header: React.FC = () => {
                                 CALCULATOR
                             </Link>
                         </li>
-                        <li>
-                            <Link className="link" to="/blog">
-                                BLOG
-                            </Link>
-                        </li>
+                        {/*<li>*/}
+                        {/*    <Link className="link" to="/blog">*/}
+                        {/*        BLOG*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
                     </>
                 )}
             </ul>

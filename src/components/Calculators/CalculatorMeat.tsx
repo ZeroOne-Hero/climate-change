@@ -1,5 +1,6 @@
 import React, {ChangeEvent, useState} from 'react';
 import meatLogo from "../../assets/meatLogo.jpg";
+
 const CalculatorMeat = () => {
     const [meatPerWeek, setMeatPerWeek] = useState(0);
     const [unit, setUnit] = useState('grams');
@@ -32,26 +33,26 @@ const CalculatorMeat = () => {
         <div className="calculator">
             <div className="calc-form">
                 <img className="calc-logo" src={meatLogo}/>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Meat consumed per week:
-                    <input
-                        type="number"
-                        value={meatPerWeek}
-                        onChange={(e: React.ChangeEvent<HTMLInputElement>) => setMeatPerWeek(Number(e.target.value))}
+                <form onSubmit={handleSubmit}>
+                    <label>
+                        Meat consumed per week:
+                        <input
+                            type="number"
+                            value={meatPerWeek}
+                            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setMeatPerWeek(Number(e.target.value))}
 
-                    />
-                </label>
-                <label>
-                    Unit:
-                    <select value={unit} onChange={(e: ChangeEvent<HTMLSelectElement>) => setUnit(e.target.value)}>
-                        <option value="grams">Grams</option>
-                        <option value="ounces">Ounces</option>
-                    </select>
-                </label>
-                <button type="submit">Calculate</button>
-            </form>
-                </div>
+                        />
+                    </label>
+                    <label>
+                        Unit:
+                        <select value={unit} onChange={(e: ChangeEvent<HTMLSelectElement>) => setUnit(e.target.value)}>
+                            <option value="grams">Grams</option>
+                            <option value="ounces">Ounces</option>
+                        </select>
+                    </label>
+                    <button type="submit">Calculate</button>
+                </form>
+            </div>
             {totalCO2e > 0 && (
                 <div className="calc-results">
                     <h3>Results</h3>

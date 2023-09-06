@@ -2,6 +2,7 @@ import React from 'react';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 import "./Statistics.css";
+import Drops from "../Drops/Drops";
 
 
 const startYear = 1880;
@@ -74,7 +75,8 @@ const CustomTooltip: React.FC<CustomTooltipProps> = ({ payload, label, active })
 
 const Statistics = () => {
     return (
-        <div className="graph-wrapper" style={{ width: '50%', height: '400px' }}> {/* Change 50vh to your desired height */}
+        <div className="graph-wrapper" style={{ width: '50%', height: '400px' }}>
+            <Drops/>
             <ResponsiveContainer width="100%" height="100%">
                 <LineChart
                     data={data}
@@ -94,8 +96,8 @@ const Statistics = () => {
                     />
                     <Tooltip content={<CustomTooltip />} />
                     <Legend verticalAlign="top" height={36} wrapperStyle={{ fontFamily: 'Arial', fontSize: '15px' }} />
-                    <Line type="monotone" dataKey="Annual_mean" stroke="#7d4706" strokeWidth={2} activeDot={{ r: 3 }} dot={{ r: 2 }} />
-                    <Line type="monotone" dataKey="Lowess_smoothing" stroke="#ce300c" strokeWidth={2} activeDot={{ r: 3 }} dot={false} />
+                    <Line type="monotone" dataKey="Annual_mean" stroke="#082929" strokeWidth={2} activeDot={{ r: 3 }} dot={{ r: 2 }} />
+                    <Line type="monotone" dataKey="Lowess_smoothing" stroke="#1dc8c8" strokeWidth={2} activeDot={{ r: 3 }} dot={false} />
                 </LineChart>
             </ResponsiveContainer>
         </div>

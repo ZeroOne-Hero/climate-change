@@ -1,6 +1,7 @@
 import React, {ChangeEvent, FormEvent, useState} from 'react';
 import axios from 'axios';
 import flightsLogo from "../../assets/flightLogo.jpg";
+
 const CalculatorFlights = () => {
     const [from, setFrom] = useState<string>('');
     const [to, setTo] = useState<string>('');
@@ -50,43 +51,44 @@ const CalculatorFlights = () => {
         <section className="calculator">
             <div className="calc-form">
                 <img className="calc-logo" src={flightsLogo}/>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    From:
-                    <select value={from} onChange={(e: ChangeEvent<HTMLSelectElement>) => setFrom(e.target.value)}>
-                        <option value="">Select</option>
-                        {airportCodes.map(code => (
-                            <option key={code} value={code}>{code}</option>
-                        ))}
-                    </select>
-                </label>
-                <label>
-                    To:
-                    <select value={to} onChange={(e) => setTo(e.target.value)}>
-                        <option value="">Select</option>
-                        {airportCodes.map(code => (
-                            <option key={code} value={code}>{code}</option>
-                        ))}
-                    </select>
-                </label>
-                <label>
-                    Passengers:
-                    <input type="number" value={passengers}  onChange={(e: ChangeEvent<HTMLInputElement>) => setPassengers(Number(e.target.value))}  />
-                </label>
-                <label>
-                    Class:
-                    <select value={flightClass} onChange={(e) => setFlightClass(e.target.value)}>
-                        <option value="unknown">Unknown</option>
-                        <option value="economy">Economy</option>
-                        <option value="business">Business</option>
-                        <option value="first">First</option>
-                    </select>
-                </label>
-                <button type="submit">Calculate</button>
-            </form>
+                <form onSubmit={handleSubmit}>
+                    <label>
+                        From:
+                        <select value={from} onChange={(e: ChangeEvent<HTMLSelectElement>) => setFrom(e.target.value)}>
+                            <option value="">Select</option>
+                            {airportCodes.map(code => (
+                                <option key={code} value={code}>{code}</option>
+                            ))}
+                        </select>
+                    </label>
+                    <label>
+                        To:
+                        <select value={to} onChange={(e) => setTo(e.target.value)}>
+                            <option value="">Select</option>
+                            {airportCodes.map(code => (
+                                <option key={code} value={code}>{code}</option>
+                            ))}
+                        </select>
+                    </label>
+                    <label>
+                        Passengers:
+                        <input type="number" value={passengers}
+                               onChange={(e: ChangeEvent<HTMLInputElement>) => setPassengers(Number(e.target.value))}/>
+                    </label>
+                    <label>
+                        Class:
+                        <select value={flightClass} onChange={(e) => setFlightClass(e.target.value)}>
+                            <option value="unknown">Unknown</option>
+                            <option value="economy">Economy</option>
+                            <option value="business">Business</option>
+                            <option value="first">First</option>
+                        </select>
+                    </label>
+                    <button type="submit">Calculate</button>
+                </form>
             </div>
             {customerResult && (
-                 <div className="calc-results">
+                <div className="calc-results">
                     <h2>Results</h2>
                     <p>Total CO2e: {customerResult.co2e} {customerResult.co2e_unit}</p>
                 </div>

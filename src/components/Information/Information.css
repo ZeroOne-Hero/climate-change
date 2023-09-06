@@ -1,11 +1,8 @@
 .information {
-    /*background-color: rgba(213, 178, 150, 0.43);*/
-    /*background-image: url('../../assets/cloudBGXL.jpg');*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*background-attachment: fixed;*/
-    color: #3b1d09;
-    padding: 30px;
+    color: #082929;
+    padding: 0 20px 50px 20px;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
 }
 
 .statistics-container {
@@ -19,9 +16,16 @@
     margin-left: 20px;
     height: 400px;
     width: 50%;
-    background-color: rgba(237, 234, 227, 0.8);
-    box-shadow: 0 0 10px rgba(69, 67, 67, 0.48);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.75);
+    background-image: url('../../assets/drops-big.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
+
 .info-stats p {
     padding: 40px;
     text-align: justify;
@@ -31,23 +35,21 @@
     text-align: center;
     padding: 20px 40px;
     font-family: 'Bebas Neue', sans-serif;
-    text-transform: uppercase;
     font-size: 1.8em;
 }
 
 .info-header {
     font-family: 'Bebas Neue', sans-serif;
-    text-transform: uppercase;
-    font-size: 2em;
-    color: #3b1d09;
-    -webkit-text-stroke: 1px black;
-    width: 100%;
-    /*padding-top: 60px;*/
-    padding: 25px;
+    font-size: 2.3em;
+    color: #d6eff0;
+    -webkit-text-stroke: 1px #0b2e2c;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 30px 0;
 }
+
 .info-header h1 {
     margin: 0;
     padding: 0;
@@ -59,9 +61,17 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    background-color: rgba(237, 234, 227, 0.8);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.75);
+    background-image: url('../../assets/drops-huge.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     margin-top: 20px;
-    box-shadow: 0 0 10px rgba(69, 67, 67, 0.48);
+    position: relative;
+    padding: 20px 0;
+
 }
 
 .info-list-item {
@@ -70,13 +80,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
+
 .info-list-item p {
-    padding: 5px 40px ;
+    padding: 5px 40px;
     text-align: justify;
 }
-.info-list-item img {
-    height: 170px;
+
+.info-img {
+    height: 160px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.info-list-item img:hover, .info-list-human img:hover {
+    transform: scale(1.1);
+}
+
+.style-tooltip {
+    background-color: #082929 !important;
+    font-family: Arial, sans-serif !important;
+    color: #f5f0f0 !important;
+    max-width: 200px;
+    opacity: 1 !important;
 }
 
 .info-list-human {
@@ -84,16 +111,42 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    background-color: rgba(237, 234, 227, 0.8);
-    padding: 20px;
-    height: 220px;
-    box-shadow: 0 0 10px rgba(69, 67, 67, 0.48);
+    background-color: rgba(255, 255, 255, 0.75);
+    background-image: url('../../assets/drops-huge.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    position: relative;
+    padding: 30px;
+
 }
+.calculator-link {
+    width: 30%;
+    margin: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    -webkit-text-stroke: 1px #030d0c;
+    text-align: center;
+}
+
+.calculator-link h1 {
+    font-size: 2.3em;
+}
+
+.calculator-link h3 {
+    font-size: 1.4em;
+}
+
+
 .info-list-human p {
     padding: 20px;
     text-align: justify;
-
+    width: 70%;
 }
-.info-list-human img {
-    height: 190px;
+
+.human {
+    height: 220px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }

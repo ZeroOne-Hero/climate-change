@@ -1,11 +1,17 @@
 .statistics {
-
+    overflow: hidden;
 }
 
 .graph-wrapper {
-    background-color: rgba(237, 234, 227, 0.8);
+    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    background-image: url('../../assets/drops-big.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: 0 0 10px rgba(69, 67, 67, 0.48);
-
+    position: relative;
 }
 
 .custom-tooltip {

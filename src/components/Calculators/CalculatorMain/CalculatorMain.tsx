@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, {useState, useEffect} from 'react';
 import CalculatorFlights from '../CalculatorFlights';
 import CalculatorMeat from '../CalculatorMeat';
 import CalculatorPlastic from '../CalculatorPlastic';
@@ -7,6 +7,7 @@ import "../CalcCommon.css";
 import foot1 from "../../../assets/footprint1.jpg"
 import foot2 from "../../../assets/footprint2.jpg"
 import cloud from "../../../assets/cloud.jpg"
+
 const CalculatorMain = () => {
     const [activeCalculator, setActiveCalculator] = useState('flights');
 
@@ -33,18 +34,18 @@ const CalculatorMain = () => {
         <section id="calculator-main" className="calculator-main">
             <h1>CO2 FOOTPRINT CALCULATOR</h1>
             <div className="calc-button-wrapper">
-            <div className="calculator-buttons">
-                <button onClick={() => setActiveCalculator('flights')}>Flights Taken</button>
-                <button onClick={() => setActiveCalculator('plastic')}>Plastic Waste</button>
-            <button onClick={() => setActiveCalculator('meat')}>Meat Consumption</button>
+                <div className="calculator-buttons">
+                    <button onClick={() => setActiveCalculator('flights')}>Flights Taken</button>
+                    <button onClick={() => setActiveCalculator('plastic')}>Plastic Waste</button>
+                    <button onClick={() => setActiveCalculator('meat')}>Meat Consumption</button>
+                </div>
+                {activeCalculator === 'flights' && <CalculatorFlights/>}
+                {activeCalculator === 'meat' && <CalculatorMeat/>}
+                {activeCalculator === 'plastic' && <CalculatorPlastic/>}
             </div>
-            {activeCalculator === 'flights' && <CalculatorFlights />}
-            {activeCalculator === 'meat' && <CalculatorMeat />}
-            {activeCalculator === 'plastic' && <CalculatorPlastic />}
+            <div className="cloud">
+                <img src={cloud}/>
             </div>
-           <div className="cloud">
-               <img src={cloud}/>
-           </div>
             <div className="footprint">
                 <div className="foot" id="foot10">
                     <img src={foot1} alt="Foot 1"/>
