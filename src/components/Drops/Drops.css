@@ -1,14 +1,17 @@
 .drops-main {
+    position: static;
 }
 
 .drops-container {
     display: flex;
+    position: static;
 }
 
 .drop, .drop2, .drop3 {
     position: absolute;
     top: 0;
     opacity: 0;
+    z-index: 999;
 }
 
 .drop {

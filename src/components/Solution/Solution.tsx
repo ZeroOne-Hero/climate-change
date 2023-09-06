@@ -1,7 +1,5 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "./Solution.css";
-import cloud1 from "../../assets/cloud-solution1.jpg";
-import cloud2 from "../../assets/cloud-solution2.jpg";
 import fashion from "../../assets/solution-fashion.jpg";
 import energy from "../../assets/solution-energy.jpg";
 import litter from "../../assets/solution-litter.jpg";
@@ -11,57 +9,55 @@ import transport from "../../assets/solution-transport.jpg";
 import Drops from "../Drops/Drops";
 
 const Solution = () => {
-    const solutionRef = React.useRef<HTMLDivElement>(null);
-    const cloud1Ref = React.useRef<HTMLDivElement>(null);
-    const cloud2Ref = React.useRef<HTMLDivElement>(null);
+
     const solutionsRef = React.useRef<HTMLDivElement>(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
+                    console.log("Element observed:", entry.target);
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('animate');
-                        setTimeout(() => {
-                            if (cloud1Ref.current && cloud2Ref.current) {
-                                cloud1Ref.current.classList.add('fade-away');
-                                cloud2Ref.current.classList.add('fade-away');
-                            }
-                        }, 4000);
+                        console.log("Element is intersecting:", entry.target);
+                        const targetElement = entry.target as HTMLElement;
+                        if (targetElement.classList.contains('solution-left')) {
+                            console.log("Animating from left");
+                            targetElement.classList.add('animate-from-left');
+                        } else if (targetElement.classList.contains('solution-right')) {
+                            console.log("Animating from right");
+                            targetElement.classList.add('animate-from-right');
+                        } // } else if (targetElement.classList.contains('solutions-header')) {
+                        //     console.log("Animating from top");
+                        //     targetElement.classList.add('animate-from-left');
+                        // }
                     }
                 });
             },
+
             {
-                threshold: 0.6,
+                threshold: 0.5,
             }
         );
 
-        if (solutionRef.current) {
-            observer.observe(solutionRef.current);
-        }
-
-
         if (solutionsRef.current) {
-            observer.observe(solutionsRef.current);
+            const solutionElements = solutionsRef.current.querySelectorAll('.solutions-inner, .solutions-header');
+            solutionElements.forEach(element => {
+                console.log("Observing element:", element);
+                observer.observe(element)
+            });
         }
     }, []);
 
-    return (
-        <section ref={solutionRef} id="solution" className="solution">
-            <div className="overlay"></div>
-            <div ref={cloud1Ref} className="cloud1-solution cloud-solution">
-                <img src={cloud1} alt="cloud"/>
-            </div>
-            <div ref={cloud2Ref} className="cloud2-solution cloud-solution">
-                <img src={cloud2} alt="cloud"/>
-            </div>
 
+
+    return (
+        <section id="solution" className="solution">
             <div ref={solutionsRef} className="solutions">
                 <div className="solutions-header">
                     {/*<Drops/>*/}
                     <h1>Not lost yet. What we can do to fix it.</h1>
                 </div>
-                <div className="solutions-wrapper">
+                <div className="solutions-wrapper ">
                     <div className="solutions-block block1">
                         <div className="solutions-inner solution-left">
                             <Drops/>

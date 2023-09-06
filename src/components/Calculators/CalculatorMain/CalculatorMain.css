@@ -10,6 +10,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
 }
 
 .calculator-main h1 {
@@ -19,14 +20,14 @@
     text-align: center;
     padding: 7px 20px;
     margin: 30px 0 0;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(66, 65, 65, 0.52);
     background-image: url('../../../assets/cloudBG.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #3b1d09;
+    color: #120a02;
     -webkit-text-stroke: 1px black;
 }
 
@@ -65,7 +66,7 @@
 
 .foot {
     opacity: 0;
-    margin-left: 50px;
+    margin-left: 65px;
 }
 
 .foot img {

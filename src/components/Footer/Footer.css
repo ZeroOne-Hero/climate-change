@@ -1,6 +1,5 @@
 .footer {
     height: 35vh;
-    background-attachment: fixed;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -8,17 +7,34 @@
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    background-color: rgba(255, 255, 255, 0.6);
-    background-image: url('../../assets/drops-huge.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     overflow: hidden;
     position: relative;
 
 }
 
-.lover-footer {
+.home-page {
+    background-color: rgba(255, 255, 255, 0.6);
+    background-image: url('../../assets/drops-huge.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.calc-page {
+
+    background-image: url('../../assets/backgroundMain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+.lower-footer {
     width: 100%;
     height: 60px;
     backdrop-filter: blur(10px);
@@ -30,4 +46,10 @@
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
     font-size: 1.1em;
+    position: absolute;
+
+}
+
+.footer-animation {
+    display: none;
 }

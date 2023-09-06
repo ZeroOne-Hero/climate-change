@@ -31,8 +31,7 @@ const CalculatorPlastic = () => {
                     <label>
                         Bottles per week:
                         <input type="number" value={bottlesPerWeek}
-                               onChange={(e: React.ChangeEvent<HTMLInputElement>) => setBottlesPerWeek(Number(e.target.value))}/>.
-
+                               onChange={(e: React.ChangeEvent<HTMLInputElement>) => setBottlesPerWeek(Number(e.target.value))}/>
                     </label>
                     <button type="submit">Calculate</button>
                 </form>

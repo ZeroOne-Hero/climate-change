@@ -1,6 +1,6 @@
 .about  {
-    height: 85vh;
-    background-image: url('../../assets/aboutBG3.jpg');
+    height: 80vh;
+    background-image: url('../../assets/aboutBG5.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -9,6 +9,10 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+}
+
+.g-photo:hover .gallery-animation {
+    display: none;
 }
 
 .about-header {

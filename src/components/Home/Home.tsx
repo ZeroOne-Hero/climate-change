@@ -9,6 +9,7 @@ import SlideThrough from "../SlideThrough/SlideThrough";
 import Information from "../Information/Information";
 import Solution from "../Solution/Solution";
 import WildFire from "../WildFire/WildFire";
+import Gallery from "../Gallery/Gallery";
 
 const Home: React.FC = () => {
     return (
@@ -37,9 +38,9 @@ const Home: React.FC = () => {
                     </div>
                 </div>
             </section>
-            <SlideThrough/>
+            <SlideThrough h1Text={"July 2023 was Earth’s hottest month on record."}/>
             <About/>
-            <SlideThrough/>
+            <SlideThrough h1Text={" 68% of world's glaciers will disappear by year 2100."}/>
             <Information/>
             <WildFire/>
             <Solution/>

@@ -12,7 +12,8 @@ import gImg9 from "../../assets/galleryPhotos/9.jpg";
 import smog1 from "../../assets/gallery-smog1.jpg";
 import smog2 from "../../assets/gallery-smog2.jpg";
 import {GalleryImage} from "../../types/types";
-import {Tooltip} from 'react-tooltip';
+import drops from "../../assets/bulletsBackground.jpg"
+import Drops from "../Drops/Drops";
 
 const Gallery = () => {
     const [modalOpen, setModalOpen] = useState(false);
@@ -73,17 +74,28 @@ const Gallery = () => {
     };
     return (
         <section className="gallery">
+            {/*<div className="info-header">*/}
+            {/*    <h1>Look what we've done...</h1>*/}
+            {/*</div>*/}
             <div className="photos">
                 {galleryImages.map((image, index) => (
                     <div onClick={() => toggleModal(image)} className={`g-photo photo${index + 1}`} key={index}>
+                        <div className="gallery-animation"><Drops/></div>
+                        <div className="g-photos-wrapper">
                         <img src={image.src}/>
-                        <img className="smog1" src={smog1}/>
-                        <img className="smog2" src={smog2}/>
+                        </div>
+                        {/*<img className="smog1" src={smog1}/>*/}
+                        <img className="gallery-drops" src={drops} alt="drops"/>
+                        <div className="gallery-overlayer">
+                        </div>
+                        {/*<img className="smog2" src={smog2}/>*/}
                         <div className="gallery-info">
                             <h2>{image.info}</h2>
-                            <div className="gallery-details">
-                                {/*<p>{image.detail}</p>*/}
-                            </div>
+                            {/*<div className="gallery-details">*/}
+                            {/*    <p>{image.detail}</p>*/}
+                            {/*   */}
+                            {/*</div>*/}
+
                         </div>
                     </div>
                 ))}

@@ -3,9 +3,9 @@
 }
 
 .graph-wrapper {
-    background-color: rgba(255, 255, 255, 0.75);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.7);
     background-image: url('../../assets/drops-big.jpg');
     background-size: cover;
     background-repeat: no-repeat;

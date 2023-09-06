@@ -16,9 +16,9 @@
     margin-left: 20px;
     height: 400px;
     width: 50%;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.7);
     background-image: url('../../assets/drops-big.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -41,13 +41,13 @@
 .info-header {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2.3em;
-    color: #d6eff0;
+    color: #dde9e9;
     -webkit-text-stroke: 1px #0b2e2c;
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px 0;
+    margin: 50px 0;
 }
 
 .info-header h1 {
@@ -61,9 +61,9 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    background-color: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.7);
     background-image: url('../../assets/drops-huge.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -111,13 +111,13 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    background-color: rgba(255, 255, 255, 0.75);
     background-image: url('../../assets/drops-huge.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.7);
     position: relative;
     padding: 30px;
 

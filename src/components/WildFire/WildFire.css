@@ -1,7 +1,7 @@
 .wild-fire {
     position: relative;
     width: 100%;
-    height: 55vh;
+    height: 60vh;
     background-image: url("../../assets/greenTree.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@
 }
 
 .wildfire-warning h1 {
-    font-size: 2.3em;
+    font-size: 2.4em;
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
     color: #f90404;
@@ -36,7 +36,7 @@
 
 
 .wildfire-image img {
-    height: 190px;
+    height: 200px;
 }
 
 .fire-animation {
@@ -48,7 +48,7 @@
 }
 
 .fire-animation img {
-    height: 150px;
+    height: 170px;
 }
 
 .burnt-layer {
