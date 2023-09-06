@@ -12,6 +12,8 @@
     background-position: center;
     box-shadow: 0 0 10px rgba(69, 67, 67, 0.48);
     position: relative;
+    width: 50%;
+    height: 400px;
 }
 
 .custom-tooltip {
@@ -34,4 +36,60 @@
 
 .tooltip-value {
     color: black;
+}
+
+@media (max-width: 576px) {
+    .statistics {
+        overflow: hidden;
+    }
+
+    .graph-wrapper {
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .custom-tooltip {
+        font-size: 14px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .statistics {
+        overflow: hidden;
+    }
+
+    .graph-wrapper {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .custom-tooltip {
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .statistics {
+        overflow: hidden;
+    }
+
+    .graph-wrapper {
+        width: 85%;
+        margin-bottom: 20px;
+    }
+
+    .custom-tooltip {
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+@media (min-width: 1200px) {
+
 }

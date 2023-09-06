@@ -75,7 +75,7 @@ const CustomTooltip: React.FC<CustomTooltipProps> = ({ payload, label, active })
 
 const Statistics = () => {
     return (
-        <div className="graph-wrapper" style={{ width: '50%', height: '400px' }}>
+        <div className="graph-wrapper">
             <Drops/>
             <ResponsiveContainer width="100%" height="100%">
                 <LineChart

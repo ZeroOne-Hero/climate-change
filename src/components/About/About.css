@@ -1,4 +1,8 @@
-.about  {
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bebas+Neue&family=Comfortaa:wght@300;500&family=Cuprum&family=Domine&family=Lilita+One&family=Lobster&family=Montserrat:wght@500&family=Nanum+Myeongjo&family=Raleway:ital,wght@0,500;1,400&family=Roboto+Condensed&display=swap');
+
+/* Common styles for all screen sizes */
+.about {
     height: 80vh;
     background-image: url('../../assets/aboutBG5.jpg');
     background-size: cover;
@@ -9,10 +13,6 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-}
-
-.g-photo:hover .gallery-animation {
-    display: none;
 }
 
 .about-header {
@@ -35,16 +35,16 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
-
 }
+
 .about-header h1 {
     margin: 0;
     padding: 0;
-
 }
+
 .info-wrapper {
-    width:50%;
-    height:80%;
+    width: 50%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,20 +65,16 @@
     align-items: center;
     opacity: 0;
     margin-top: 10px;
-
-
 }
 
 .info p {
     font-size: 1.3em;
-    padding:  40px 50px;
+    padding: 40px 50px;
     font-family: 'Bebas Neue', sans-serif;
-    /*text-transform: uppercase;*/
     text-align: justify;
     color: #042122;
     margin: 0;
 }
-
 
 .slide-from-right,
 .slide-from-left {
@@ -125,7 +121,7 @@
 }
 
 .earth-about {
-   width: 45%;
+    width: 45%;
     animation: float 5s ease-in-out infinite;
     display: flex;
     justify-content: center;
@@ -134,4 +130,100 @@
 
 .earth-about img {
     height: 520px;
+}
+
+/* Media Queries */
+@media (max-width: 576px) {
+    .about {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .about-header {
+        margin-top:5vh;
+        font-size: 0.7em;
+    }
+    .info-wrapper {
+        width: 95%;
+    }
+    .info {
+        margin-top: 5px;
+        font-size: 0.8em;
+    }
+    .earth-about img {
+        height: 370px;
+        padding-left: 35px;
+        margin: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .about-header {
+        margin-top:5vh;
+        font-size: 0.9em;
+    }
+    .info-wrapper {
+        width: 90%;
+    }
+    .info {
+        margin-top: 5px;
+        font-size: 0.8em;
+    }
+    .earth-about img {
+        height: 400px;
+        padding-left: 35px;
+        margin: 25px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .about {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .about-header {
+        margin-top:5vh;
+        font-size: 1em;
+    }
+    .info-wrapper {
+        width: 85%;
+    }
+    .info {
+        margin-top: 5px;
+        font-size: 0.9em;
+    }
+    .earth-about img {
+        height: 420px;
+        padding-left: 35px;
+        margin: 25px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .about {
+        /*flex-direction: column;*/
+        /*height: fit-content;*/
+    }
+    .about-header {
+        margin-top:5vh;
+        font-size: 1em;
+    }
+    .info-wrapper {
+        width: 50%;
+    }
+    .info {
+        margin-top: 5px;
+        font-size: 1em;
+    }
+    .earth-about img {
+        height: 430px;
+        padding-left: 35px;
+    }
+}
+
+@media (min-width: 1200px) {
+
 }

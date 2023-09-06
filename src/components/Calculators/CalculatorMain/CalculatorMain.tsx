@@ -3,7 +3,6 @@ import CalculatorFlights from '../CalculatorFlights';
 import CalculatorMeat from '../CalculatorMeat';
 import CalculatorPlastic from '../CalculatorPlastic';
 import "./CalculatorMain.css";
-import "../CalcCommon.css";
 import foot1 from "../../../assets/footprint1.jpg"
 import foot2 from "../../../assets/footprint2.jpg"
 import cloud from "../../../assets/cloud.jpg"
@@ -32,8 +31,9 @@ const CalculatorMain = () => {
     return (
 
         <section id="calculator-main" className="calculator-main">
-            <h1>CO2 FOOTPRINT CALCULATOR</h1>
+
             <div className="calc-button-wrapper">
+                <h1>CO2 FOOTPRINT CALCULATOR</h1>
                 <div className="calculator-buttons">
                     <button onClick={() => setActiveCalculator('flights')}>Flights Taken</button>
                     <button onClick={() => setActiveCalculator('plastic')}>Plastic Waste</button>

@@ -1,9 +1,9 @@
+/* Base Styles */
 .solution {
     height: 100vh;
     box-shadow: 0 0 15px black;
     position: relative;
     overflow: hidden;
-    /*padding: 0 50px;*/
 }
 
 .solutions {
@@ -14,7 +14,7 @@
 }
 
 .solutions-block {
-    width:45%;
+    width: 45%;
     margin: 20px;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .solutions-inner {
-    min-height:120px;
+    min-height: 120px;
     width: 100%;
     margin-bottom: 30px;
     display: flex;
@@ -84,10 +84,9 @@
     flex-wrap: wrap;
 }
 
-
+/* Animations */
 .solution-left,
-.solution-right
-/*.solutions-header {*/ {
+.solution-right {
     opacity: 0;
     transition: all 1s ease;
 }
@@ -99,10 +98,6 @@
 .animate-from-right {
     animation: slideFromRight 1500ms ease forwards;
 }
-
-/*.animate-from-top {*/
-/*    animation: slideFromTop 2s ease forwards;*/
-/*}*/
 
 @keyframes slideFromLeft {
     from {
@@ -126,13 +121,81 @@
     }
 }
 
-/*@keyframes slideFromTop {*/
-/*    from {*/
-/*        transform: translateY(-100%);*/
-/*        opacity: 0;*/
-/*    }*/
-/*    to {*/
-/*        transform: translateY(0);*/
-/*        opacity: 1;*/
-/*    }*/
-/*}*/
+/* Media Queries */
+@media (max-width: 576px) {
+    .solution {
+       height: fit-content;
+        font-size: 1em;
+    }
+    .solutions-block {
+        width: 95%;
+        padding: 0;
+        margin: 0 0 30px 0;
+    }
+    .solutions-header {
+        width: 95%;
+        font-size: 1.5em;
+        margin-top: 70px;
+    }
+
+    .solutions-wrapper {
+        justify-content: center;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .solution {
+        height: fit-content;
+        font-size: 1em;
+    }
+    .solutions-block {
+        width: 90%;
+        padding: 0;
+        margin: 0 0 30px 0;
+    }
+    .solutions-header {
+        width: 90%;
+        font-size: 1.5em;
+        margin-top: 70px;
+    }
+
+    .solutions-wrapper {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .solution {
+        height: fit-content;
+        font-size: 1em;
+    }
+    .solutions-block {
+        width: 85%;
+        padding: 0;
+        margin: 0 0 30px 0;
+    }
+    .solutions-header {
+        width: 85%;
+        font-size: 1.5em;
+        margin-top: 70px;
+    }
+
+    .solutions-wrapper {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .solutions-header h1 {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+}
+
+@media (min-width: 1400px) {
+
+}
