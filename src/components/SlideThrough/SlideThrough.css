@@ -78,6 +78,9 @@
 
 
 @media (max-width: 576px) {
+    .slide {
+        background-attachment: scroll;
+    }
     .slide-throught-text {
         font-size: 1.8em;
     }

@@ -5,11 +5,15 @@ import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import CalculatorMain from "./components/Calculators/CalculatorMain/CalculatorMain";
 import "./App.css";
+import background from  "./assets/homePage5.jpg"
 
 const App: React.FC = () => {
     return (
         <Router>
             <div className="app">
+                <div className="app-background">
+                    <img loading="lazy" src={background} alt="background"/>
+                </div>
                 <Header/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>

@@ -8,33 +8,24 @@ html {
     font-size: 16px;
 }
 
-/*.app-background {*/
-/*    background-image: url('./assets/homePage5.jpg');*/
-/*    background-position: center;*/
-/*    background-repeat: no-repeat;*/
-/*    background-size: cover;*/
-/*    position: fixed;*/
-/*    background-attachment: fixed;*/
-/*    top: 0;*/
-/*    left: 0;*/
-/*    width: 100%;*/
-/*    height: 100vh;*/
-/*    z-index: -1;*/
-/*}*/
+.app {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
 
-.app:before {
-    content: "";
-    display: block;
+.app-background {
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    z-index: -10;
-    background: url('./assets/homePage5.jpg')
-    no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    z-index: -1;
+}
+
+.app-background img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /*background-attachment: fixed;*/
 }
