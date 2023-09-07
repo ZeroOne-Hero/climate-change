@@ -61,7 +61,7 @@
     }
 }
 
-.slide-throught-text {
+.slide-through-text {
     position: absolute;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 3em;
@@ -90,14 +90,14 @@
     .slide {
         background-attachment: scroll;
     }
-    .slide-throught-text {
+    .slide-through-text {
         font-size: 1.8em;
     }
 }
 
 
 @media (min-width: 576px) and (max-width: 768px) {
-    .slide-throught-text {
+    .slide-through-text {
         font-size: 2em;
     }
     .slide {
@@ -107,7 +107,7 @@
 
 
 @media (min-width: 768px) and (max-width: 992px) {
-    .slide-throught-text {
+    .slide-through-text {
         font-size: 2.5em;
     }
     .slide {

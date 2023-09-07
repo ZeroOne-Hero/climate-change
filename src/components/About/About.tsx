@@ -45,6 +45,8 @@ const About = () => {
 
     return (
         <section className="about" id="about">
+            <div className="about-background"></div>
+            <div className="about-content">
             <div className="info-wrapper">
                 <div className="about-header" ref={headerRef} id="about-header">
                     <h1>
@@ -72,6 +74,7 @@ const About = () => {
             </div>
             <div className="earth-about">
                 <img src={earth} alt="earth"/>
+            </div>
             </div>
         </section>
     );

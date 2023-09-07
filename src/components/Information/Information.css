@@ -160,6 +160,7 @@
 @media (max-width: 576px) {
     .information {
         padding: 30px 0;
+
     }
     .info-stats {
         width: 95%;
@@ -190,6 +191,7 @@
 @media (min-width: 576px) and (max-width: 768px) {
     .information {
         padding: 30px 0;
+
     }
     .info-stats {
         width: 90%;
