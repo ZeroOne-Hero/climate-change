@@ -161,15 +161,20 @@
     .information {
         padding: 30px 0;
     }
+    .info-header {
+        font-size: 1.7em;
+    }
     .info-stats {
         width: 95%;
         margin-left: 0;
         font-size: 1em;
+        height: fit-content;
     }
     .info-list-item {
         width: 100%;
-        padding: 20px 0;
+        padding: 0;
         font-size: 1em;
+        flex-direction: column;
     }
     .info-list {
         width: 95%;

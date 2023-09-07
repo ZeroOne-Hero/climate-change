@@ -32,6 +32,7 @@
     -webkit-backdrop-filter: blur(30px);
     padding: 15px 35px;
     -webkit-text-stroke: 1px rgba(29, 3, 3, 0.65);
+    text-align: center;
 }
 
 
@@ -137,4 +138,37 @@
 
 .dark-overlay.revealed {
     animation: darken 2s forwards 4500ms;
+}
+@media (max-width: 576px) {
+    .wildfire-image img {
+        height: 150px;
+    }
+    .wildfire-warning h1 {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .wildfire-image img {
+        height: 200px;
+    }
+    .wildfire-warning h1 {
+        font-size: 2.4em;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+}
+
+@media (min-width: 1400px) {
+
 }

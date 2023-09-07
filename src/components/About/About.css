@@ -38,6 +38,7 @@
 .about-header h1 {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 .info-wrapper {
@@ -134,12 +135,12 @@
     .about {
         flex-direction: column;
         height: fit-content;
-        background-image: url('../../assets/mobile-background.jpg');
+        background-attachment: scroll;
     }
 
     .about-header {
         margin-top: 5vh;
-        font-size: 0.6em;
+        font-size: 1em;
     }
 
     .info-wrapper {
@@ -162,12 +163,12 @@
     .about {
         flex-direction: column;
         height: fit-content;
-        background-image: url('../../assets/mobile-background.jpg');
+        background-attachment: scroll;
     }
 
     .about-header {
         margin-top: 5vh;
-        font-size: 0.9em;
+        font-size: 1.1em;
     }
 
     .info-wrapper {
@@ -190,12 +191,12 @@
     .about {
         flex-direction: column;
         height: fit-content;
-        background-image: url('../../assets/mobile-background.jpg');
+        background-attachment: scroll;
     }
 
     .about-header {
         margin-top: 5vh;
-        font-size: 1em;
+        font-size: 1.3em;
     }
 
     .info-wrapper {
@@ -216,7 +217,7 @@
 
 @media (min-width: 992px) and (max-width: 1200px) {
     .about {
-        background-image: url('../../assets/mobile-background.jpg');
+        background-attachment: scroll;
     }
 
     .about-header {

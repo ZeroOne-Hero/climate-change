@@ -127,6 +127,9 @@
        height: fit-content;
         font-size: 1em;
     }
+    .solutions-inner {
+        height: 170px;
+    }
     .solutions-block {
         width: 95%;
         padding: 0;
