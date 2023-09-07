@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import "./Header.css"
 import {Link, useLocation} from 'react-router-dom';
 import {Link as ScrollLink} from 'react-scroll';
@@ -9,6 +9,9 @@ const Header: React.FC = () => {
     const isHomePage = location.pathname === '/';
     // const isCalculatorPage = location.pathname === '/calculator';
     const isBlogPage = location.pathname === '/blog';
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [location.pathname]);
 
     return (
         <nav className="header">

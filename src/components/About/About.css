@@ -1,26 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bebas+Neue&family=Comfortaa:wght@300;500&family=Cuprum&family=Domine&family=Lilita+One&family=Lobster&family=Montserrat:wght@500&family=Nanum+Myeongjo&family=Raleway:ital,wght@0,500;1,400&family=Roboto+Condensed&display=swap');
 
 .about {
-    height: 80vh;
-    background-image: url('../../assets/aboutBG5.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    box-shadow: 0 0 15px black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    padding: 90px 20px 0 20px;
+
 }
 
 .about-header {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     height: fit-content;
-    padding: 20px 0;
+    padding: 15px 0;
     background-color: rgba(255, 255, 255, 0.75);
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.5em;
     color: #062627;
     -webkit-text-stroke: 1px rgba(4, 25, 24, 0.48);
     background-image: url('../../assets/drops-big.jpg');
@@ -32,7 +28,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .about-header h1 {
@@ -63,13 +59,14 @@
     justify-content: center;
     align-items: center;
     opacity: 0;
-    margin-top: 10px;
 }
 
+
+
 .info p {
-    font-size: 1.3em;
+    font-size: 1.1em;
     padding: 40px 50px;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: Arial;
     text-align: justify;
     color: #042122;
     margin: 0;
@@ -128,7 +125,7 @@
 }
 
 .earth-about img {
-    height: 520px;
+    height: 470px;
 }
 
 @media (max-width: 576px) {
@@ -158,6 +155,7 @@
         margin: 20px;
     }
 }
+
 
 @media (min-width: 576px) and (max-width: 768px) {
     .about {

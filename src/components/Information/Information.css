@@ -28,6 +28,7 @@
     justify-content: center;
     align-items: center;
     margin: 50px 0;
+    text-align: center;
 }
 
 .info-header h1 {
@@ -48,6 +49,10 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .info-stats p {
@@ -57,9 +62,9 @@
 
 .info-stats h2 {
     text-align: center;
-    padding: 20px 40px;
+    padding: 30px 30px 0 30px;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 
 /* Info List */
@@ -162,7 +167,7 @@
         padding: 30px 0;
     }
     .info-header {
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
     .info-stats {
         width: 95%;

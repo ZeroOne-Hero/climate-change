@@ -43,9 +43,9 @@ const CalculatorMain = () => {
                 {activeCalculator === 'meat' && <CalculatorMeat/>}
                 {activeCalculator === 'plastic' && <CalculatorPlastic/>}
             </div>
-            <div className="cloud">
-                <img src={cloud}/>
-            </div>
+            {/*<div className="cloud">*/}
+            {/*    <img src={cloud}/>*/}
+            {/*</div>*/}
             <div className="footprint">
                 <div className="foot" id="foot10">
                     <img src={foot1} alt="Foot 1"/>

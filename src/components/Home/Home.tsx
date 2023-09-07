@@ -15,11 +15,14 @@ const Home: React.FC = () => {
     return (
         <div>
             <section className="home" id="home">
+                <div className="home-container">
+
                 <div className="home-header slideInLeft">
                     <h1>Don't Let Our Future Melt Away:</h1>
                     <h2>Stop Climate Change!</h2>
                     <Drops/>
                 </div>
+
                 <div className="home-bullets">
                     <div className="bullet slideInDown">
                         <img className="bLogo" src={dLogo1} alt="Logo 1"/>
@@ -37,12 +40,13 @@ const Home: React.FC = () => {
                         <Drops/>
                     </div>
                 </div>
+                </div>
             </section>
             <SlideThrough h1Text={"July 2023 was Earth’s hottest month on record."}/>
             <About/>
-            <SlideThrough h1Text={" 68% of world's glaciers will disappear by year 2100."}/>
+            {/*<SlideThrough h1Text={" 68% of world's glaciers will disappear by year 2100."}/>*/}
             <Information/>
-            <WildFire/>
+            {/*<WildFire/>*/}
             <Solution/>
         </div>
     );

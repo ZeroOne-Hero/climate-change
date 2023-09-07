@@ -53,10 +53,10 @@ const Solution = () => {
     return (
         <section id="solution" className="solution">
             <div ref={solutionsRef} className="solutions">
-                <div className="solutions-header">
-                    {/*<Drops/>*/}
-                    <h1>Not lost yet. What we can do to fix it.</h1>
-                </div>
+                {/*<div className="solutions-header">*/}
+                {/*    /!*<Drops/>*!/*/}
+                {/*    <h1>Not lost yet. What we can do to fix it.</h1>*/}
+                {/*</div>*/}
                 <div className="solutions-wrapper ">
                     <div className="solutions-block block1">
                         <div className="solutions-inner solution-left">

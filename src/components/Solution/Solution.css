@@ -1,9 +1,8 @@
 /* Base Styles */
 .solution {
-    height: 100vh;
-    box-shadow: 0 0 15px black;
     position: relative;
     overflow: hidden;
+    padding: 0 20px 100px 20px;
 }
 
 .solutions {
@@ -14,8 +13,7 @@
 }
 
 .solutions-block {
-    width: 45%;
-    margin: 20px;
+    width: 48%;
 }
 
 .solution-right {
@@ -27,9 +25,9 @@
 }
 
 .solutions-inner {
-    min-height: 120px;
+    min-height: 130px;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,40 +49,14 @@
     margin: 0 10px;
 }
 
-.solutions-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 17vh 0 7vh 0;
-    padding: 15px 50px;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.7em;
-    color: #073031;
-    -webkit-text-stroke: 1px rgba(1, 15, 15, 0.48);
-    background-color: rgba(255, 255, 255, 0.65);
-    background-image: url('../../assets/drops-big.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-}
-
-.solutions-header h1 {
-    text-align: center;
-}
-
 .solutions-wrapper {
     width: 100%;
-    height: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-/* Animations */
 .solution-left,
 .solution-right {
     opacity: 0;

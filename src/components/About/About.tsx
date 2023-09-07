@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from 'react';
 import "animate.css"
 import "./About.css";
 import Drops from "../Drops/Drops";
-import earth from "../../assets/earthAbout.jpg"
+import earth from "../../assets/earth.jpg"
 
 
 const About = () => {

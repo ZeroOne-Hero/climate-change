@@ -10,8 +10,8 @@ import coral from "../../assets/coral.jpg";
 import tree from "../../assets/tree.jpg";
 import human from "../../assets/family.jpg";
 import {Tooltip} from 'react-tooltip';
-import WildFire from "../WildFire/WildFire";
 import Drops from "../Drops/Drops";
+
 
 const Information = () => {
     return (
@@ -23,7 +23,7 @@ const Information = () => {
                 <Statistics/>
                 <div className="info-stats">
                     <Drops/>
-                    <h2>LOREM IPSUM DOLOR SIT AMET</h2>
+                    <h2>68% of world's glaciers will disappear by year 2100.</h2>
                     <p>
                         Since the late 1800s, Earth's average yearly surface temperature has risen about 1°C, leading to
                         significant environmental changes. These include more extreme weather, reduced ice and snow, and
@@ -116,7 +116,7 @@ const Information = () => {
                  </div>
             </div>
             <div className="info-header">
-                <h1>Look what we've done...</h1>
+                <h1>Too hot to be cool. Look what we've done.</h1>
             </div>
             <Tooltip id="turtle-tooltip" className="style-tooltip"/>
             <Tooltip id="penguin-tooltip" className="style-tooltip"/>
@@ -126,7 +126,9 @@ const Information = () => {
             <Tooltip id="cow-tooltip" className="style-tooltip"/>
             <Tooltip id="human-tooltip" className="style-tooltip"/>
             <Gallery/>
-
+            <div className="info-header">
+                <h1>Not lost yet</h1>
+            </div>
         </section>
     );
 };

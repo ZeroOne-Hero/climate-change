@@ -81,6 +81,7 @@ const Gallery = () => {
                 {galleryImages.map((image, index) => (
                     <div onClick={() => toggleModal(image)} className={`g-photo photo${index + 1}`} key={index}>
                         <div className="gallery-animation"><Drops/></div>
+
                         <div className="g-photos-wrapper">
                         <img src={image.src}/>
                         </div>
