@@ -20,7 +20,7 @@
 
 .info-header {
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.3em;
+    font-size: 2em;
     color: #dde9e9;
     -webkit-text-stroke: 1px #0b2e2c;
     padding: 20px;
@@ -43,7 +43,7 @@
     width: 50%;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     background-image: url('../../assets/drops-big.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -76,7 +76,7 @@
     flex-wrap: wrap;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     background-image: url('../../assets/drops-huge.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -129,7 +129,7 @@
     background-position: center;
     backdrop-filter: blur(15px);
     -webkit-backdrop-filter: blur(15px);
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     position: relative;
     padding: 30px;
     text-align: justify;

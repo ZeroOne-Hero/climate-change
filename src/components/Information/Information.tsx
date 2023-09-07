@@ -127,7 +127,7 @@ const Information = () => {
             <Tooltip id="human-tooltip" className="style-tooltip"/>
             <Gallery/>
             <div className="info-header">
-                <h1>Not lost yet</h1>
+                <h1>Let our kids count the stars and not pollution rates.</h1>
             </div>
         </section>
     );
