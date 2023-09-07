@@ -1,7 +1,5 @@
-/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bebas+Neue&family=Comfortaa:wght@300;500&family=Cuprum&family=Domine&family=Lilita+One&family=Lobster&family=Montserrat:wght@500&family=Nanum+Myeongjo&family=Raleway:ital,wght@0,500;1,400&family=Roboto+Condensed&display=swap');
 
-/* Common styles for all screen sizes */
 .home {
     width: 100%;
     height: 100vh;
@@ -84,7 +82,6 @@
     margin-right: 30px;
 }
 
-/* Keyframes */
 @keyframes slideInLeft {
     0% {
         transform: translateX(-100%);
@@ -121,7 +118,7 @@
     }
 }
 
-/* Animation classes */
+
 .slideInLeft {
     animation: slideInLeft 1200ms ease-in-out;
 }
@@ -138,22 +135,25 @@
     animation: slideInUp 1200ms ease-in-out;
 }
 
-/* Media Queries */
 @media (max-width: 576px) {
     .home {
         flex-direction: column;
         height: fit-content;
     }
+
     .home-header {
         margin-top: 20vh;
-        font-size: 1.2em;
+        font-size: 1.1em;
         width: 95%;
     }
+
     .home-bullets {
         width: 95%;
         margin-top: 40px;
         padding: 0 0 50px 0;
+        font-size: 0.9em;
     }
+
     .bullet {
         width: 100%;
     }
@@ -164,11 +164,13 @@
         flex-direction: column;
         height: fit-content;
     }
+
     .home-header {
         margin-top: 20vh;
         font-size: 1.3em;
         width: 90%;
     }
+
     .home-bullets {
         width: 90%;
         padding: 0 0 50px 0;
@@ -181,11 +183,13 @@
         flex-direction: column;
         height: fit-content;
     }
+
     .home-header {
         margin-top: 20vh;
         font-size: 1.4em;
         width: 85%;
     }
+
     .home-bullets {
         width: 85%;
         padding: 0 0 50px 0;
@@ -198,6 +202,7 @@
         margin-top: 50vh;
         font-size: 1.5em;
     }
+
     .home-bullets {
         width: 50%;
         padding: 50px;
@@ -210,6 +215,7 @@
         margin-top: 60vh;
         font-size: 1.6em;
     }
+
     .home-bullets {
         width: 42%;
         padding: 60px;
