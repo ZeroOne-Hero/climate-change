@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import './SlideThrough.css';
 import slider1 from '../../assets/slider-cloud1.jpg';
 import slider2 from '../../assets/slider-cloud2.jpg';
-
+import background from "../../assets/backgroundMain.jpg"
 interface SlideThroughProps {
     h1Text: string;
 }

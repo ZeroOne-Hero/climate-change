@@ -4,6 +4,7 @@ import "./About.css";
 import Drops from "../Drops/Drops";
 import earth from "../../assets/earthAbout.jpg"
 
+
 const About = () => {
     const headerRef = useRef<HTMLDivElement | null>(null);
     const infoRefs = useRef<HTMLDivElement[]>([]);
@@ -44,7 +45,6 @@ const About = () => {
 
     return (
         <section className="about" id="about">
-    <div className="about-background"></div>
             <div className="info-wrapper">
                 <div className="about-header" ref={headerRef} id="about-header">
                     <h1>

@@ -6,13 +6,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: center center;
     box-shadow: 0 0 15px black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-
 }
 
 .about-header {
@@ -136,7 +134,7 @@
     .about {
         flex-direction: column;
         height: fit-content;
-        background-attachment: scroll;
+        background: none;
     }
 
     .about-header {
@@ -164,7 +162,7 @@
     .about {
         flex-direction: column;
         height: fit-content;
-        background-attachment: scroll;
+        background: none;
     }
 
     .about-header {
@@ -192,7 +190,7 @@
     .about {
         flex-direction: column;
         height: fit-content;
-        background-attachment: scroll;
+        background: none;
     }
 
     .about-header {
@@ -218,7 +216,7 @@
 
 @media (min-width: 992px) and (max-width: 1200px) {
     .about {
-        background-attachment: scroll;
+        background: none;
     }
 
     .about-header {
