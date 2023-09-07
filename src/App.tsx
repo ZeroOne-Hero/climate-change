@@ -10,7 +10,6 @@ const App: React.FC = () => {
     return (
         <Router>
             <div className="app">
-                <div className="app-background"></div>
                 <Header/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>

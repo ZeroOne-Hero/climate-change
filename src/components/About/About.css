@@ -5,15 +5,13 @@
     background-image: url('../../assets/aboutBG5.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed;
     box-shadow: 0 0 15px black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
 }
-
-
 
 .about-header {
     backdrop-filter: blur(20px);
