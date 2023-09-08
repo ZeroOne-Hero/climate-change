@@ -25,7 +25,7 @@
 }
 
 .calc-page {
-    background-image: url('../../assets/backgroundMain.jpg');
+    background-image: url('../../assets/footer-calc.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -61,7 +61,7 @@
 
     .calc-page {
         background-attachment: scroll;
-
+        background-image: url("../../assets/calc-mobileBG.jpg");
     }
 }
 
@@ -73,6 +73,7 @@
 
     .calc-page {
         background-attachment: scroll;
+        background-image: url("../../assets/calc-mobileBG.jpg");
     }
 }
 
@@ -83,6 +84,7 @@
 
     .calc-page {
         background-attachment: scroll;
+        background-image: url("../../assets/calc-mobileBG.jpg");
     }
 }
 
@@ -93,6 +95,7 @@
 
     .calc-page {
         background-attachment: scroll;
+        background-image: url("../../assets/calc-mobileBG.jpg");
 
     }
 

@@ -267,7 +267,8 @@ input:focus {
     .calculator-main {
         padding: 100px 0;
         height: fit-content;
-        background-attachment: fixed;
+        background-attachment: scroll;
+
     }
 
     .calculator-main h1 {
@@ -314,7 +315,7 @@ input:focus {
     .calculator-main {
         padding: 100px 0;
         height: fit-content;
-        background-attachment: fixed;
+        background-attachment: scroll;
     }
 
     .calculator-main h1 {
@@ -360,7 +361,7 @@ input:focus {
     .calculator-main {
         padding: 100px 0;
         height: fit-content;
-        background-attachment: fixed;
+        background-attachment: scroll;
     }
 
     .calculator-main h1 {

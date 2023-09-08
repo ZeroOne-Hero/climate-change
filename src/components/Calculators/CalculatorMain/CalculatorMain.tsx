@@ -1,11 +1,11 @@
-import React, { useState, useEffect, startTransition } from 'react';
-import "./CalculatorMain.css";
-import foot1 from "../../../assets/footprint1.png";
-import foot2 from "../../../assets/footprint2.png";
-import { Helmet } from "react-helmet";
+import React, {useState, useEffect} from 'react';
 import CalculatorFlights from '../CalculatorFlights';
 import CalculatorMeat from '../CalculatorMeat';
 import CalculatorPlastic from '../CalculatorPlastic';
+import "./CalculatorMain.css";
+import foot1 from "../../../assets/footprint1.png"
+import foot2 from "../../../assets/footprint2.png"
+
 
 const CalculatorMain = () => {
     const [activeCalculator, setActiveCalculator] = useState('flights');
@@ -22,11 +22,12 @@ const CalculatorMain = () => {
             }
         };
 
-        const intervalId = setInterval(resetAnimation, 15000);
+
+        const intervalId = setInterval(resetAnimation, 14000);
+
 
         return () => clearInterval(intervalId);
     }, []);
-
     const footprints = [];
 
     for (let i = 1; i <= 10; i++) {
@@ -36,36 +37,20 @@ const CalculatorMain = () => {
             </div>
         );
     }
-
     return (
+
         <section id="calculator-main" className="calculator-main">
-            <Helmet>
-                <title>CO2 Emissions Calculator - Calculate Your Carbon Footprint</title>
-                <meta
-                    name="description"
-                    content="Use our CO2 emissions calculator to estimate your carbon footprint. Learn how your lifestyle choices impact the environment and discover ways to reduce your carbon footprint."
-                />
-                <meta name="author" content="Your Name" />
-            </Helmet>
+
             <div className="calc-button-wrapper">
                 <h1>CO2 FOOTPRINT CALCULATOR</h1>
                 <div className="calculator-buttons">
-                    <button onClick={() => {
-                        startTransition(() => setActiveCalculator('flights'));
-                    }}>Flights Taken
-                    </button>
-                    <button onClick={() => {
-                        startTransition(() => setActiveCalculator('plastic'));
-                    }}>Plastic Waste
-                    </button>
-                    <button onClick={() => {
-                        startTransition(() => setActiveCalculator('meat'));
-                    }}>Meat Consumption
-                    </button>
+                    <button onClick={() => setActiveCalculator('plastic')}>Plastic Waste</button>
+                    <button onClick={() => setActiveCalculator('flights')}>Flights Taken</button>
+                    <button onClick={() => setActiveCalculator('meat')}>Meat Consumption</button>
                 </div>
-                {activeCalculator === 'flights' && <CalculatorFlights />}
-                {activeCalculator === 'meat' && <CalculatorMeat />}
-                {activeCalculator === 'plastic' && <CalculatorPlastic />}
+                {activeCalculator === 'plastic' && <CalculatorPlastic/>}
+                {activeCalculator === 'flights' && <CalculatorFlights/>}
+                {activeCalculator === 'meat' && <CalculatorMeat/>}
             </div>
             <div className="footprint">{footprints}</div>
         </section>
