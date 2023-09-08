@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from 'react';
 import "animate.css"
 import "./About.css";
 import Drops from "../Drops/Drops";
-import earth from "../../assets/earth.jpg"
+import earth from "../../assets/earth.png"
 
 
 const About = () => {
@@ -48,19 +48,19 @@ const About = () => {
             <div className="info-wrapper">
                 <div className="about-header" ref={headerRef} id="about-header">
                     <h1>
-                        The Earth Called.  It Wants Its Cool Back.
+                        The Earth Called. It Wants Its Cool Back.
                     </h1>
                 </div>
                 {/*<div className="info" ref={el => infoRefs.current[0] = el as HTMLDivElement}>*/}
                 {/*    <p>*/}
-                {/*        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.*/}
                 {/*    </p>*/}
                 {/*    /!*<Drops/>*!/*/}
                 {/*</div>*/}
                 <div className="info" ref={el => infoRefs.current[1] = el as HTMLDivElement}>
                     <p>
                         Driven by human activities, global warming is causing Earth's average temperature to soar, with
-                        a host of detrimental outcomes. Sea levels have increased by about 8 inches, jeopardizing coastal
+                        a host of detrimental outcomes. Sea levels have increased by about 8 inches, jeopardizing
+                        coastal
                         regions. The accelerated decline of Arctic sea ice, at a rate of around 13% per decade, puts
                         polar ecosystems at risk. Incidences of extreme weather like hurricanes and heatwaves are
                         becoming more common and severe. We release roughly 40 billion metric tons of CO2 each year,
@@ -71,7 +71,7 @@ const About = () => {
                 </div>
             </div>
             <div className="earth-about">
-                <img src={earth} alt="earth"/>
+                <img src={earth} alt="earth" loading="lazy"/>
             </div>
 
         </section>

@@ -10,13 +10,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background-color: rgba(240, 248, 255, 0.58);*/
-    /*background-image: url('../../assets/header-drops.jpg');*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*background-position: center;*/
     overflow: hidden;
-
 }
 
 .earth-logo {

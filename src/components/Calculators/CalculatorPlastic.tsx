@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import plasticLogo from "../../assets/plasticLogo.jpg";
+import plasticLogo from "../../assets/plasticLogo.png";
 
 const CalculatorPlastic = () => {
     const [bottlesPerWeek, setBottlesPerWeek] = useState(0);
@@ -26,7 +26,7 @@ const CalculatorPlastic = () => {
     return (
         <div className="calculator">
             <div className="calc-form">
-                <img className="calc-logo" src={plasticLogo}/>
+                <img className="calc-logo" src={plasticLogo} alt="bottle"/>
                 <form onSubmit={handleSubmit}>
                     <label>
                         Bottles per week:

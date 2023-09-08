@@ -55,9 +55,8 @@
 .slide-through-text {
     position: absolute;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 3.2em;
-    color: #190f05;
-    /*-webkit-text-stroke: 1px rgba(11, 5, 1, 0.48);*/
+    font-size: 3em;
+    color: var(--secondary-color);
     opacity: 0;
     transition: opacity 0.2s;
     text-align: center;

@@ -6,7 +6,7 @@ import Drops from "../Drops/Drops";
 
 
 const startYear = 1880;
-// const endYear = 2022;
+
 
 const noSmoothingData = [
     -0.17, -0.09, -0.11, -0.18, -0.29, -0.34, -0.32, -0.37, -0.18, -0.11,
@@ -81,7 +81,7 @@ const Statistics = () => {
                 <LineChart
                     data={data}
                     margin={{
-                        top: 15, right: 50, left: 0, bottom: 15,
+                        top: 15, right: 40, left: -10, bottom: 15,
                     }}
                 >
                     <CartesianGrid strokeDasharray="3 3" stroke="#ccc" />

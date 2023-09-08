@@ -1,6 +1,6 @@
 import React, {ChangeEvent, FormEvent, useState} from 'react';
 import axios from 'axios';
-import flightsLogo from "../../assets/flightLogo.jpg";
+import flightsLogo from "../../assets/flightLogo.png";
 
 const CalculatorFlights = () => {
     const [from, setFrom] = useState<string>('');
@@ -50,7 +50,7 @@ const CalculatorFlights = () => {
     return (
         <section className="calculator">
             <div className="calc-form">
-                <img className="calc-logo" src={flightsLogo}/>
+                <img className="calc-logo" src={flightsLogo}  alt="plane"/>
                 <form onSubmit={handleSubmit}>
                     <label>
                         From:

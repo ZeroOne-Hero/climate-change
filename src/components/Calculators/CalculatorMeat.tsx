@@ -1,5 +1,5 @@
 import React, {ChangeEvent, useState} from 'react';
-import meatLogo from "../../assets/meatLogo.jpg";
+import meatLogo from "../../assets/meatLogo.png";
 
 const CalculatorMeat = () => {
     const [meatPerWeek, setMeatPerWeek] = useState(0);
@@ -32,7 +32,7 @@ const CalculatorMeat = () => {
     return (
         <div className="calculator">
             <div className="calc-form">
-                <img className="calc-logo" src={meatLogo}/>
+                <img className="calc-logo" src={meatLogo} alt="meat"/>
                 <form onSubmit={handleSubmit}>
                     <label>
                         Meat consumed per week:

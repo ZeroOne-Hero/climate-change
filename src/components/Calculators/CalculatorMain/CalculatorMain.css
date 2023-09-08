@@ -1,3 +1,10 @@
+:root {
+    --calc-box-shadow: 0 0 15px rgba(34, 19, 5, 0.35);
+    --calcInner-box-shadow: 1px 1px 5px rgba(34, 19, 5, 0.5);
+    --butonsColor-background: linear-gradient(45deg, rgba(170, 95, 19, 0.67), rgba(130, 69, 19, 0.8));
+    --butonsHover-background: linear-gradient(45deg, rgba(144, 79, 22, 0.8), rgba(83, 44, 9, 0.8));
+}
+
 .calculator-main {
     height: 100vh;
     width: 100%;
@@ -20,15 +27,14 @@
     text-align: center;
     padding: 7px 20px;
     margin: 30px 0 0;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px rgba(66, 65, 65, 0.52);
-    background-image: url('../../../assets/cloudBG.jpg');
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+    box-shadow: var(--calc-box-shadow);
+    background-image: url('../../../assets/cloudBG.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color: #120a02;
-    -webkit-text-stroke: 1px black;
+    color: var(--secondary-color);
 }
 
 .cloud img {
@@ -52,10 +58,9 @@
     z-index: 1;
 }
 
-
 .footprint {
     position: absolute;
-    right: 30px;
+    left: 20px;
     bottom: 10px;
     display: flex;
     justify-content: center;
@@ -126,8 +131,8 @@
 }
 
 .calculator {
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
     padding: 7px 30px 30px 30px;
     height: 40vh;
     min-height: 380px;
@@ -135,14 +140,14 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-    box-shadow: 0 0 10px rgba(66, 65, 65, 0.52);
-    background-image: url('../../../assets/cloudBG.jpg');
+    box-shadow: var(--calc-box-shadow);
+    background-image: url('../../../assets/cloudBG.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
     overflow: hidden;
-    color: #120a02;
+    color: var(--secondary-color);
 }
 
 .calc-logo {
@@ -155,11 +160,9 @@
     align-items: center;
     width: 100%;
     padding: 5px 20px;
-    background: linear-gradient(45deg, rgba(144, 73, 20, 0.65), rgba(231, 166, 99, 0.33));
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    box-shadow: 0 0 10px rgba(39, 26, 8, 0.52);
-    color: #120a02;
+    box-shadow: var(--calc-box-shadow);
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter:blur(var(--blur));
 }
 
 .calc-button-wrapper {
@@ -183,6 +186,7 @@
     padding: 5px;
     font-family: 'Bebas Neue', sans-serif;
     transition: transform 0.3s ease-in-out;
+    color: var(--secondary-color);
 }
 
 .calculator-buttons button:hover {
@@ -210,7 +214,7 @@
 }
 
 input, select {
-    background: linear-gradient(45deg, rgba(144, 73, 20, 0.65), rgba(231, 166, 99, 0.33));
+    background: var(--butonsColor-background);
     border: 2px;
     height: 25px;
     padding-left: 7px;
@@ -223,31 +227,31 @@ input, select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    font-family: Arial;
+    font-family: Arial, serif;
     text-transform: uppercase;
-    box-shadow: 0 0 5px rgba(39, 26, 8, 0.52);
+    box-shadow: var(--calcInner-box-shadow);
     cursor: pointer;
     font-weight: bold;
-    color: #120a02;
+    color: var(--secondary-color);
 }
 
 .calc-form form button {
     margin: 5px;
-    font-size: 14px;
     height: 30px;
     width: 200px;
     min-width: fit-content;
     border: 2px;
     cursor: pointer;
-    background: linear-gradient(45deg, rgba(144, 73, 20, 0.65), rgba(231, 166, 99, 0.33));
+    background: var(--butonsColor-background);
     transition: all 0.3s ease;
-    box-shadow: 0 0 5px rgba(39, 26, 8, 0.52);
-    font-family: Arial, serif;
+    box-shadow: var(--calcInner-box-shadow);
+    font-family: 'Bebas Neue', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     padding-left: 10px;
     padding-right: 10px;
-    color: #120a02;
+    color: var(--secondary-color);
+    font-size: 1.2em;
 }
 
 input[type=number]::-webkit-inner-spin-button {
@@ -262,27 +266,25 @@ input[type=number] {
 }
 
 .calc-form form button:hover, select:hover {
-    background: linear-gradient(45deg, rgba(144, 73, 20, 1), rgba(231, 166, 99, 0.79));
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    background:  var(--butonsHover-background);
+    box-shadow: var(--calcInner-box-shadow);
 }
 
 input:focus {
-    background: linear-gradient(45deg, rgba(144, 73, 20, 1), rgba(231, 166, 99, 0.79));
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    background: var(--butonsHover-background);
+    box-shadow: var(--calcInner-box-shadow);
 }
 
 .calc-results {
     width: 60%;
     padding: 20px 70px;
-    background: linear-gradient(45deg, rgba(144, 73, 20, 1), rgba(231, 166, 99, 0.79));
+    background: var(--butonsColor-background);
     height: 80%;
     margin-top: 20px;
     margin-left: 30px;
     border-radius: 2px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-
+    box-shadow: var(--calcInner-box-shadow);
 }
-
 
 @media (max-width: 576px) {
     .calculator-main {
@@ -330,7 +332,6 @@ input:focus {
     }
 }
 
-
 @media (min-width: 576px) and (max-width: 768px) {
     .calculator-main {
         padding: 100px 0;
@@ -376,7 +377,6 @@ input:focus {
         height: 60%;
     }
 }
-
 
 @media (min-width: 768px) and (max-width: 992px) {
     .calculator-main {
@@ -424,12 +424,10 @@ input:focus {
     }
 }
 
-/* Large (lg) - Most Desktop Screens and Laptops */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    /* Add your adaptations here */
+@media (min-width: 992px) and (max-width: 1200px) {
+
 }
 
-/* Extra Large (xl) - Larger Desktop Screens and High-Resolution Displays */
 @media (min-width: 1200px) {
-    /* Add your adaptations here */
+
 }

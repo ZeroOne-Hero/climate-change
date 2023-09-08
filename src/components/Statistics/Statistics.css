@@ -3,10 +3,10 @@
 }
 
 .graph-wrapper {
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    background-color: rgba(255, 255, 255, 0.8);
-    background-image: url('../../assets/drops-big.jpg');
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+    background-color: var(--background-color);
+    background-image: url('../../assets/drops-big.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -17,11 +17,13 @@
 }
 
 .custom-tooltip {
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
     padding: 10px;
     box-shadow: 0 0 3px rgba(69, 67, 67, 0.48);
-
+    background-color: rgba(8, 107, 108, 0.59);
+    border-radius: 3px;
+    font-size: 14px;
 }
 .custom-tooltip p {
     margin: 5px;
@@ -30,12 +32,11 @@
 }
 
 .tooltip-label {
-    font-weight: bold;
-    color: black;
+    color: white;
 }
 
 .tooltip-value {
-    color: black;
+    color: white;
 }
 
 @media (max-width: 576px) {

@@ -1,11 +1,14 @@
-import React, {useState, useEffect} from 'react';
-import CalculatorFlights from '../CalculatorFlights';
-import CalculatorMeat from '../CalculatorMeat';
-import CalculatorPlastic from '../CalculatorPlastic';
+import React, {useState, useEffect, lazy, Suspense, startTransition} from 'react';
 import "./CalculatorMain.css";
-import foot1 from "../../../assets/footprint1.jpg"
-import foot2 from "../../../assets/footprint2.jpg"
-import cloud from "../../../assets/cloud.jpg"
+import foot1 from "../../../assets/footprint1.png"
+import foot2 from "../../../assets/footprint2.png"
+import {Helmet} from "react-helmet";
+
+
+
+const CalculatorFlights = lazy(() => import('../CalculatorFlights'));
+const CalculatorMeat = lazy(() => import('../CalculatorMeat'));
+const CalculatorPlastic = lazy(() => import('../CalculatorPlastic'));
 
 const CalculatorMain = () => {
     const [activeCalculator, setActiveCalculator] = useState('flights');
@@ -22,62 +25,54 @@ const CalculatorMain = () => {
             }
         };
 
-
-        const intervalId = setInterval(resetAnimation, 14000);
-
+        const intervalId = setInterval(resetAnimation, 15000);
 
         return () => clearInterval(intervalId);
     }, []);
+
+    const footprints = [];
+
+    for (let i = 1; i <= 10; i++) {
+        footprints.push(
+            <div className="foot" id={`foot${i}`} key={`foot${i}`}>
+                <img  src={i % 2 === 0 ? foot2 : foot1} alt={`Foot ${i}`}/>
+            </div>
+        );
+    }
     return (
 
         <section id="calculator-main" className="calculator-main">
-
+            <Helmet>
+                <title>CO2 Emissions Calculator - Calculate Your Carbon Footprint</title>
+                <meta
+                    name="description"
+                    content="Use our CO2 emissions calculator to estimate your carbon footprint. Learn how your lifestyle choices impact the environment and discover ways to reduce your carbon footprint."
+                />
+                <meta name="author" content="Your Name" />
+            </Helmet>
             <div className="calc-button-wrapper">
                 <h1>CO2 FOOTPRINT CALCULATOR</h1>
                 <div className="calculator-buttons">
-                    <button onClick={() => setActiveCalculator('flights')}>Flights Taken</button>
-                    <button onClick={() => setActiveCalculator('plastic')}>Plastic Waste</button>
-                    <button onClick={() => setActiveCalculator('meat')}>Meat Consumption</button>
+                    <button onClick={() => {
+                        startTransition(() => setActiveCalculator('flights'));
+                    }}>Flights Taken
+                    </button>
+                    <button onClick={() => {
+                        startTransition(() => setActiveCalculator('plastic'));
+                    }}>Plastic Waste
+                    </button>
+                    <button onClick={() => {
+                        startTransition(() => setActiveCalculator('meat'));
+                    }}>Meat Consumption
+                    </button>
                 </div>
-                {activeCalculator === 'flights' && <CalculatorFlights/>}
-                {activeCalculator === 'meat' && <CalculatorMeat/>}
-                {activeCalculator === 'plastic' && <CalculatorPlastic/>}
+                <Suspense fallback={<div>Loading...</div>}>
+                    {activeCalculator === 'flights' && <CalculatorFlights/>}
+                    {activeCalculator === 'meat' && <CalculatorMeat/>}
+                    {activeCalculator === 'plastic' && <CalculatorPlastic/>}
+                </Suspense>
             </div>
-            {/*<div className="cloud">*/}
-            {/*    <img src={cloud}/>*/}
-            {/*</div>*/}
-            <div className="footprint">
-                <div className="foot" id="foot10">
-                    <img src={foot1} alt="Foot 1"/>
-                </div>
-                <div className="foot" id="foot9">
-                    <img src={foot2} alt="Foot 2"/>
-                </div>
-                <div className="foot" id="foot8">
-                    <img src={foot1} alt="Foot 1"/>
-                </div>
-                <div className="foot" id="foot7">
-                    <img src={foot2} alt="Foot 2"/>
-                </div>
-                <div className="foot" id="foot6">
-                    <img src={foot1} alt="Foot 1"/>
-                </div>
-                <div className="foot" id="foot5">
-                    <img src={foot2} alt="Foot 2"/>
-                </div>
-                <div className="foot" id="foot4">
-                    <img src={foot1} alt="Foot 3"/>
-                </div>
-                <div className="foot" id="foot3">
-                    <img src={foot2} alt="Foot 4"/>
-                </div>
-                <div className="foot" id="foot2">
-                    <img src={foot1} alt="Foot 5"/>
-                </div>
-                <div className="foot" id="foot1">
-                    <img src={foot2} alt="Foot 6"/>
-                </div>
-            </div>
+            <div className="footprint">{footprints}</div>
         </section>
     );
 };

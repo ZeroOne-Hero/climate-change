@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import {useLocation} from 'react-router-dom';
 import "./Footer.css";
 import Drops from "../Drops/Drops";
 
@@ -17,8 +17,10 @@ const Footer: React.FC = () => {
 
     return (
         <section className="footer">
-            <div className={footerClass}></div>
-            <div className={`animation ${animationClass}`}> <Drops/></div>
+            <div className={footerClass}>
+                <div className={`animation ${animationClass}`}><Drops/></div>
+            </div>
+
             <div className="lower-footer">
                 <p>2023</p>
             </div>

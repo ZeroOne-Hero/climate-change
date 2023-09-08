@@ -1,5 +1,6 @@
-export  type GalleryImage = {
+export interface GalleryImage {
     src: string;
     info: string;
-    detail: string;
-};
+    alt: string;
+    detail?: string;
+}

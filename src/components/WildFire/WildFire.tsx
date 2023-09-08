@@ -49,12 +49,12 @@ const WildFire = () => {
                     <h1>Climate change is increasing the risk of wildfires.</h1>
                 </div>
                 <div className="wildfire-image">
-                    <img src={hand2} alt="hand"/>
-                    <img src={hand1} alt="hand"/>
+                    <img src={hand2} alt="hand" loading="lazy"/>
+                    <img src={hand1} alt="hand" loading="lazy"/>
                 </div>
             </div>
-            <div ref={fireAnimationRef} className="fire-animation">
-                <img src={fire} alt="fire"/>
+            <div ref={fireAnimationRef} className="fire-animation" >
+                <img src={fire} alt="fire" loading="lazy"/>
             </div>
             <div ref={burntLayerRef} className="burnt-layer"></div>
 

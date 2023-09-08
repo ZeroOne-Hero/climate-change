@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './SlideThrough.css';
-import slider1 from '../../assets/slider-cloud1.jpg';
-import slider2 from '../../assets/slider-cloud2.jpg';
-import background from "../../assets/backgroundMain.jpg"
+import slider1 from '../../assets/slider-cloud1.png';
+import slider2 from '../../assets/slider-cloud2.png';
 interface SlideThroughProps {
     h1Text: string;
 }
@@ -47,12 +46,13 @@ const SlideThrough: React.FC<SlideThroughProps> = ({ h1Text }) => {
 
     return (
         <section className="slide" ref={slideRef}>
+            <div className="slide-background"></div>
             <h1 className="slide-through-text" ref={h1Ref}>{h1Text}</h1>
             <div className="slider1">
-                <img src={slider1} alt="Slider 1" />
+                <img src={slider1} alt="smog" loading="lazy" />
             </div>
             <div className="slider2">
-                <img src={slider2} alt="Slider 2" />
+                <img src={slider2} alt="smog" loading="lazy"/>
             </div>
         </section>
     );
