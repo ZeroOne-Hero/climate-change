@@ -2,6 +2,10 @@
     position: relative;
     overflow: hidden;
     padding: 0 20px 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .solutions {
@@ -98,13 +102,32 @@
     .solution {
        height: fit-content;
         font-size: 1em;
+        width: 100%;
+        padding: 0;
+    }
+
+    .solutions {
+        width: 90%;
     }
     .solutions-inner {
-        height: 170px;
         background-color: var(--background-mobile-color);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
     }
+
+    .solution-right {
+        padding:  20px;
+    }
+
+    .solution-left {
+        padding: 20px;
+    }
+
     .solutions-block {
-        width: 95%;
+        width: 100%;
         padding: 0;
         margin: 0 0 30px 0;
     }
@@ -116,6 +139,7 @@
 
     .solutions-wrapper {
         justify-content: center;
+        width: 100%;
     }
 
 }
@@ -124,6 +148,8 @@
     .solution {
         height: fit-content;
         font-size: 1em;
+        width: 100%;
+        padding: 0;
     }
     .solutions-block {
         width: 90%;
@@ -148,6 +174,8 @@
     .solution {
         height: fit-content;
         font-size: 1em;
+        width: 100%;
+        padding: 0;
     }
     .solutions-block {
         width: 85%;

@@ -132,10 +132,16 @@
         background-attachment: scroll;
         padding: 0;
     }
+    .info-wrapper {
+        order: 2;
+    }
 
+    .earth-about {
+        order: 1;
+    }
     .about-header {
         margin-top: 5vh;
-        font-size: 1em;
+        font-size: 0.85em;
         background-color: var(--background-mobile-color);
     }
 
@@ -145,7 +151,7 @@
 
     .info {
         margin-top: 5px;
-        font-size: 0.8em;
+        font-size: 0.9em;
         background-color: var(--background-mobile-color);
     }
 
@@ -163,7 +169,13 @@
         background-attachment: scroll;
         padding: 30px 0 0 0;
     }
+    .info-wrapper {
+        order: 2;
+    }
 
+    .earth-about {
+        order: 1;
+    }
     .about-header {
         margin-top: 5vh;
         font-size: 1.1em;
@@ -193,7 +205,13 @@
         background-attachment: scroll;
         padding: 30px 0 0 0;
     }
+    .info-wrapper {
+        order: 2;
+    }
 
+    .earth-about {
+        order: 1;
+    }
     .about-header {
         margin-top: 5vh;
         font-size: 1.3em;

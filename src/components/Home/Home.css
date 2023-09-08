@@ -161,6 +161,7 @@
         font-size: 1.1em;
         width: 100%;
         background-color: var(--background-mobile-color);
+        padding: 20px 15px;
     }
 
     .home-bullets {
@@ -194,6 +195,7 @@
         font-size: 1.3em;
         width: 100%;
         background-color: var(--background-mobile-color);
+        padding:20px;
     }
 
     .home-bullets {

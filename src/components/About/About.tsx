@@ -71,7 +71,7 @@ const About = () => {
                 </div>
             </div>
             <div className="earth-about">
-                <img src={earth} alt="earth" loading="lazy"/>
+                <img src={earth} alt="earth"/>
             </div>
 
         </section>
