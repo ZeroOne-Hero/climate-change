@@ -1,14 +1,11 @@
-import React, {useState, useEffect, lazy, Suspense, startTransition} from 'react';
+import React, { useState, useEffect, startTransition } from 'react';
 import "./CalculatorMain.css";
-import foot1 from "../../../assets/footprint1.png"
-import foot2 from "../../../assets/footprint2.png"
-import {Helmet} from "react-helmet";
-
-
-
-const CalculatorFlights = lazy(() => import('../CalculatorFlights'));
-const CalculatorMeat = lazy(() => import('../CalculatorMeat'));
-const CalculatorPlastic = lazy(() => import('../CalculatorPlastic'));
+import foot1 from "../../../assets/footprint1.png";
+import foot2 from "../../../assets/footprint2.png";
+import { Helmet } from "react-helmet";
+import CalculatorFlights from '../CalculatorFlights';
+import CalculatorMeat from '../CalculatorMeat';
+import CalculatorPlastic from '../CalculatorPlastic';
 
 const CalculatorMain = () => {
     const [activeCalculator, setActiveCalculator] = useState('flights');
@@ -39,8 +36,8 @@ const CalculatorMain = () => {
             </div>
         );
     }
-    return (
 
+    return (
         <section id="calculator-main" className="calculator-main">
             <Helmet>
                 <title>CO2 Emissions Calculator - Calculate Your Carbon Footprint</title>
@@ -66,11 +63,9 @@ const CalculatorMain = () => {
                     }}>Meat Consumption
                     </button>
                 </div>
-                <Suspense fallback={<div>Loading...</div>}>
-                    {activeCalculator === 'flights' && <CalculatorFlights/>}
-                    {activeCalculator === 'meat' && <CalculatorMeat/>}
-                    {activeCalculator === 'plastic' && <CalculatorPlastic/>}
-                </Suspense>
+                {activeCalculator === 'flights' && <CalculatorFlights />}
+                {activeCalculator === 'meat' && <CalculatorMeat />}
+                {activeCalculator === 'plastic' && <CalculatorPlastic />}
             </div>
             <div className="footprint">{footprints}</div>
         </section>
