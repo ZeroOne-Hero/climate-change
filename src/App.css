@@ -4,15 +4,6 @@
     box-sizing: border-box;
 }
 
-/*html{*/
-/*    overflow: hidden;*/
-/*    height: 100%;*/
-/*    font-size: 16px;*/
-/*}*/
-/*body{*/
-/*    overflow: auto;*/
-/*    height: 100%;*/
-/*}*/
 
 .app {
     position: relative;
@@ -60,4 +51,13 @@
 }
 
 @media (min-width: 1200px) {
+    html{
+        overflow: hidden;
+        height: 100%;
+        font-size: 16px;
+    }
+    body{
+        overflow: auto;
+        height: 100%;
+    }
 }

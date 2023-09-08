@@ -37,10 +37,6 @@
     color: var(--secondary-color);
 }
 
-.cloud img {
-    height: 250px;
-}
-
 @keyframes float {
     0%, 100% {
         transform: translateY(0);
@@ -50,22 +46,13 @@
     }
 }
 
-.cloud {
-    position: absolute;
-    left: 30px;
-    top: 70px;
-    animation: float 5s ease-in-out infinite;
-    z-index: 1;
-}
-
 .footprint {
-    position: fixed;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     z-index: 0;
-    /*padding-bottom: 20px;*/
     bottom: 0;
 }
 
@@ -93,39 +80,30 @@
 #foot1 {
     animation: fade-in-out 5s 1 500ms;
 }
-
 #foot2 {
     animation: fade-in-out 5s 1 1500ms;
 }
-
 #foot3 {
     animation: fade-in-out 5s 1 2500ms;
 }
-
 #foot4 {
     animation: fade-in-out 5s 1 3500ms;
 }
-
 #foot5 {
     animation: fade-in-out 5s 1 4500ms;
 }
-
 #foot6 {
     animation: fade-in-out 5s 1 5500ms;
 }
-
 #foot7 {
     animation: fade-in-out 5s 1 6500ms;
 }
-
 #foot8 {
     animation: fade-in-out 5s 1 7500ms;
 }
-
 #foot9 {
     animation: fade-in-out 5s 1 8500ms;
 }
-
 #foot10 {
     animation: fade-in-out 5s 1 9500ms;
 }
@@ -145,8 +123,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 1;
-    overflow: hidden;
     color: var(--secondary-color);
 }
 
@@ -289,7 +265,8 @@ input:focus {
 
 @media (max-width: 576px) {
     .calculator-main {
-        min-height: fit-content;
+        height: 100%;
+        background-attachment: fixed;
     }
 
     .calc-button-wrapper {
@@ -300,7 +277,7 @@ input:focus {
     .calculator {
         flex-direction: column;
         padding: 20px 0 70px 0;
-        height: fit-content;
+        height: auto;
     }
 
     .calculator-buttons {
@@ -322,7 +299,7 @@ input:focus {
         margin-top: 30px;
         padding: 20px 30px;
         margin-left: 15px;
-        height: 60%;
+        height: auto;
     }
 }
 
@@ -330,6 +307,7 @@ input:focus {
     .calculator-main {
         padding: 100px 0;
         height: fit-content;
+        background-attachment: fixed;
     }
 
     .calculator-main h1 {
@@ -375,7 +353,7 @@ input:focus {
     .calculator-main {
         padding: 100px 0;
         height: fit-content;
-        min-height: 100vh;
+        background-attachment: fixed;
     }
 
     .calculator-main h1 {
