@@ -1,8 +1,8 @@
 import React from 'react';
 import "./WildFire.css";
-import fire from "../../assets/fire.jpg";
-import hand1 from "../../assets/hand1.jpg";
-import hand2 from "../../assets/hand2.jpg";
+import fire from "../../assets/fire.png";
+import hand1 from "../../assets/hand1.png";
+import hand2 from "../../assets/hand2.png";
 import {useEffect, useRef} from 'react';
 
 const WildFire = () => {

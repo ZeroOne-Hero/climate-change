@@ -267,6 +267,7 @@ input:focus {
     .calculator-main {
         padding: 100px 0 10px 0;
         height: fit-content;
+        min-height: 100vh;
         background-attachment: scroll;
     }
 
@@ -312,9 +313,11 @@ input:focus {
 
 @media (min-width: 576px) and (max-width: 768px) {
     .calculator-main {
-        padding: 100px 0;
+        padding: 100px 0 10px 0;
         height: fit-content;
         background-attachment: scroll;
+        min-height: 100vh;
+
     }
 
     .calculator-main h1 {
@@ -361,6 +364,8 @@ input:focus {
         padding: 100px 0;
         height: fit-content;
         background-attachment: scroll;
+        min-height: 100vh;
+
     }
 
     .calculator-main h1 {

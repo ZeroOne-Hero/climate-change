@@ -11,6 +11,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   margin-top: 20px;
 
 }
 
@@ -49,7 +50,7 @@
 }
 
 .fire-animation img {
-    height: 170px;
+    height: 150px;
 }
 
 .burnt-layer {

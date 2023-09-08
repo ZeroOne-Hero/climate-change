@@ -48,6 +48,9 @@ const Solution = () => {
 
     return (
         <section id="solution" className="solution">
+            <div className="info-header">
+                <h1>Let our kids count the stars and not pollution rates.</h1>
+            </div>
             <div ref={solutionsRef} className="solutions">
                 <div className="solutions-wrapper ">
                     <div className="solutions-block block1">

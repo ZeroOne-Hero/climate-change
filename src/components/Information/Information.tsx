@@ -11,6 +11,7 @@ import tree from "../../assets/tree.png";
 import human from "../../assets/family.png";
 import {Tooltip} from 'react-tooltip';
 import Drops from "../Drops/Drops";
+import WildFire from "../WildFire/WildFire";
 
 
 const Information = () => {
@@ -127,9 +128,7 @@ const Information = () => {
             <Tooltip id="cow-tooltip" className="style-tooltip" arrowColor="transparent"/>
             <Tooltip id="human-tooltip" className="style-tooltip " arrowColor="transparent"/>
             <Gallery/>
-            <div className="info-header">
-                <h1>Let our kids count the stars and not pollution rates.</h1>
-            </div>
+            {/*<WildFire/>*/}
         </section>
     );
 };

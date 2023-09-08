@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 
 }
 
@@ -125,6 +126,12 @@
     .solution-left {
         padding: 20px;
     }
+    .solution-left img {
+        order: 1;
+    }
+    .solution-left p {
+        order: 2;
+    }
 
     .solutions-block {
         width: 100%;
@@ -167,6 +174,7 @@
     }
     .solutions-inner {
         background-color: var(--background-mobile-color);
+
     }
 }
 

@@ -1,6 +1,6 @@
 .information {
     color: var(--primary-color);
-    padding: 0 20px 50px 20px;
+    padding: 0 20px 0 20px;
     font-family: Arial, sans-serif;
     overflow: hidden;
     display: flex;
@@ -195,6 +195,7 @@
 
     .info-header {
         font-size: 1.5em;
+
     }
 
     .info-stats {
@@ -255,6 +256,9 @@
 
     }
 
+    .info-header {
+        font-size: 1.6em;
+    }
     .info-stats {
         width: 90%;
         margin: 0;
@@ -306,7 +310,9 @@
     .information {
         padding: 30px 0;
     }
-
+    .info-header {
+        font-size: 1.7em;
+    }
     .info-stats {
         width: 85%;
         margin: 0;
@@ -354,6 +360,9 @@
 .info-list-item {
     padding-top: 30px;
 }
+    .info-header {
+        font-size: 1.8em;
+    }
 }
 
 @media (min-width: 1700px) {
