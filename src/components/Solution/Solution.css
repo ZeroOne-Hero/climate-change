@@ -69,14 +69,14 @@
 }
 
 .animate-from-left {
-    animation: slideFromLeft 1500ms ease forwards;
+    animation: solutionSlideFromLeft 1500ms ease forwards;
 }
 
 .animate-from-right {
-    animation: slideFromRight 1500ms ease forwards;
+    animation: solutionSlideFromRight 1500ms ease forwards;
 }
 
-@keyframes slideFromLeft {
+@keyframes solutionSlideFromLeft {
     from {
         transform: translateX(-100%);
         opacity: 0;
@@ -87,7 +87,7 @@
     }
 }
 
-@keyframes slideFromRight {
+@keyframes solutionSlideFromRight {
     from {
         transform: translateX(100%);
         opacity: 0;

@@ -46,7 +46,6 @@ const SlideThrough: React.FC<SlideThroughProps> = ({ h1Text }) => {
 
     return (
         <section className="slide" ref={slideRef}>
-            <div className="slide-background"></div>
             <h1 className="slide-through-text" ref={h1Ref}>{h1Text}</h1>
             <div className="slider1">
                 <img src={slider1} alt="smog" loading="lazy" />

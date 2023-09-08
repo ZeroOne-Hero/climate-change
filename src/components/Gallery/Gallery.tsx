@@ -105,7 +105,7 @@ const Gallery = () => {
                     <div onClick={() => toggleModal(image)} className={`g-photo photo${index + 1}`} key={index}>
                         <div className="gallery-animation"><Drops/></div>
                         <div className="g-photos-wrapper">
-                            <img src={image.src} loading="lazy" alt={image.alt}/>
+                            <img src={image.src}  alt={image.alt}/>
                         </div>
                         {isSmallScreen ? (
                             <img src={dropsMobile} alt="drops" className="gallery-drops"  />
@@ -122,7 +122,7 @@ const Gallery = () => {
 
                 {modalOpen && selectedImage && (
                     <div className="modal" onClick={() => toggleModal(null)}>
-                        <img src={selectedImage.src} loading="lazy" alt={selectedImage.alt} className="modal-image"/>
+                        <img src={selectedImage.src}  alt={selectedImage.alt} className="modal-image"/>
                     </div>
                 )}
             </div>

@@ -156,27 +156,14 @@
     text-align: center;
     text-decoration: none;
     color: var(--primary-color);
-    animation: colorChange 2s infinite alternate;
     transition: transform 0.5s ease;
 }
 .calculator-link:hover {
     transform: scale(1.1);
 }
-@keyframes colorChange {
-    0% {
-        color: var(--primary-color);
 
-    }
-    100% {
-        color: #9e5c19;
-
-    }
-}
-
-.calculator-link h1, .calculator-link h3 {
-    text-decoration: none;
-}
 .calculator-link h1 {
+    text-decoration: none;
     font-size: 2.5em;
 }
 
@@ -186,7 +173,7 @@
     cursor: pointer;
 }
 
-/* Media Queries */
+ /*Media Queries*/
 
 @media (max-width: 576px) {
     .information {

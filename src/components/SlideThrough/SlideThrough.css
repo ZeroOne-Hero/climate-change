@@ -1,48 +1,35 @@
 .slide {
-    height: 60vh;
+    height: 55vh;
     position: relative;
     overflow: hidden;
-    /*background-image: url('../../assets/backgroundMain.jpg');*/
-    /*background-size: cover;*/
-    /*background-repeat: no-repeat;*/
-    /*background-attachment: fixed;*/
-    /*background-position: 50%;*/
+    background-image: url('../../assets/backgroundMain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: inset 0 0 15px black;
 }
 
-.slide-background {
-        width: 100%;
-        height: 60vh;
-        -webkit-background-size: cover;
-        text-align: center;
-        -webkit-background-attachment: fixed;
-        background-color: #fff;
-        background-image: url("../../assets/backgroundMain.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-}
 
 .slider1 img, .slider2 img {
-    height: 60vh;
+    height: 55vh;
     position: absolute;
     opacity: 0;
     top: 0
 }
 
 .animate-slider1 {
-    animation: slideInFromRight 1500ms ease-out forwards;
+    animation: smogsSlideInFromRight 1500ms ease-out forwards;
 }
 
 .animate-slider2 {
-    animation: slideInFromLeft 1500ms ease-out forwards;
+    animation: smogSlideInFromLeft 1500ms ease-out forwards;
 }
 
-@keyframes slideInFromRight {
+@keyframes smogsSlideInFromRight {
     from {
         opacity: 0;
         right: -100%;
@@ -55,7 +42,7 @@
 
 
 
-@keyframes slideInFromLeft {
+@keyframes smogSlideInFromLeft {
     from {
         opacity: 0;
         left: -100%;
@@ -77,10 +64,10 @@
     padding: 20px;
 }
 .animate-fade-in {
-    animation: fadeIn 2s ease-in-out forwards;
+    animation: sliderFadeIn 2s ease-in-out forwards;
 }
 
-@keyframes fadeIn {
+@keyframes sliderFadeIn {
     from {
         opacity: 0;
     }
