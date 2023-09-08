@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import "./Gallery.css";
 import gImg1 from "../../assets/galleryPhotos/1.jpg";
 import gImg2 from "../../assets/galleryPhotos/2.jpg";
@@ -11,11 +11,13 @@ import gImg8 from "../../assets/galleryPhotos/8.jpg";
 import gImg9 from "../../assets/galleryPhotos/9.jpg";
 import {GalleryImage} from "../../types/types";
 import drops from "../../assets/bulletsBackground.png"
+import dropsMobile from "../../assets/mobile-drops-small.png"
 import Drops from "../Drops/Drops";
 
 const Gallery = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
+    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 576);
 
     const galleryImages = [
         {
@@ -84,6 +86,17 @@ const Gallery = () => {
             document.body.style.overflow = 'auto';
         }
     };
+    useEffect(() => {
+        const handleResize = () => {
+            setIsSmallScreen(window.innerWidth <= 768);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
 
     return (
         <section className="gallery">
@@ -94,7 +107,11 @@ const Gallery = () => {
                         <div className="g-photos-wrapper">
                             <img src={image.src} loading="lazy" alt={image.alt}/>
                         </div>
-                        <img className="gallery-drops" src={drops} alt="drops"/>
+                        {isSmallScreen ? (
+                            <img src={dropsMobile} alt="drops" className="gallery-drops"  />
+                        ) : (
+                            <img src={drops} alt="drops" className="gallery-drops" />
+                        )}
                         <div className="gallery-overlayer">
                         </div>
                         <div className="gallery-info">

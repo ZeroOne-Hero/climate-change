@@ -2,7 +2,7 @@
     --calc-box-shadow: 0 0 15px rgba(34, 19, 5, 0.35);
     --calcInner-box-shadow: 1px 1px 5px rgba(34, 19, 5, 0.5);
     --butonsColor-background: linear-gradient(45deg, rgba(170, 95, 19, 0.67), rgba(130, 69, 19, 0.8));
-    --butonsHover-background: linear-gradient(45deg, rgba(144, 79, 22, 0.8), rgba(83, 44, 9, 0.8));
+    --butonsHover-background: linear-gradient(45deg, rgba(144, 79, 22, 0.8), rgba(95, 51, 12, 0.76));
 }
 
 .calculator-main {
@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     overflow: hidden;
     background-image: url('../../../assets/backgroundMain.jpg');
     background-size: cover;
@@ -59,14 +59,14 @@
 }
 
 .footprint {
-    position: absolute;
-    left: 20px;
-    bottom: 10px;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     z-index: 0;
+    /*padding-bottom: 20px;*/
+    bottom: 0;
 }
 
 .foot {
@@ -162,12 +162,13 @@
     padding: 5px 20px;
     box-shadow: var(--calc-box-shadow);
     backdrop-filter: blur(var(--blur));
-    -webkit-backdrop-filter:blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
 }
 
 .calc-button-wrapper {
     height: 100%;
     width: 60%;
+    min-width: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,6 +212,7 @@
     flex-direction: column;
     height: 100%;
     width: 30%;
+    margin: 20px;
 }
 
 input, select {
@@ -256,7 +258,6 @@ input, select {
 
 input[type=number]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-
 }
 
 input[type=number] {
@@ -266,7 +267,7 @@ input[type=number] {
 }
 
 .calc-form form button:hover, select:hover {
-    background:  var(--butonsHover-background);
+    background: var(--butonsHover-background);
     box-shadow: var(--calcInner-box-shadow);
 }
 
@@ -289,25 +290,27 @@ input:focus {
 @media (max-width: 576px) {
     .calculator-main {
         padding: 100px 0;
+        min-height: 100vh;
+        height: fit-content;
+
     }
+
     .calculator-main h1 {
         font-size: 2em;
         padding: 5px 10px;
         margin: 60px 0 0;
     }
+
     .calc-button-wrapper {
         width: 90%;
     }
 
-    .cloud img{
-       display: none;
+    .calculator {
+        flex-direction: column;
+        padding: 20px 0 70px 0;
+        height: fit-content;
     }
 
-    .calculator {
-       flex-direction: column;
-        padding: 20px 0 70px 0;
-        height:fit-content;
-    }
     .calculator-buttons {
         width: 100%;
         padding: 5px 10px;
@@ -320,7 +323,6 @@ input:focus {
 
     .calc-form {
         width: 100%;
-
     }
 
     .calc-results {
@@ -335,25 +337,26 @@ input:focus {
 @media (min-width: 576px) and (max-width: 768px) {
     .calculator-main {
         padding: 100px 0;
+        height: fit-content;
+        min-height: 100vh;
     }
+
     .calculator-main h1 {
         font-size: 2em;
         padding: 5px 10px;
         margin: 60px 0 0;
     }
+
     .calc-button-wrapper {
         width: 90%;
-    }
-
-    .cloud img{
-        display: none;
     }
 
     .calculator {
         flex-direction: column;
         padding: 20px 0 70px 0;
-        height:fit-content;
+        height: fit-content;
     }
+
     .calculator-buttons {
         width: 100%;
         padding: 5px 10px;
@@ -366,7 +369,6 @@ input:focus {
 
     .calc-form {
         width: 100%;
-
     }
 
     .calc-results {
@@ -381,25 +383,26 @@ input:focus {
 @media (min-width: 768px) and (max-width: 992px) {
     .calculator-main {
         padding: 100px 0;
+        height: fit-content;
+        min-height: 100vh;
     }
+
     .calculator-main h1 {
         font-size: 2em;
         padding: 5px 10px;
         margin: 60px 0 0;
     }
+
     .calc-button-wrapper {
         width: 90%;
-    }
-
-    .cloud img{
-        display: none;
     }
 
     .calculator {
         flex-direction: column;
         padding: 20px 0 70px 0;
-        height:fit-content;
+        height: fit-content;
     }
+
     .calculator-buttons {
         width: 100%;
         padding: 5px 10px;
@@ -412,7 +415,6 @@ input:focus {
 
     .calc-form {
         width: 100%;
-
     }
 
     .calc-results {
@@ -428,6 +430,9 @@ input:focus {
 
 }
 
-@media (min-width: 1200px) {
-
+@media (min-width: 1700px) {
+   .calculator-main {
+       padding-left:  10%;
+       padding-right: 10%;
+   }
 }

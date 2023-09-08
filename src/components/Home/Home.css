@@ -73,7 +73,7 @@
     justify-content: center;
     align-items: center;
     color: var(--primary-color);
-    background-image: url('../../assets/bulletsBackground.png');
+    background-image: url('../../assets/drops-big.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -160,6 +160,7 @@
         margin-top: 20vh;
         font-size: 1.1em;
         width: 100%;
+        background-color: var(--background-mobile-color);
     }
 
     .home-bullets {
@@ -171,6 +172,7 @@
 
     .bullet {
         width: 100%;
+        background-color: var(--background-mobile-color);
     }
 }
 
@@ -191,12 +193,17 @@
         margin-top: 20vh;
         font-size: 1.3em;
         width: 100%;
+        background-color: var(--background-mobile-color);
     }
 
     .home-bullets {
         width: 100%;
         padding: 0 0 50px 0;
         margin-top: 60px;
+
+    }
+    .bullet {
+        background-color: var(--background-mobile-color);
     }
 }
 
@@ -216,6 +223,7 @@
         margin-top: 20vh;
         font-size: 1.4em;
         width: 100%;
+        background-color: var(--background-mobile-color);
     }
 
     .home-bullets {
@@ -223,7 +231,13 @@
         padding: 0 0 50px 0;
         margin-top: 80px;
     }
-}
+
+    .bullet {
+        background-color: var(--background-mobile-color);
+    }
+
+    }
+
 
 @media (min-width: 992px) and (max-width: 1200px) {
     .home-header {
@@ -246,5 +260,11 @@
         width: 42%;
         /*padding: 60px;*/
         /*margin-top: 120px;*/
+    }
+}
+@media (min-width: 1700px) {
+    .home {
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }

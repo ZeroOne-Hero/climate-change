@@ -119,13 +119,13 @@ const Information = () => {
             <div className="info-header">
                 <h1>Too hot to be cool. Look what we've done.</h1>
             </div>
-            <Tooltip id="turtle-tooltip" className="style-tooltip"/>
-            <Tooltip id="penguin-tooltip" className="style-tooltip"/>
-            <Tooltip id="bee-tooltip" className="style-tooltip"/>
-            <Tooltip id="tree-tooltip" className="style-tooltip"/>
-            <Tooltip id="coral-tooltip" className="style-tooltip"/>
-            <Tooltip id="cow-tooltip" className="style-tooltip"/>
-            <Tooltip id="human-tooltip" className="style-tooltip"/>
+            <Tooltip id="turtle-tooltip" className="style-tooltip" arrowColor="transparent"/>
+            <Tooltip id="penguin-tooltip" className="style-tooltip" arrowColor="transparent"/>
+            <Tooltip id="bee-tooltip" className="style-tooltip" arrowColor="transparent"/>
+            <Tooltip id="tree-tooltip" className="style-tooltip" arrowColor="transparent"/>
+            <Tooltip id="coral-tooltip" className="style-tooltip" arrowColor="transparent"/>
+            <Tooltip id="cow-tooltip" className="style-tooltip" arrowColor="transparent"/>
+            <Tooltip id="human-tooltip" className="style-tooltip " arrowColor="transparent"/>
             <Gallery/>
             <div className="info-header">
                 <h1>Let our kids count the stars and not pollution rates.</h1>

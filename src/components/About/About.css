@@ -136,6 +136,7 @@
     .about-header {
         margin-top: 5vh;
         font-size: 1em;
+        background-color: var(--background-mobile-color);
     }
 
     .info-wrapper {
@@ -145,6 +146,7 @@
     .info {
         margin-top: 5px;
         font-size: 0.8em;
+        background-color: var(--background-mobile-color);
     }
 
     .earth-about img {
@@ -165,6 +167,7 @@
     .about-header {
         margin-top: 5vh;
         font-size: 1.1em;
+        background-color: var(--background-mobile-color);
     }
 
     .info-wrapper {
@@ -174,6 +177,7 @@
     .info {
         margin-top: 5px;
         font-size: 0.8em;
+        background-color: var(--background-mobile-color);
     }
 
     .earth-about img {
@@ -193,15 +197,18 @@
     .about-header {
         margin-top: 5vh;
         font-size: 1.3em;
+         background-color: var(--background-mobile-color);
     }
 
     .info-wrapper {
         width: 85%;
+
     }
 
     .info {
         margin-top: 5px;
         font-size: 0.9em;
+        background-color: var(--background-mobile-color);
     }
 
     .earth-about img {
@@ -237,4 +244,11 @@
 
 @media (min-width: 1200px) {
 
+}
+
+@media (min-width: 1700px) {
+.about {
+    padding-left:  10%;
+    padding-right: 10%;
+}
 }
