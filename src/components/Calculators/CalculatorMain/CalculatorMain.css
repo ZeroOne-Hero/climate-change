@@ -289,20 +289,12 @@ input:focus {
 
 @media (max-width: 576px) {
     .calculator-main {
-        padding: 100px 0;
-        min-height: 100vh;
-        height: fit-content;
-
-    }
-
-    .calculator-main h1 {
-        font-size: 2em;
-        padding: 5px 10px;
-        margin: 60px 0 0;
+        min-height: fit-content;
     }
 
     .calc-button-wrapper {
         width: 90%;
+        padding: 100px 0 50px 0;
     }
 
     .calculator {
