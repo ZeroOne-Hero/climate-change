@@ -13,11 +13,6 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    background-image: url('../../../assets/backgroundMain.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 .calculator-main h1 {
@@ -268,7 +263,6 @@ input:focus {
         padding: 100px 0 10px 0;
         height: fit-content;
         min-height: 100vh;
-        background-attachment: scroll;
     }
 
     .calculator-main h1 {
@@ -325,7 +319,6 @@ input:focus {
     .calculator-main {
         padding: 100px 0 10px 0;
         height: fit-content;
-        background-attachment: scroll;
         min-height: 100vh;
 
     }
@@ -373,7 +366,6 @@ input:focus {
     .calculator-main {
         padding: 100px 0;
         height: fit-content;
-        background-attachment: scroll;
         min-height: 100vh;
 
     }
