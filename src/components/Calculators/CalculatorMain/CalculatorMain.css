@@ -421,7 +421,7 @@ input:focus {
 
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1500px) {
    .calculator-main {
        padding-left:  10%;
        padding-right: 10%;
