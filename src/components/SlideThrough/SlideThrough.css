@@ -79,6 +79,12 @@
 
 @media (max-width: 576px) {
     .slide {
+        height: 75vh;
+    }
+    .slider1 img, .slider2 img {
+        height: 75vh;
+    }
+    .slide {
         background-attachment: scroll;
     }
     .slide-through-text {
@@ -88,6 +94,12 @@
 
 
 @media (min-width: 576px) and (max-width: 768px) {
+    .slide {
+        height: 65vh;
+    }
+    .slider1 img, .slider2 img {
+        height: 65vh;
+    }
     .slide-through-text {
         font-size: 2em;
     }
@@ -98,6 +110,7 @@
 
 
 @media (min-width: 768px) and (max-width: 992px) {
+
     .slide-through-text {
         font-size: 2.5em;
     }

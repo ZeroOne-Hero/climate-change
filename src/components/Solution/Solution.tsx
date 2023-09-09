@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react';
 import "./Solution.css";
-import fashion from "../../assets/solution-fashion.png";
-import energy from "../../assets/solution-energy.png";
-import litter from "../../assets/solution-litter.png";
-import repair from "../../assets/solution-repair.png";
-import recycle from "../../assets/solution-recycle.png";
-import transport from "../../assets/solution-transport.png";
+import fashion from "../../assets/icons/solution-fashion.png";
+import energy from "../../assets/icons/solution-energy.png";
+import litter from "../../assets/icons/solution-litter.png";
+import repair from "../../assets/icons/solution-repair.png";
+import recycle from "../../assets/icons/solution-recycle.png";
+import transport from "../../assets/icons/solution-transport.png";
 import Drops from "../Drops/Drops";
 
 const Solution = () => {
@@ -54,20 +54,20 @@ const Solution = () => {
             <div ref={solutionsRef} className="solutions">
                 <div className="solutions-wrapper ">
                     <div className="solutions-block block1">
-                        <div className="solutions-inner solution-left">
+                        <div className="solutions-inner solution-left background-general">
                             <Drops/>
                             <p><b>Recycle:</b> Proper recycling of materials like plastic, paper, and metal minimizes the need
                                 for new production, reducing both resource extraction and emissions that contribute to
                                 global warming.</p>
                             <img className="solution-img" src={recycle} alt="recycle"/>
                         </div>
-                        <div className="solutions-inner solution-left">
+                        <div className="solutions-inner solution-left background-general">
                             <p><b>Repair:</b> Fixing and maintaining products instead of discarding them extends their life
                                 cycle, which in turn reduces the need for new items to be manufactured, thereby saving
                                 energy and reducing emissions.</p>
                             <img className="solution-img" src={repair} alt="repair"/>
                         </div>
-                        <div className="solutions-inner solution-left">
+                        <div className="solutions-inner solution-left background-general">
                             <p><b>Repair:</b> Fixing and maintaining products instead of discarding them extends their life
                                 cycle, which in turn reduces the need for new items to be manufactured, thereby saving
                                 energy and reducing emissions.</p>
@@ -75,21 +75,20 @@ const Solution = () => {
                         </div>
                     </div>
                     <div className="solutions-block">
-                        <div className="solutions-inner solution-right ">
+                        <div className="solutions-inner solution-right background-general">
                             <img className="solution-img" src={fashion} alt="fashion" />
                             <p><b>Fast Fashion:</b> Ditch the one-season wonders! Rock timeless pieces that not only make you
                                 look like a style god but also give Mother Earth a well-deserved break.</p>
                         </div>
-                        <div className="solutions-inner solution-right">
+                        <div className="solutions-inner solution-right background-general">
                             <Drops/>
                             <img className="solution-img" src={litter} alt="litter" />
                             <p><b>Do Not Litter:</b> Approximately 8 million metric tons of plastic enter the ocean each year,
                                 posing a significant threat to marine life through ingestion and entanglement. </p>
                         </div>
-                        <div className="solutions-inner solution-right">
+                        <div className="solutions-inner solution-right background-general">
                             <img className="solution-img" src={energy} alt="energy" />
-                            <p><b>Green Energy:</b>Transitioning to renewable energy sources like solar, wind, and
-                                hydroelectric power can drastically cut greenhouse gas emissions, reducing the Earth's
+                            <p><b>Green Energy:</b> Transitioning to renewable energy sources can drastically cut greenhouse gas emissions, reducing the Earth's
                                 overall temperature and mitigating climate change impacts. </p>
                         </div>
                     </div>

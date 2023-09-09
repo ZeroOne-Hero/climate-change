@@ -1,18 +1,17 @@
 .wild-fire {
     position: relative;
     width: 100%;
-    height: 55vh;
+    height: 50vh;
     background-image: url("../../assets/greenTree.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
-    box-shadow: 0 0 15px black;
     display: flex;
     justify-content: center;
     align-items: center;
-   margin-top: 20px;
-
+    cursor: pointer;
+    margin-top: 20px;
 }
 
 .wildfire-warning {
@@ -25,20 +24,20 @@
 }
 
 .wildfire-warning h1 {
-    font-size: 2.4em;
+    font-size: 2.3em;
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
     color: #f90404;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
-    padding: 15px 35px;
+    padding: 10px 25px;
     -webkit-text-stroke: 1px rgba(29, 3, 3, 0.65);
     text-align: center;
 }
 
 
 .wildfire-image img {
-    height: 200px;
+    height: 170px;
 }
 
 .fire-animation {
@@ -57,7 +56,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     background-image: url("../../assets/burnedTree.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -129,17 +128,76 @@
     animation: fadeInWarning 2s forwards 4500ms;
 }
 
-.fire-animation.revealed {
-    animation: animateFire 5s forwards ease-in-out;
+.fire-animation.started {
+    animation: animateFire 5000ms forwards ease-in-out 300ms;
+    animation-play-state: running;
 }
 
 .burnt-layer.revealed {
-    animation: fadein 6s forwards 1s;
+    animation: fadein 5000ms forwards 1800ms;
 }
 
 .dark-overlay.revealed {
-    animation: darken 2s forwards 4500ms;
+    animation: darken 3500ms forwards 4700ms;
 }
+
+
+.drops-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    opacity: 1;
+    transition: opacity 1200ms ease-in-out;
+}
+
+.wildfire-drops-img {
+    height: auto;
+    width: 120%;
+}
+
+.drops-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 3;
+    opacity: 1;
+    transition: opacity 1200ms ease-in-out;
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+}
+
+.drops-image.hidden {
+    opacity: 0;
+}
+.click.hidden {
+    opacity: 0;
+}
+.drops-overlay.hidden {
+    opacity: 0;
+}
+
+.click {
+    position: absolute;
+    z-index:4;
+}
+.click img {
+    height: 35px;
+}
+
+.wildfire-animation {
+    position: absolute;
+    z-index: 25;
+    width: 200px;
+    height: 500px;
+    left: 200px;
+}
+
 @media (max-width: 576px) {
     .wildfire-image img {
         height: 150px;
@@ -147,19 +205,27 @@
     .wildfire-warning h1 {
         font-size: 2em;
     }
+    .wild-fire {
+        width: 95%;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
     .wildfire-image img {
-        height: 200px;
+        height: 180px;
     }
     .wildfire-warning h1 {
-        font-size: 2.4em;
+        font-size: 1.9em;
+    }
+    .wild-fire {
+        width: 95%;
     }
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
-
+    .wild-fire {
+        width: 85%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {

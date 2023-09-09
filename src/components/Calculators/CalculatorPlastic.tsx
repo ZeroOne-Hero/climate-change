@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import plasticLogo from "../../assets/plasticLogo.png";
+import plasticLogo from "../../assets/icons/plasticLogo.png";
 
 const CalculatorPlastic = () => {
     const [bottlesPerWeek, setBottlesPerWeek] = useState(0);

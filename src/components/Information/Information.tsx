@@ -2,13 +2,13 @@ import React from 'react';
 import "./Information.css"
 import Statistics from "../Statistics/Statistics";
 import Gallery from "../Gallery/Gallery";
-import bee from "../../assets/bee.png";
-import turtle from "../../assets/turtle.png";
-import cow from "../../assets/cow.png";
-import penguin from "../../assets/penguin.png";
-import coral from "../../assets/coral.png";
-import tree from "../../assets/tree.png";
-import human from "../../assets/family.png";
+import bee from "../../assets/info-images/bee.png";
+import turtle from "../../assets/info-images/turtle.png";
+import cow from "../../assets/info-images/cow.png";
+import penguin from "../../assets/info-images/penguin.png";
+import coral from "../../assets/info-images/coral.png";
+import tree from "../../assets/info-images/tree.png";
+import human from "../../assets/info-images/family.png";
 import {Tooltip} from 'react-tooltip';
 import Drops from "../Drops/Drops";
 import WildFire from "../WildFire/WildFire";
@@ -17,12 +17,12 @@ import WildFire from "../WildFire/WildFire";
 const Information = () => {
     return (
         <section id="information" className="information">
-            <div className="info-header">
+            <div className="info-header info-header1">
                 <h1>Lets talk numbers</h1>
             </div>
             <div className="statistics-container">
                 <Statistics/>
-                <div className="info-stats">
+                <div className="info-stats background-general">
                     <Drops/>
                     <h2>68% of world's glaciers will disappear by year 2100.</h2>
                     <p>
@@ -36,7 +36,7 @@ const Information = () => {
                     </p>
                 </div>
             </div>
-            <div className="info-list">
+            <div className="info-list background-general">
 
                 <div className="info-list-item">
                     <img className="info-img" src={turtle}  alt="turtle" data-tooltip-id="turtle-tooltip" data-tooltip-content="Sea turtles have been around for about 110 million years! This means they shared the planet with dinosaurs and have witnessed the Earth's history unfold over countless generations."
@@ -98,7 +98,7 @@ const Information = () => {
                     </p>
                 </div>
             </div>
-            <div className="info-list-human">
+            <div className="info-list-human background-general">
                 <Drops/>
                 <img  className="human" src={human} alt="human"  data-tooltip-id="human-tooltip" data-tooltip-content="Every time you take a 10-minute shower with hot water, you can release approximately 0.1 pounds (0.045 kilograms) of carbon dioxide into the atmosphere. While it might not seem like much, it highlights the environmental impact of everyday activities."
                      data-tooltip-delay-show={50}/>
@@ -113,6 +113,7 @@ const Information = () => {
                     also accelerate these crucial changes.</p>
                 <a href="/calculator" className="calculator-link">
                     <div>
+                        <h1>Whats your role?</h1>
                         <h1>GO TO CO2 CALCULATOR</h1>
                     </div>
                 </a>
@@ -128,7 +129,7 @@ const Information = () => {
             <Tooltip id="cow-tooltip" className="style-tooltip" arrowColor="transparent"/>
             <Tooltip id="human-tooltip" className="style-tooltip " arrowColor="transparent"/>
             <Gallery/>
-            {/*<WildFire/>*/}
+            <WildFire/>
         </section>
     );
 };

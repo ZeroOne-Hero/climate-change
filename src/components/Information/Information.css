@@ -29,6 +29,10 @@
     text-align: center;
 }
 
+.info-header1 {
+    margin-top: 10px !important;
+}
+
 .info-header h1 {
     margin: 0;
     padding: 0;
@@ -38,13 +42,7 @@
     margin-left: 20px;
     height: 400px;
     width: 50%;
-    backdrop-filter: blur(var(--blur));
-    -webkit-backdrop-filter: blur(var(--blur));
-    background-color: var(--background-color);
-    background-image: url('../../assets/drops-big.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('../../assets/drops-background/drops-medium.png');
     position: relative;
     display: flex;
     justify-content: center;
@@ -70,13 +68,7 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    backdrop-filter: blur(var(--blur));
-    -webkit-backdrop-filter: blur(var(--blur));
-    background-color: var(--background-color);
-    background-image: url('../../assets/drops-huge.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('../../assets/drops-background/drops-huge.png');
     margin-top: 20px;
     position: relative;
     padding: 20px 0;
@@ -133,13 +125,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    background-image: url('../../assets/drops-huge.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    backdrop-filter: blur(var(--blur));
-    -webkit-backdrop-filter: blur(var(--blur));
-    background-color: var(--background-color);
+    background-image: url('../../assets/drops-background/drops-huge.png');
     position: relative;
     padding: 30px;
     text-align: justify;
@@ -182,7 +168,7 @@
 
     .info-header {
         font-size: 1.5em;
-
+        margin: 10px;
     }
 
     .info-stats {
@@ -191,6 +177,13 @@
         font-size: 1em;
         height: fit-content;
         background-color: var(--background-mobile-color);
+        background-image: url('../../assets/drops-background/drops-small.png');
+    }
+    .info-stats h2 {
+        font-size: 1.3em;
+    }
+    .info-stats p {
+        padding: 20px 30px;
     }
 
     .info-list-item {
@@ -198,16 +191,18 @@
         padding: 0;
         font-size: 1em;
         flex-direction: column;
-        margin-top: 20px;
+    }
+    .info-list-item p {
+        padding: 0 30px;
     }
 
     .info-list {
         width: 95%;
         background-color: var(--background-mobile-color);
-        background-image: url("../../assets/mobile-drops.png");
+        background-image: url('../../assets/drops-background/drops-mobile.png');
     }
     .info-img {
-        height: 200px;
+        height: 150px;
     }
 
     .statistics-container {
@@ -219,43 +214,48 @@
         flex-direction: column;
         font-size: 1em;
         background-color: var(--background-mobile-color);
-        background-image: url("../../assets/mobile-drops.png");
-        padding: 20px;
+        background-image: url('../../assets/drops-background/drops-big.png');
+        padding: 30px;
 
     }
     .info-list-human p {
-        width: 90%;
+        width: 100%;
         margin-top: 20px;
     }
     .human {
-        height: 250px;
+        height: 200px;
     }
 
     .calculator-link {
         width: 100%;
+        font-size: 1em;
+    }
+    .calculator-link h1{
+        font-size: 1.8em;
     }
 
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-    .information {
-        padding: 30px 0;
-
-    }
 
     .info-header {
         font-size: 1.6em;
+        margin: 20px;
     }
+
     .info-stats {
-        width: 90%;
+        width: 95%;
         margin: 0;
         font-size: 1em;
         background-color: var(--background-mobile-color);
+        height: fit-content;
+        background-image: url('../../assets/drops-background/drops-medium.png');
     }
-
+    .info-stats p {
+        padding: 20px 30px;
+    }
     .info-list-item {
         width: 100%;
-        padding: 20px 0;
         font-size: 1em;
     }
 
@@ -264,31 +264,37 @@
     }
 
     .info-list {
-        width: 90%;
+        width: 95%;
         background-color: var(--background-mobile-color);
-        background-image: url("../../assets/mobile-drops.png");
+        background-image: url('../../assets/drops-background/drops-mobile.png');
+
+    }
+    .info-list p {
+        padding: 0 30px 0 0;
     }
 
     .info-list-human {
-        width: 90%;
+        width: 95%;
         flex-direction: column;
         font-size: 1em;
         background-color: var(--background-mobile-color);
-        background-image: url("../../assets/mobile-drops.png");
+        background-image: url('../../assets/drops-background/drops-mobile.png');
     }
 
     .info-list-human p {
-        width: 90%;
+        width: 100%;
         margin-top: 20px;
     }
     .human {
-        height: 250px;
+        height: 220px;
     }
 
     .calculator-link {
         width: 100%;
     }
-
+    .calculator-link h1 {
+        font-size: 1.9em;
+    }
 
 }
 
@@ -303,8 +309,13 @@
     .info-stats {
         width: 85%;
         margin: 0;
-        font-size: 0.9em;
+        font-size: 1em;
         background-color: var(--background-mobile-color);
+        height: fit-content;
+        padding: 20px 0;
+    }
+    .info-stats p {
+        padding:30px;
     }
 
     .info-list-item {
@@ -312,15 +323,21 @@
         padding:0;
         font-size: 0.9em;
     }
-
+    .info-img {
+        height: 150px;
+    }
     .statistics-container {
         flex-direction: column;
     }
 
+     .info-list p {
+         font-size: 1.1em;
+         padding: 0 30px 0 0;
+     }
     .info-list {
         width: 85%;
         background-color: var(--background-mobile-color);
-        background-image: url("../../assets/mobile-drops.png");
+        background-image: url('../../assets/drops-background/drops-mobile.png');
     }
 
     .info-list-human {
@@ -328,18 +345,22 @@
         flex-direction: column;
         font-size: 0.9em;
         background-color: var(--background-mobile-color);
-        background-image: url("../../assets/mobile-drops.png");
+        background-image: url('../../assets/drops-background/drops-mobile.png');
     }
 
     .calculator-link {
         width: 100%;
     }
+    .calculator-link h1 {
+       font-size: 2em;
+    }
     .info-list-human p {
-        width: 90%;
+        width: 100%;
         margin-top: 20px;
+        font-size: 1.1em;
     }
     .human {
-        height: 250px;
+        height: 230px;
     }
 }
 

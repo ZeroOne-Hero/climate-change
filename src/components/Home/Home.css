@@ -5,12 +5,9 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    box-shadow: 0 0 15px black;
     overflow: hidden;
     background-attachment: fixed;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 50px;
+    padding: 0 20px 50px 20px;
 }
 
 .home-container {
@@ -26,19 +23,12 @@
 .home-header {
     left: 0;
     bottom: 0;
-    padding: 30px 50px;
+    padding: 20px 0;
     width: 50%;
-    color: var(--primary-color);
-    backdrop-filter: blur(var(--blur));
     -webkit-backdrop-filter: blur(var(--blur));
-    font-size: 1.7em;
+    font-size: 1.5em;
     font-family: 'Bebas Neue', sans-serif;
-    text-transform: uppercase;
-    background-color: var(--background-color);
-    background-image: url('../../assets/drops-big.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('../../assets/drops-background/drops-medium.png');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -65,20 +55,14 @@
 .bullet {
     position: relative;
     width: 100%;
-    backdrop-filter: blur(var(--blur));
-    -webkit-backdrop-filter: blur(var(--blur));
     margin-top: 20px;
     right: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--primary-color);
-    background-image: url('../../assets/drops-big.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: var(--background-color);
-    padding: 30px;
+    background-image: url('../../assets/drops-background/drops-medium.png');
+    padding: 30px 25px 30px 20px;
     text-align: justify;
 }
 
@@ -88,7 +72,7 @@
 
 .bLogo {
     height: 80px;
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 @keyframes slideInLeft {
@@ -150,30 +134,40 @@
         padding: 0;
         justify-content: center;
     }
+
     .home-container {
         flex-direction: column;
         width: 95%;
         padding: 0;
         margin: 0;
     }
+
     .home-header {
-        margin-top: 20vh;
-        font-size: 1.1em;
+        margin-top: 17vh;
+        font-size: 1em;
         width: 100%;
         background-color: var(--background-mobile-color);
         padding: 20px 15px;
+        background-image: url('../../assets/drops-background/drops-small.png');
     }
 
     .home-bullets {
         width: 100%;
-        margin-top: 40px;
-        padding: 0 0 50px 0;
-        font-size: 0.9em;
+        margin-top: 30px;
+        padding-bottom: 7vh;
+        font-size: 0.8em;
+
     }
 
     .bullet {
         width: 100%;
         background-color: var(--background-mobile-color);
+        background-image: url('../../assets/drops-background/drops-small.png');
+    }
+
+    .bLogo {
+        height: 65px;
+        margin-right: 15px;
     }
 }
 
@@ -183,6 +177,7 @@
         padding: 0;
         justify-content: center;
     }
+
     .home-container {
         flex-direction: column;
         width: 90%;
@@ -195,15 +190,15 @@
         font-size: 1.3em;
         width: 100%;
         background-color: var(--background-mobile-color);
-        padding:20px;
+        padding: 20px;
     }
 
     .home-bullets {
         width: 100%;
         padding: 0 0 50px 0;
         margin-top: 60px;
-
     }
+
     .bullet {
         background-color: var(--background-mobile-color);
     }
@@ -215,12 +210,14 @@
         padding: 0;
         justify-content: center;
     }
+
     .home-container {
         flex-direction: column;
         width: 85%;
         padding: 0;
         margin: 0;
     }
+
     .home-header {
         margin-top: 20vh;
         font-size: 1.4em;
@@ -237,33 +234,30 @@
     .bullet {
         background-color: var(--background-mobile-color);
     }
-
-    }
+}
 
 
 @media (min-width: 992px) and (max-width: 1200px) {
     .home-header {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .home-bullets {
         width: 50%;
-        padding-left:20px;
+        padding-left: 100px;
     }
 }
 
 @media (min-width: 1200px) {
     .home-header {
-        /*margin-top: 60vh;*/
         font-size: 1.6em;
     }
 
     .home-bullets {
         width: 42%;
-        /*padding: 60px;*/
-        /*margin-top: 120px;*/
     }
 }
+
 @media (min-width: 1700px) {
     .home {
         padding-left: 10%;

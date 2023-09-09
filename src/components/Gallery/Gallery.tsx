@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import "./Gallery.css";
-import gImg1 from "../../assets/galleryPhotos/1.jpg";
+import gImg1 from "../../assets/galleryPhotos/1.webp";
 import gImg2 from "../../assets/galleryPhotos/2.jpg";
 import gImg3 from "../../assets/galleryPhotos/3.jpg";
 import gImg4 from "../../assets/galleryPhotos/4.jpg";
@@ -10,14 +10,16 @@ import gImg7 from "../../assets/galleryPhotos/7.jpg";
 import gImg8 from "../../assets/galleryPhotos/8.jpg";
 import gImg9 from "../../assets/galleryPhotos/9.jpg";
 import {GalleryImage} from "../../types/types";
-import drops from "../../assets/bulletsBackground.png"
-import dropsMobile from "../../assets/mobile-drops-small.png"
+import drops from "../../assets/drops-background/drops-medium.png"
+import dropsMobile from "../../assets/drops-background/drops-big.png"
 import Drops from "../Drops/Drops";
 
 const Gallery = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
-    const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth <= 576);
+    const [isSmallScreen, setIsSmallScreen] = useState(
+        window.innerWidth <= 576 || (window.innerWidth >= 768 && window.innerWidth <= 992)
+    );
 
     const galleryImages = [
         {
@@ -86,9 +88,14 @@ const Gallery = () => {
             document.body.style.overflow = 'auto';
         }
     };
+
+    const checkScreenSize = () => {
+        return window.innerWidth >= 768 && window.innerWidth <= 992;
+    };
+
     useEffect(() => {
         const handleResize = () => {
-            setIsSmallScreen(window.innerWidth <= 768);
+            setIsSmallScreen(checkScreenSize());
         };
 
         window.addEventListener('resize', handleResize);
@@ -103,17 +110,16 @@ const Gallery = () => {
             <div className="photos">
                 {galleryImages.map((image, index) => (
                     <div onClick={() => toggleModal(image)} className={`g-photo photo${index + 1}`} key={index}>
-                        <div className="gallery-animation"><Drops/></div>
+                        {index % 2 === 0 && <Drops />}
                         <div className="g-photos-wrapper">
-                            <img src={image.src}  alt={image.alt}/>
+                            <img src={image.src} alt={image.alt} />
                         </div>
                         {isSmallScreen ? (
-                            <img src={dropsMobile} alt="drops" className="gallery-drops"  />
+                            <img src={dropsMobile} alt="drops" className="gallery-drops" />
                         ) : (
                             <img src={drops} alt="drops" className="gallery-drops" />
                         )}
-                        <div className="gallery-overlayer">
-                        </div>
+                        <div className="gallery-overlayer"></div>
                         <div className="gallery-info">
                             <h2>{image.info}</h2>
                         </div>
@@ -122,12 +128,12 @@ const Gallery = () => {
 
                 {modalOpen && selectedImage && (
                     <div className="modal" onClick={() => toggleModal(null)}>
-                        <img src={selectedImage.src}  alt={selectedImage.alt} className="modal-image"/>
+                        <img src={selectedImage.src} alt={selectedImage.alt} className="modal-image" />
                     </div>
                 )}
             </div>
         </section>
     );
-
 };
+
 export default Gallery;

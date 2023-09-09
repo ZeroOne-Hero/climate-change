@@ -1,27 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bebas+Neue&family=Comfortaa:wght@300;500&family=Cuprum&family=Domine&family=Lilita+One&family=Lobster&family=Montserrat:wght@500&family=Nanum+Myeongjo&family=Raleway:ital,wght@0,500;1,400&family=Roboto+Condensed&display=swap');
-
 .about {
     display: flex;
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
     padding: 90px 20px 0 20px;
-
 }
 
 .about-header {
-    backdrop-filter: blur(var(--blur));
-    -webkit-backdrop-filter: blur(var(--blur));
     height: fit-content;
     padding: 15px 0;
-    background-color: var(--background-color);
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.2em;
     color: var(--primary-color);
-    background-image: url('../../assets/drops-big.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('../../assets/drops-background/drops-medium.png');
     opacity: 0;
     width: 100%;
     display: flex;
@@ -47,13 +38,7 @@
 
 .info {
     width: 100%;
-    backdrop-filter: blur(var(--blur));
-    -webkit-backdrop-filter: blur(var(--blur));
-    background-color: var(--background-color);
-    background-image: url('../../assets/drops-big.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-image: url('../../assets/drops-background/drops-medium.png');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +48,7 @@
 .info p {
     font-size: 1em;
     padding: 40px 50px;
-    font-family: Arial;
+    font-family: Arial, serif;
     text-align: justify;
     color: var(--primary-color);
     margin: 0;
@@ -143,6 +128,7 @@
         margin-top: 5vh;
         font-size: 0.85em;
         background-color: var(--background-mobile-color);
+        background-image: url('../../assets/drops-background/drops-small.png');
     }
 
     .info-wrapper {
@@ -151,13 +137,17 @@
 
     .info {
         margin-top: 5px;
-        font-size: 0.9em;
+        font-size: 1em;
         background-color: var(--background-mobile-color);
+        background-image: url('../../assets/drops-background/drops-small.png');
+    }
+    .info p {
+        padding: 20px 30px;
     }
 
     .earth-about img {
-        height: 370px;
-        margin-top: 70px;
+        height: 300px;
+        margin-top: 60px;
     }
 }
 
@@ -188,13 +178,16 @@
 
     .info {
         margin-top: 5px;
-        font-size: 0.8em;
+        font-size: 1em;
         background-color: var(--background-mobile-color);
+    }
+    .info p {
+        padding: 20px 30px;
     }
 
     .earth-about img {
-        height: 400px;
-        margin-top: 70px;
+        height: 350px;
+        margin-top: 50px;
     }
 }
 
@@ -225,13 +218,13 @@
 
     .info {
         margin-top: 5px;
-        font-size: 0.9em;
+        font-size: 1em;
         background-color: var(--background-mobile-color);
     }
 
     .earth-about img {
-        height: 420px;
-        margin-top: 70px;
+        height: 350px;
+        margin-top: 50px;
     }
 }
 

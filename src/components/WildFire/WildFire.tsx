@@ -1,65 +1,64 @@
-import React from 'react';
-import "./WildFire.css";
-import fire from "../../assets/fire.png";
-import hand1 from "../../assets/hand1.png";
-import hand2 from "../../assets/hand2.png";
-import {useEffect, useRef} from 'react';
+import React, { useState } from 'react';
+import './WildFire.css';
+import fire from '../../assets/fire.png';
+import hand1 from '../../assets/icons/hand1.png';
+import hand2 from '../../assets/icons/hand2.png';
+import drops from '../../assets/drops-background/drops-huge.png';
+import click from '../../assets/icons/click.png';
+import Drops from "../Drops/Drops";
 
 const WildFire = () => {
-    const wildfireWarningRef = useRef<HTMLDivElement | null>(null);
-    const fireAnimationRef = useRef<HTMLDivElement | null>(null);
-    const burntLayerRef = useRef<HTMLDivElement | null>(null);
-    const darkOverlayRef = useRef<HTMLDivElement | null>(null);
+    const [isClicked, setIsClicked] = useState(false);
+    const [isAnimationStarted, setIsAnimationStarted] = useState(false);
 
-    const handleIntersect: IntersectionObserverCallback = (entries, observer) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('revealed');
-                observer.unobserve(entry.target);
-            }
-        });
+    const handleClick = () => {
+        if (!isAnimationStarted) {
+            setIsClicked(true);
+            setTimeout(() => {
+                setIsAnimationStarted(true);
+            }, 500); // Adjust the delay as needed
+        }
     };
 
-    useEffect(() => {
-        const options: IntersectionObserverInit = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.5,
-        };
-
-        const observer = new IntersectionObserver(handleIntersect, options);
-
-        if (wildfireWarningRef.current) {
-            observer.observe(wildfireWarningRef.current);
-        }
-        if (fireAnimationRef.current) {
-            observer.observe(fireAnimationRef.current);
-        }
-        if (burntLayerRef.current) {
-            observer.observe(burntLayerRef.current);
-        }
-        if (darkOverlayRef.current) {
-            observer.observe(darkOverlayRef.current);
-        }
-    }, []);
     return (
-        <section id="wildfire" className="wild-fire">
-            <div ref={wildfireWarningRef} className="wildfire-warning">
+        <section
+            id="wildfire"
+            className={`wild-fire ${isClicked ? 'clicked' : ''}`}
+            onClick={handleClick}
+        >
+            <div className={`wildfire-warning ${isClicked ? 'revealed' : ''}`}>
                 <div className="hands">
                     <h1>Climate change is increasing the risk of wildfires.</h1>
                 </div>
                 <div className="wildfire-image">
-                    <img src={hand2} alt="hand" loading="lazy"/>
-                    <img src={hand1} alt="hand" loading="lazy"/>
+                    <img src={hand2} alt="hand" />
+                    <img src={hand1} alt="hand" />
                 </div>
             </div>
-            <div ref={fireAnimationRef} className="fire-animation" >
-                <img src={fire} alt="fire" loading="lazy"/>
+            <div className={`fire-animation ${isAnimationStarted ? 'started' : ''}`}>
+                <img src={fire} alt="fire" />
             </div>
-            <div ref={burntLayerRef} className="burnt-layer"></div>
+            <div className={`burnt-layer ${isClicked ? 'revealed' : ''}`}></div>
+            <div className={`dark-overlay ${isClicked ? 'revealed' : ''}`}></div>
+            <div
+                className={`drops-image ${isClicked ? 'hidden' : ''}`}
+            >    <div className="wildfire-animation">
+                <Drops/>
+            </div>
+                <Drops/>
+                <img className="wildfire-drops-img" src={drops} alt="drops" />
 
-            <div ref={darkOverlayRef} className="dark-overlay"></div>
+            </div>
+            <div
+                className={`drops-overlay ${isClicked ? 'hidden' : ''}`}
 
+            >
+            </div>
+            <div
+                className={`click ${isClicked ? 'hidden' : ''}`}
+            >
+                <img src={click} alt="drops" />
+            </div>
         </section>
     );
 };

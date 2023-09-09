@@ -5,7 +5,7 @@ import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import CalculatorMain from "./components/Calculators/CalculatorMain/CalculatorMain";
 import "./App.css";
-import background from  "./assets/homepage.jpg"
+import background from  "./assets/homepage.webp"
 import {Helmet} from "react-helmet";
 
 const App: React.FC = () => {

@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         footerClass += " calc-page";
         animationClass = "footer-animation";
     } else if (location.pathname === "/") {
-        footerClass += " home-page";
+        footerClass += " home-page background-general";
     }
 
     return (

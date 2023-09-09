@@ -1,5 +1,5 @@
 import React, {ChangeEvent, useState} from 'react';
-import meatLogo from "../../assets/meatLogo.png";
+import meatLogo from "../../assets/icons/meatLogo.png";
 
 const CalculatorMeat = () => {
     const [meatPerWeek, setMeatPerWeek] = useState(0);

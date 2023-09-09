@@ -2,7 +2,7 @@ import React, {useEffect, useRef} from 'react';
 import "animate.css"
 import "./About.css";
 import Drops from "../Drops/Drops";
-import earth from "../../assets/earth.png"
+import earth from "../../assets/info-images/earth.png"
 
 
 const About = () => {
@@ -46,7 +46,7 @@ const About = () => {
     return (
         <section className="about" id="about">
             <div className="info-wrapper">
-                <div className="about-header" ref={headerRef} id="about-header">
+                <div className="about-header background-general" ref={headerRef} id="about-header">
                     <h1>
                         The Earth Called. It Wants Its Cool Back.
                     </h1>
@@ -56,7 +56,7 @@ const About = () => {
                 {/*    </p>*/}
                 {/*    /!*<Drops/>*!/*/}
                 {/*</div>*/}
-                <div className="info" ref={el => infoRefs.current[1] = el as HTMLDivElement}>
+                <div className="info background-general" ref={el => infoRefs.current[1] = el as HTMLDivElement}>
                     <p>
                         Driven by human activities, global warming is causing Earth's average temperature to soar, with
                         a host of detrimental outcomes. Sea levels have increased by about 8 inches, jeopardizing

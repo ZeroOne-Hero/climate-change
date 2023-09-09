@@ -1,6 +1,6 @@
 import React, {ChangeEvent, FormEvent, useState} from 'react';
 import axios from 'axios';
-import flightsLogo from "../../assets/flightLogo.png";
+import flightsLogo from "../../assets/icons/flightLogo.png";
 
 const CalculatorFlights = () => {
     const [from, setFrom] = useState<string>('');

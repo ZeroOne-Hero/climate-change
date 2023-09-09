@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bebas+Neue&family=Comfortaa:wght@300;500&family=Cuprum&family=Domine&family=Lilita+One&family=Lobster&family=Montserrat:wght@500&family=Nanum+Myeongjo&family=Raleway:ital,wght@0,500;1,400&family=Roboto+Condensed&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -28,14 +30,21 @@
 }
 
 :root {
-    --primary-color: rgba(3, 28, 31);
+    --primary-color: rgb(4, 35, 39);
     --secondary-color: rgba(41, 23, 4);
     --background-color: rgba(255, 255, 255, 0.8);
     --background-mobile-color: rgba(255, 255, 255, 0.9) ;
     --blur: 15px;
-
 }
 
+.background-general {
+    backdrop-filter: blur(var(--blur));
+    -webkit-backdrop-filter: blur(var(--blur));
+    background-color: var(--background-color);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 @media (max-width: 576px) {
 }
