@@ -7,8 +7,10 @@ import CalculatorMain from './components/Calculators/CalculatorMain/CalculatorMa
 import './App.css';
 import background from './assets/homepage.webp';
 import calculatorBackground from './assets/backgroundMain.webp';
-import { Helmet, HelmetProvider } from 'react-helmet-async'; // Import Helmet and HelmetProvider from react-helmet-async
+import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { inject } from '@vercel/analytics';
 
+inject();
 const BackgroundSwitcher = () => {
     const location = useLocation();
     const isCalculatorPage = location.pathname === '/calculator';

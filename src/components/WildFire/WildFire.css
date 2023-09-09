@@ -26,14 +26,14 @@
 }
 
 .wildfire-warning h1 {
-    font-size: 2.3em;
+    font-size: 2.4em;
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
     color: #f90404;
     backdrop-filter: blur(30px);
     -webkit-backdrop-filter: blur(30px);
     padding: 10px 25px;
-    -webkit-text-stroke: 1px rgba(29, 3, 3, 0.65);
+    -webkit-text-stroke: 0.01em rgba(29, 3, 3, 0.65);
     text-align: center;
 }
 
