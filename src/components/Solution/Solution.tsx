@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react';
 import "./Solution.css";
-import fashion from "../../assets/icons/solution-fashion.png";
-import energy from "../../assets/icons/solution-energy.png";
-import litter from "../../assets/icons/solution-litter.png";
-import repair from "../../assets/icons/solution-repair.png";
-import recycle from "../../assets/icons/solution-recycle.png";
-import transport from "../../assets/icons/solution-transport.png";
+import fashion from "../../assets/icons/solution-fashion.webp";
+import energy from "../../assets/icons/solution-energy.webp";
+import litter from "../../assets/icons/solution-litter.webp";
+import repair from "../../assets/icons/solution-repair.webp";
+import recycle from "../../assets/icons/solution-recycle.webp";
+import transport from "../../assets/icons/solution-transport.webp";
 import Drops from "../Drops/Drops";
 
 const Solution = () => {

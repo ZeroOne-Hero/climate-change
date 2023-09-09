@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    padding: 90px 20px 0 20px;
+    padding: 90px 45px 0 45px;
 }
 
 .about-header {
@@ -12,7 +12,7 @@
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.2em;
     color: var(--primary-color);
-    background-image: url('../../assets/drops-background/drops-medium.png');
+    background-image: url('../../assets/drops-background/drops-medium.webp');
     opacity: 0;
     width: 100%;
     display: flex;
@@ -38,7 +38,7 @@
 
 .info {
     width: 100%;
-    background-image: url('../../assets/drops-background/drops-medium.png');
+    background-image: url('../../assets/drops-background/drops-medium.webp');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +128,7 @@
         margin-top: 5vh;
         font-size: 0.85em;
         background-color: var(--background-mobile-color);
-        background-image: url('../../assets/drops-background/drops-small.png');
+        background-image: url('../../assets/drops-background/drops-small.webp');
     }
 
     .info-wrapper {
@@ -139,7 +139,7 @@
         margin-top: 5px;
         font-size: 1em;
         background-color: var(--background-mobile-color);
-        background-image: url('../../assets/drops-background/drops-small.png');
+        background-image: url('../../assets/drops-background/drops-small.webp');
     }
     .info p {
         padding: 20px 30px;

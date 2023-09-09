@@ -6,6 +6,7 @@
     align-items: center;
     flex-direction: column;
     overflow: hidden;
+    box-shadow: 0 0 7px rgba(4, 26, 27, 0.48);
 }
 
 .photos {
@@ -16,6 +17,7 @@
     height: 100%;
     width: 100%;
     position: relative;
+
 }
 
 .g-photo {
@@ -29,6 +31,7 @@
     cursor: pointer;
     flex-grow: 1;
     margin: 1px;
+
 }
 
 .g-photos-wrapper img {

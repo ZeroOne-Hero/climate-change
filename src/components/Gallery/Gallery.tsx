@@ -1,17 +1,17 @@
 import React, {useEffect, useState} from 'react';
 import "./Gallery.css";
 import gImg1 from "../../assets/galleryPhotos/1.webp";
-import gImg2 from "../../assets/galleryPhotos/2.jpg";
-import gImg3 from "../../assets/galleryPhotos/3.jpg";
-import gImg4 from "../../assets/galleryPhotos/4.jpg";
-import gImg5 from "../../assets/galleryPhotos/5.jpg";
-import gImg6 from "../../assets/galleryPhotos/6.jpg";
-import gImg7 from "../../assets/galleryPhotos/7.jpg";
-import gImg8 from "../../assets/galleryPhotos/8.jpg";
-import gImg9 from "../../assets/galleryPhotos/9.jpg";
+import gImg2 from "../../assets/galleryPhotos/2.webp";
+import gImg3 from "../../assets/galleryPhotos/3.webp";
+import gImg4 from "../../assets/galleryPhotos/4.webp";
+import gImg5 from "../../assets/galleryPhotos/5.webp";
+import gImg6 from "../../assets/galleryPhotos/6.webp";
+import gImg7 from "../../assets/galleryPhotos/7.webp";
+import gImg8 from "../../assets/galleryPhotos/8.webp";
+import gImg9 from "../../assets/galleryPhotos/9.webp";
 import {GalleryImage} from "../../types/types";
-import drops from "../../assets/drops-background/drops-medium.png"
-import dropsMobile from "../../assets/drops-background/drops-big.png"
+import drops from "../../assets/drops-background/drops-medium.webp"
+import dropsMobile from "../../assets/drops-background/drops-big.webp"
 import Drops from "../Drops/Drops";
 
 const Gallery = () => {

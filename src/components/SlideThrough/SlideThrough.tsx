@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import './SlideThrough.css';
-import slider1 from '../../assets/slider-cloud1.png';
-import slider2 from '../../assets/slider-cloud2.png';
+import slider1 from '../../assets/slider-cloud1.webp';
+import slider2 from '../../assets/slider-cloud2.webp';
 interface SlideThroughProps {
     h1Text: string;
 }

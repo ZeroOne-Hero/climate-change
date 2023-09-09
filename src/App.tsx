@@ -1,12 +1,24 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
 import CalculatorMain from "./components/Calculators/CalculatorMain/CalculatorMain";
 import "./App.css";
-import background from  "./assets/homepage.webp"
-import {Helmet} from "react-helmet";
+import background from "./assets/homepage.webp";
+import calculatorBackground from "./assets/backgroundMain.webp";
+import { Helmet } from "react-helmet";
+
+const BackgroundSwitcher = () => {
+    const location = useLocation();
+    const isCalculatorPage = location.pathname === "/calculator";
+
+    return (
+        <div className={`app-background ${isCalculatorPage ? 'calc-bg' : 'home-bg'}`}>
+            <img src={isCalculatorPage ? calculatorBackground : background} alt="background" />
+        </div>
+    );
+};
 
 const App: React.FC = () => {
     return (
@@ -24,17 +36,16 @@ const App: React.FC = () => {
                     />
                     <meta name="author" content="Your Name" />
                 </Helmet>
-                <div className="app-background">
-                    <img src={background} alt="background"/>
-                </div>
-                <Header/>
+                <BackgroundSwitcher />
+                <Header />
                 <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/calculator" element={<CalculatorMain/>}/>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/calculator" element={<CalculatorMain />} />
                 </Routes>
-                <Footer/>
+                <Footer />
             </div>
         </Router>
     );
 };
+
 export default App;

@@ -6,7 +6,7 @@
     backdrop-filter: blur(var(--blur));
     -webkit-backdrop-filter: blur(var(--blur));
     background-color: var(--background-color);
-    background-image: url('../../assets/drops-background/drops-medium.png');
+    background-image: url('../../assets/drops-background/drops-medium.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

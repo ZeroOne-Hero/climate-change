@@ -3,8 +3,8 @@ import CalculatorFlights from '../CalculatorFlights';
 import CalculatorMeat from '../CalculatorMeat';
 import CalculatorPlastic from '../CalculatorPlastic';
 import "./CalculatorMain.css";
-import foot1 from "../../../assets/icons/footprint1.png"
-import foot2 from "../../../assets/icons/footprint2.png"
+import foot1 from "../../../assets/icons/footprint1.webp"
+import foot2 from "../../../assets/icons/footprint2.webp"
 
 
 const CalculatorMain = () => {

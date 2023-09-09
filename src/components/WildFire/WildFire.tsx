@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import './WildFire.css';
-import fire from '../../assets/fire.png';
-import hand1 from '../../assets/icons/hand1.png';
-import hand2 from '../../assets/icons/hand2.png';
-import drops from '../../assets/drops-background/drops-huge.png';
-import click from '../../assets/icons/click.png';
+import fire from '../../assets/fire.webp';
+import hand1 from '../../assets/icons/hand1.webp';
+import hand2 from '../../assets/icons/hand2.webp';
+import drops from '../../assets/drops-background/drops-huge.webp';
+import click from '../../assets/icons/click.webp';
 import Drops from "../Drops/Drops";
 
 const WildFire = () => {

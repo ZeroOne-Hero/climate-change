@@ -1,5 +1,5 @@
 import React from 'react';
-import drop from "../../assets/waterDrop.png";
+import drop from "../../assets/waterDrop.webp";
 import "./Drops.css";
 
 const Drops = () => {
