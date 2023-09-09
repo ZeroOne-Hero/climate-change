@@ -20,6 +20,7 @@ const Gallery = () => {
     const [isSmallScreen, setIsSmallScreen] = useState(
         window.innerWidth <= 576 || (window.innerWidth >= 768 && window.innerWidth <= 992)
     );
+    const isExtraSmallScreen = window.innerWidth <= 768;
 
     const galleryImages = [
         {
@@ -109,7 +110,11 @@ const Gallery = () => {
         <section className="gallery">
             <div className="photos">
                 {galleryImages.map((image, index) => (
-                    <div onClick={() => toggleModal(image)} className={`g-photo photo${index + 1}`} key={index}>
+                    <div
+                        onClick={isExtraSmallScreen ? undefined : () => toggleModal(image)}
+                        className={`g-photo photo${index + 1}`}
+                        key={index}
+                    >
                         {index % 2 === 0 && <Drops />}
                         <div className="g-photos-wrapper">
                             <img src={image.src} alt={image.alt} />
@@ -125,6 +130,7 @@ const Gallery = () => {
                         </div>
                     </div>
                 ))}
+
 
                 {modalOpen && selectedImage && (
                     <div className="modal" onClick={() => toggleModal(null)}>

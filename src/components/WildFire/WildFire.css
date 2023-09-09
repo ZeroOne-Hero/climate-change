@@ -207,6 +207,14 @@
     }
     .wild-fire {
         width: 95%;
+        height: 60vh;
+    }
+    .burnt-layer {
+        height: 60vh;
+    }
+    .wildfire-drops-img {
+        width: auto;
+        height: 180%;
     }
 }
 
@@ -219,6 +227,14 @@
     }
     .wild-fire {
         width: 95%;
+        height: 60vh;
+    }
+    .burnt-layer {
+        height: 60vh;
+    }
+    .wildfire-drops-img {
+        width: auto;
+        height: 230%;
     }
 }
 
@@ -226,10 +242,17 @@
     .wild-fire {
         width: 85%;
     }
+    .wildfire-drops-img {
+        width: auto;
+        height: 220%;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .wildfire-drops-img {
+        width: auto;
+        height: 250%;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1400px) {
