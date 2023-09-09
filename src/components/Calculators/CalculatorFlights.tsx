@@ -89,8 +89,8 @@ const CalculatorFlights = () => {
             </div>
             {customerResult && (
                 <div className="calc-results">
-                    <h2>Results</h2>
-                    <p>Total CO2e: {customerResult.co2e} {customerResult.co2e_unit}</p>
+                    <h2 className="results-header">Results</h2>
+                    <p><b>Total CO2e:</b> {customerResult.co2e} {customerResult.co2e_unit}</p>
                 </div>
             )}
         </section>

@@ -310,7 +310,17 @@ input:focus {
         height: 60%;
     }
 }
+.results-header {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+}
 
+.calc-results p {
+    font-family: Arial sans-serif;
+    color: var(--secondary-color);
+    font-size: 1em;
+    margin-top: 10px;
+}
 @media (min-width: 576px) and (max-width: 768px) {
     .calculator-main {
         padding: 100px 0 10px 0;
@@ -411,7 +421,7 @@ input:focus {
 
 }
 
-@media (min-width: 1700px) {
+@media (min-width: 1600px) {
    .calculator-main {
        padding-left:  10%;
        padding-right: 10%;

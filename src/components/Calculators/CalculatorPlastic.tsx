@@ -38,9 +38,9 @@ const CalculatorPlastic = () => {
             </div>
             {totalCO2e > 0 && (
                 <div className="calc-results">
-                    <h3>Results</h3>
-                    <p>Total CO2e over a lifetime: {totalCO2e.toFixed(2)} kg</p>
-                    <p>Total area required: {totalArea.toFixed(2)} square m</p>
+                    <h2 className="results-header">Results</h2>
+                    <p><b>Total CO2e over a lifetime:</b> {totalCO2e.toFixed(2)} kg</p>
+                    <p><b>Total area required:</b> {totalArea.toFixed(2)} square m</p>
                 </div>
             )}
         </div>

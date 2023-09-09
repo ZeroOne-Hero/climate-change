@@ -55,12 +55,9 @@ const CalculatorMeat = () => {
             </div>
             {totalCO2e > 0 && (
                 <div className="calc-results">
-                    <h3>Results</h3>
+                    <h2 className="results-header">Results</h2>
                     <p>Your estimated CO2 emissions from meat consumption over an average human lifetime:</p>
-                    <ul>
-                        <li>{totalCO2e.toFixed(2)} kg</li>
-                        <li>{(totalCO2e * 2.20462).toFixed(2)} lbs</li>
-                    </ul>
+                        <p>{totalCO2e.toFixed(2)} kg ({(totalCO2e * 2.20462).toFixed(2)} lbs)</p>
                 </div>
             )}
         </div>
