@@ -4,7 +4,7 @@
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 15px rgba(6, 36, 39, 0.64);
     backdrop-filter: blur(var(--blur));
     -webkit-backdrop-filter: blur(var(--blur));
     overflow: hidden;
@@ -20,22 +20,12 @@
     width: 100%;
 }
 
-.calc-page {
-    background-image: url('../../assets/footer-calc.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100%;
-    width: 100%;
-}
-
 .lower-footer {
     width: 100%;
     height: 60px;
     backdrop-filter: blur(var(--blur));
     -webkit-backdrop-filter: blur(var(--blur));
-    box-shadow: 0 0 15px rgba(32, 31, 31, 0.58);
+    box-shadow: 0 0 12px rgba(32, 31, 31, 0.44);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -94,7 +84,6 @@
         background-image: url("../../assets/calc-mobileBG.webp");
 
     }
-
 }
 
 @media (min-width: 1200px) {

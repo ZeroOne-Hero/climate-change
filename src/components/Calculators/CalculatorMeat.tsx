@@ -38,9 +38,9 @@ const CalculatorMeat = () => {
                         Meat consumed per week:
                         <input
                             type="number"
-                            value={meatPerWeek}
+                            value={meatPerWeek  || ''}
+                            placeholder=""
                             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setMeatPerWeek(Number(e.target.value))}
-
                         />
                     </label>
                     <label>

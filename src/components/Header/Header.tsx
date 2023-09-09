@@ -13,6 +13,7 @@ const Header: React.FC = () => {
         window.scrollTo(0, 0);
     }, [location.pathname]);
 
+
     return (
         <nav className="header">
             {/*<div className="drops-container">   <Drops/></div>*/}

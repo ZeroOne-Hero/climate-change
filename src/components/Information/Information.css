@@ -19,8 +19,8 @@
 .info-header {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2em;
-    color: #dde9e9;
-    -webkit-text-stroke: 1px var(--primary-color);
+    color: #e6eeee;
+    -webkit-text-stroke: 0.02em var(--primary-color);
     padding: 20px;
     display: flex;
     justify-content: center;

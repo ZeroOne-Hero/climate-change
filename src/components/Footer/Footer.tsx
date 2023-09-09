@@ -20,7 +20,6 @@ const Footer: React.FC = () => {
             <div className={footerClass}>
                 <div className={`animation ${animationClass}`}><Drops/></div>
             </div>
-
             <div className="lower-footer">
                 <p>2023</p>
             </div>

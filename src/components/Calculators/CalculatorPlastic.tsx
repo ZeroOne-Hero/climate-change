@@ -30,7 +30,7 @@ const CalculatorPlastic = () => {
                 <form onSubmit={handleSubmit}>
                     <label>
                         Bottles per week:
-                        <input type="number" value={bottlesPerWeek}
+                        <input type="number" placeholder=""   value={bottlesPerWeek || ''}
                                onChange={(e: React.ChangeEvent<HTMLInputElement>) => setBottlesPerWeek(Number(e.target.value))}/>
                     </label>
                     <button type="submit">Calculate</button>

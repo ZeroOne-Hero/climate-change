@@ -72,7 +72,9 @@ const CalculatorFlights = () => {
                     </label>
                     <label>
                         Passengers:
-                        <input type="number" value={passengers}
+                        <input type="number"
+                               value={passengers || ""}
+                               placeholder=""
                                onChange={(e: ChangeEvent<HTMLInputElement>) => setPassengers(Number(e.target.value))}/>
                     </label>
                     <label>
