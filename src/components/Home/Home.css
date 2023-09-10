@@ -48,7 +48,7 @@
     align-items: center;
     flex-direction: column;
     font-family: 'Bebas Neue', sans-serif;
-    width: 30%;
+    width: 35%;
     margin-top: 120px;
     align-self: flex-end;
 }
@@ -263,7 +263,7 @@
     }
 
     .home-bullets {
-        width: 37%;
+        width: 45%;
     }
 }
 
