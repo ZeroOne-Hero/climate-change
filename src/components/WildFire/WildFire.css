@@ -25,7 +25,7 @@
 }
 
 .wildfire-warning p {
-    font-size: 2.4em;
+    font-size: 2.5em;
     font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
     color: #eb0a0a;
@@ -80,7 +80,7 @@
         opacity: 0;
     }
     100% {
-        opacity: 0.65;
+        opacity: 0.67;
     }
 }
 

@@ -44,7 +44,7 @@ const Footer: React.FC = () => {
                 </div>
             </div>
             <div className="lower-footer">
-                <p>2023</p>
+                <p>© 2023</p>
             </div>
         </footer>
     );

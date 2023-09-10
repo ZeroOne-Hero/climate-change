@@ -39,11 +39,9 @@ const Information = () => {
             </div>
             <div className="info-list background-general info-list-top">
                 <Drops/>
-                <p className="p1">Global warming is a  long-term increase in Earth's
-                    average
-                    temperature. While a natural occurrence to some extent, it has accelerated dramatically in recent
-                    decades due to human activities. Here are some crucial facts that shed light on the alarming reality
-                    of global warming:</p>
+                <p className="p1">Global warming represents an alarming, long-term rise in Earth's average temperature—a
+                    surge that has gained dangerous momentum in recent decades due to human activities. For a deeper
+                    understanding of this climatic shift, consider the following critical facts:</p>
                 <ul>
                     <li><b>Deforestation:</b> Deforestation, largely fueled by activities like logging and land
                         conversion for agriculture,
@@ -158,8 +156,7 @@ const Information = () => {
                     also accelerate these crucial changes.</p>
                 <a href="/calculator" className="calculator-link">
                     <div>
-                        <h1>Whats your role?</h1>
-                        <h1>GO TO CO2 CALCULATOR</h1>
+                        <h1>Calculate Your CO2 Emissions</h1>
                     </div>
                 </a>
             </div>

@@ -28,7 +28,8 @@
     flex-direction: column;
     width: 100%;
     padding: 50px 0 105px 0;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: 'Bebas Neue', sans-serif;
 }
 .footer-link {
     transition: transform 0.3s ease-in-out;
@@ -68,10 +69,10 @@
     font-size: 11px;
     width: 130px;
     text-align: justify;
-    font-family: Arial;
     padding: 10px 0;
 
 }
+
 .footer-gratitude {
     font-size: 13px;
     width: 90%;
