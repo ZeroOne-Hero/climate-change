@@ -156,7 +156,7 @@ const Information = () => {
                     also accelerate these crucial changes.</p>
                 <a href="/calculator" className="calculator-link">
                     <div>
-                        <h1>Calculate Your CO2 Emissions</h1>
+                        <h1>Click here to go to CO2 calculator</h1>
                     </div>
                 </a>
             </div>
