@@ -115,7 +115,7 @@
     cursor: pointer;
     background: none;
     border: 1px solid #020c0d;
-    border-radius: 5px;
+    border-radius: 4px;
     font-family: Arial;
     text-decoration: none;
     color: var(--primary-color);
