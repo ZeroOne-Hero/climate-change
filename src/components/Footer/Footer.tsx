@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
                         <a  href="https://www.linkedin.com/in/mari-dvlpr/"className="footer-link" target="_blank" rel="noopener noreferrer">
                             <img src={linkedin} alt="LinkedIn logo"/>
                         </a>
-                        Hey there! If you spot something that doesn't look right, or if you have any questions, I'd love to hear from you. Feel free to contact me!
+                        Hey there! If you spot something that doesn't look right, or if you have any questions, I'd love to hear from you. Feel free to contact me, just cklick on the logo!
                     </p>
                     <p>Special thanks to Annie Spratt, a UK-based photographer, for generously providing this stunning iceberg photograph for free use.</p>
                 </div>

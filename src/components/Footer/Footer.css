@@ -27,7 +27,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding: 50px 0 90px 0;
+    padding: 50px 0 105px 0;
     font-size: 14px;
 }
 .footer-link {
@@ -82,7 +82,7 @@
     align-items: center;
     flex-direction: column;
     font-family: Arial;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 .footer-gratitude img {
     height: 30px;
