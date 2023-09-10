@@ -55,21 +55,21 @@ const Solution = () => {
                 <div className="solutions-wrapper ">
                     <div className="solutions-block block1">
                         <div className="solutions-inner solution-left background-general">
-                            <p><b>Recycle:</b> Proper recycling of materials like plastic, paper, and metal minimizes
+                            <p><b>Recycle:</b> Recycling of materials like plastic, paper, and metal minimizes
                                 the need
                                 for new production, reducing both resource extraction and emissions that contribute to
                                 global warming.</p>
                             <img className="solution-img" src={recycle} alt="recycle"/>
                         </div>
                         <div className="solutions-inner solution-left background-general">
-                            <p><b>Travel:</b> Consider eco-friendly travel options to minimize your carbon footprint. By
-                                opting for train travel, carpooling, or bicycle you're playing a
+                            <p><b>Travel:</b> Consider eco-friendly travel options to minimize your CO2 footprint. By
+                                opting for train travel or bicycle you're playing a
                                 part in reducing harmful emissions and mitigating climate change.</p>
                             <img className="solution-img" src={transport} alt="transport"/>
                         </div>
                         <div className="solutions-inner solution-left background-general">
                             <Drops/>
-                            <p><b>Repair:</b> Mending and upkeep of existing items, rather than throwing them away,
+                            <p><b>Repair:</b> Mending of existing items, rather than throwing them away,
                                 prolongs their usability, reducing the demand for new production and subsequently
                                 lowering energy consumption and emissions.</p>
                             <img className="solution-img" src={repair} alt="repair"/>
