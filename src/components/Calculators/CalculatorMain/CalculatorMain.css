@@ -113,6 +113,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    justify-content: space-between;
     box-shadow: var(--calc-box-shadow);
     background-image: url('../../../assets/cloudBG.webp');
     background-size: cover;
@@ -253,7 +254,7 @@ input:focus {
     background: var(--butonsColor-background);
     height: 95%;
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 20px;
     border-radius: 2px;
     box-shadow: var(--calcInner-box-shadow);
     display: flex;
@@ -304,10 +305,10 @@ input:focus {
     }
 
     .calc-results {
-        width: 80%;
+        width: 90%;
         margin-top: 30px;
         padding: 20px 30px;
-        margin-left: 15px;
+        margin-left: 0;
         height: 60%;
     }
 }
@@ -361,12 +362,11 @@ input:focus {
     }
 
     .calc-results {
-        width: 80%;
+        width: 90%;
         margin-top: 30px;
         padding: 20px 30px;
-        margin-left: 15px;
         height: 60%;
-
+        margin-left: 0;
     }
 }
 
@@ -412,9 +412,8 @@ input:focus {
         width: 80%;
         margin-top: 30px;
         padding: 20px 30px;
-        margin-left: 15px;
         height: 60%;
-
+        margin-left: 0;
     }
 }
 

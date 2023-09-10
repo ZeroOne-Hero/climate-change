@@ -28,7 +28,7 @@ const WildFire = () => {
         >
             <div className={`wildfire-warning ${isClicked ? 'revealed' : ''}`}>
                 <div className="hands">
-                    <h1>Climate change is increasing the risk of wildfires.</h1>
+                    <p>Climate change is increasing the risk of wildfires.</p>
                 </div>
                 <div className="wildfire-image">
                     <img src={hand2} alt="hand" />

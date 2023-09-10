@@ -37,7 +37,7 @@ html
     --primary-color: rgb(5, 30, 35);
     --secondary-color: rgba(41, 23, 4);
     --background-color: rgba(255, 255, 255, 0.85);
-    --background-mobile-color: rgba(255, 255, 255, 0.9) ;
+    --background-mobile-color: rgba(255, 255, 255, 0.85) ;
     --blur: 15px;
 }
 
