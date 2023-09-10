@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import "./Header.css";
 import { Link, useLocation } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
+import {GalleryImage} from "../../types/types";
 
 const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,6 +32,12 @@ const Header: React.FC = () => {
     const closeMenu = () => {
         setIsMenuOpen(false);
     }
+
+        if (isMenuOpen) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = 'auto';
+        }
 
     return (
         <nav className="header">

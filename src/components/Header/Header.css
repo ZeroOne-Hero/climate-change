@@ -38,13 +38,12 @@
     height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.75);
-    z-index: 10;
     transition: transform 0.3s ease-in-out;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 0;
-
+    z-index: 99;
 }
 
 .nav-list.closed {
@@ -53,7 +52,6 @@
 
 .nav-list.open {
     transform: translateX(0);
-    z-index: 20;
 }
 
 .nav-list li, .link {
@@ -81,7 +79,7 @@
     color: aliceblue;
     cursor: pointer;
     font-family: 'Bebas Neue', sans-serif;
-    z-index: 30;
+    z-index: 100;
 }
 
 
