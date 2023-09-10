@@ -18,7 +18,7 @@ const Information = () => {
     return (
         <section id="information" className="information">
             <div className="info-header info-header1">
-                <h1>Whats the damage?</h1>
+                <h1>What's the damage?</h1>
             </div>
             <div className="statistics-container">
                 <Statistics/>
