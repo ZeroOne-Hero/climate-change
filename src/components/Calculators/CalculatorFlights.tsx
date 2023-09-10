@@ -50,7 +50,7 @@ const CalculatorFlights = () => {
     return (
         <section className="calculator">
             <div className="calc-form">
-                <img className="calc-logo" src={flightsLogo}  alt="plane"/>
+                <img className="calc-logo" src={flightsLogo} alt="plane"/>
                 <form onSubmit={handleSubmit}>
                     <label>
                         From:
@@ -92,7 +92,11 @@ const CalculatorFlights = () => {
             {customerResult && (
                 <div className="calc-results">
                     <h2 className="results-header">Results</h2>
-                    <p><b>Total CO2e:</b> {customerResult.co2e} {customerResult.co2e_unit}</p>
+                    <p><b>Total CO2e:</b> {customerResult.co2e.toFixed(2)} {customerResult.co2e_unit} ({(parseFloat(customerResult.co2e) * 2.20462).toFixed(2)} lb) *rounded to 2 decimal places</p>
+                    <p>Did you know that the aviation industry is responsible for approximately 2.5% of global carbon dioxide emissions?
+                        Notably, France has taken legislative steps to curb this by banning domestic short-haul flights
+                        where train alternatives are available, aiming to reduce the country's carbon footprint.</p>
+                    <p>*this calculation was done using climatiq API</p>
                 </div>
             )}
         </section>

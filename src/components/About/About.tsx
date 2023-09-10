@@ -57,15 +57,13 @@ const About = () => {
                 {/*</div>*/}
                 <div className="info background-general" ref={el => infoRefs.current[1] = el as HTMLDivElement}>
                     <p>
-                        Driven by human activities, global warming is fast becoming one of the most pressing challenges of our time. Sea levels have increased by about 8 inches, endangering coastal
-                        regions and millions of inhabitants. Equally concerning is the rapid disappearance of Arctic sea ice, vanishing at a
-                        staggering rate of around 13% per decade. This threatens not only polar ecosystems but also
-                        disrupts global climate patterns with far-reaching consequences. Furthermore, extreme weather
-                        events like hurricanes and heatwaves are intensifying in frequency and intensity, causing
-                        widespread devastation and economic loss. Human activities contribute significantly to this crisis, with an annual
-                        release of 40 billion metric tons of CO2 into the atmosphere, worsening the situation. Urgent
-                        action is required to avert lasting damage to the planet and its
-                        future inhabitants.
+                        Fueled by human actions, climate change is quickly becoming a critical issue. Sea levels have
+                        risen approximately 8 inches, putting coastal areas and millions of people at risk. The alarming
+                        rate of Arctic sea ice loss, about 13% per decade, not only jeopardizes polar habitats but also
+                        has a ripple effect on global climate. Additionally, the increasing frequency and severity of
+                        extreme weather events cause extensive damage and financial strain. Human activities, emitting
+                        around 40 billion metric tons of CO2 annually, are a significant factor. Immediate intervention
+                        is needed to prevent irreversible harm to Earth and future generations.
                     </p>
                     <Drops/>
                 </div>

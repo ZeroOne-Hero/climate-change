@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import "./Gallery.css";
 import gImg1 from "../../assets/galleryPhotos/1.webp";
 import gImg2 from "../../assets/galleryPhotos/2.webp";
@@ -10,16 +10,11 @@ import gImg7 from "../../assets/galleryPhotos/7.webp";
 import gImg8 from "../../assets/galleryPhotos/8.webp";
 import gImg9 from "../../assets/galleryPhotos/9.webp";
 import {GalleryImage} from "../../types/types";
-import drops from "../../assets/drops-background/drops-medium.webp"
-import dropsMobile from "../../assets/drops-background/drops-big.webp"
 import Drops from "../Drops/Drops";
 
 const Gallery = () => {
     const [modalOpen, setModalOpen] = useState(false);
     const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
-    const [isSmallScreen, setIsSmallScreen] = useState(
-        window.innerWidth <= 576 || (window.innerWidth >= 768 && window.innerWidth <= 992)
-    );
     const isExtraSmallScreen = window.innerWidth <= 768;
 
     const galleryImages = [
@@ -90,37 +85,21 @@ const Gallery = () => {
         }
     };
 
-    const checkScreenSize = () => {
-        return window.innerWidth >= 768 && window.innerWidth <= 992;
-    };
-
-    useEffect(() => {
-        const handleResize = () => {
-            setIsSmallScreen(checkScreenSize());
-        };
-
-        window.addEventListener('resize', handleResize);
-
-        return () => {
-            window.removeEventListener('resize', handleResize);
-        };
-    }, []);
-
     return (
         <section className="gallery">
             <div className="photos">
                 {galleryImages.map((image, index) => (
                     <div
-                        onClick={() => toggleModal(image)}
+                        onClick={isExtraSmallScreen ? undefined : () => toggleModal(image)}
                         className={`g-photo photo${index + 1}`}
                         key={index}
                     >
-                        {index % 2 === 0 && <div className="gallery-drops"><Drops /></div> }
+                        {index % 2 === 0 && <Drops />}
                         <div className="g-photos-wrapper">
                             <img src={image.src} alt={image.alt} />
                         </div>
+                       <div className="gallery-drops"></div>
                         <div className="gallery-overlayer"></div>
-                        <div className="gallery-drops"></div>
                         <div className="gallery-info">
                             <h2>{image.info}</h2>
                         </div>

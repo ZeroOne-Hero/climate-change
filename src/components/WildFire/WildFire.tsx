@@ -3,7 +3,7 @@ import './WildFire.css';
 import fire from '../../assets/fire.webp';
 import hand1 from '../../assets/icons/hand1.webp';
 import hand2 from '../../assets/icons/hand2.webp';
-import drops from '../../assets/drops-background/opacity-drops-huge.webp';
+import drops from '../../assets/drops-background/opacity-drops-big.webp';
 import click from '../../assets/icons/click.webp';
 import Drops from "../Drops/Drops";
 

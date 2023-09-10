@@ -8,19 +8,18 @@
     top: 0;
     z-index: 50;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    overflow: hidden;
+
 }
 
 .earth-logo {
-    left: 0;
-    position: fixed;
-
+    /* Your styling for the logo, if needed */
 }
 
-.earth-logo img {
-    height: 70px
+.menu-toggle {
+    display: none;
+    z-index: 20;
 }
 
 .nav-list {
@@ -28,9 +27,32 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    position: fixed;
-    right: 0;
+    position: static;
     margin-right: 30px;
+}
+
+.nav-list.open, .nav-list.closed {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 10;
+    transition: transform 0.3s ease-in-out;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+.nav-list.closed {
+    transform: translateX(100%);
+}
+
+.nav-list.open {
+    transform: translateX(0);
 }
 
 .nav-list li, .link {
@@ -49,11 +71,33 @@
     transform: scale(1.2);
 }
 
-.drops-container {
-    position: absolute;
-    left: 600px;
+.menu-toggle {
+    display: block;
+    margin-right: 20px;
+    background: none;
+    border: transparent;
+    font-size: 1.6em;
+    color: aliceblue;
+    cursor: pointer;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 
+/*@media (max-width: 768px) {*/
+/*    .menu-toggle {*/
+/*        display: block;*/
+/*    }*/
+/*}*/
 
-
+/*@media (min-width: 769px) {*/
+/*    .menu-toggle {*/
+/*        display: none;*/
+/*    }*/
+/*    .nav-list {*/
+/*        position: static;*/
+/*        background-color: transparent;*/
+/*        height: auto;*/
+/*        width: auto;*/
+/*        flex-direction: row;*/
+/*    }*/
+/*}*/

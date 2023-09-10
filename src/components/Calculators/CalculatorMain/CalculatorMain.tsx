@@ -53,7 +53,7 @@ const CalculatorMain = () => {
                     <div className="calculator-buttons">
                         <button onClick={() => setActiveCalculator('plastic')}>Plastic Waste</button>
                         <button onClick={() => setActiveCalculator('flights')}>Flights Taken</button>
-                        <button onClick={() => setActiveCalculator('meat')}>Meat Consumption</button>
+                        <button onClick={() => setActiveCalculator('meat')}>Beef Consumption</button>
                     </div>
                     {activeCalculator === 'plastic' && <CalculatorPlastic/>}
                     {activeCalculator === 'flights' && <CalculatorFlights/>}

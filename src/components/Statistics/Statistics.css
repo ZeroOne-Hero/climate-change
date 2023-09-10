@@ -6,11 +6,11 @@
     backdrop-filter: blur(var(--blur));
     -webkit-backdrop-filter: blur(var(--blur));
     background-color: var(--background-color);
-    background-image: url('../../assets/drops-background/drops-medium.webp');
+    background-image: url('../../assets/drops-background/opacity-drops-medium.webp');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    box-shadow: 0 0 10px rgba(69, 67, 67, 0.48);
+    /*box-shadow: 0 0 10px rgba(69, 67, 67, 0.48);*/
     position: relative;
     width: 50%;
     height: 400px;
@@ -95,7 +95,7 @@
     .graph-wrapper {
         width: 100%;
         margin:  0 0 20px 0;
-        background-image: url("../../assets/drops-background/drops-big.webp");
+        background-image: url("../../assets/drops-background/opacity-drops-big.webp");
     }
 
 }

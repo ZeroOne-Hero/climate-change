@@ -28,7 +28,7 @@
     -webkit-backdrop-filter: blur(var(--blur));
     font-size: 1.5em;
     font-family: 'Bebas Neue', sans-serif;
-    background-image: url('../../assets/drops-background/drops-medium.webp');
+    background-image: url('../../assets/drops-background/opacity-drops-medium.webp');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +61,7 @@
     justify-content: center;
     align-items: center;
     color: var(--primary-color);
-    background-image: url('../../assets/drops-background/drops-small.webp');
+    background-image: url('../../assets/drops-background/opacity-drops-small.webp');
     padding: 20px 30px 20px 20px;
     text-align: justify;
     min-height:150px;
@@ -149,7 +149,7 @@
         width: 100%;
         background-color: var(--background-mobile-color);
         padding: 20px 15px;
-        background-image: url('../../assets/drops-background/drops-extra-small.webp');
+        background-image: url('../../assets/drops-background/opacity-drops-extra-small.webp');
     }
 
     .home-bullets {
@@ -163,7 +163,7 @@
     .bullet {
         width: 100%;
         background-color: var(--background-mobile-color);
-        background-image: url('../../assets/drops-background/drops-extra-small.webp');
+        background-image: url('../../assets/drops-background/opacity-drops-extra-small.webp');
     }
 
     .bLogo {
@@ -181,7 +181,7 @@
 
     .home-container {
         flex-direction: column;
-        width: 90%;
+        width: 95%;
         padding: 0;
         margin: 0;
     }

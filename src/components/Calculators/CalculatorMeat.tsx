@@ -35,10 +35,10 @@ const CalculatorMeat = () => {
                 <img className="calc-logo" src={meatLogo} alt="meat"/>
                 <form onSubmit={handleSubmit}>
                     <label>
-                        Meat consumed per week:
+                        Beef consumed per week:
                         <input
                             type="number"
-                            value={meatPerWeek  || ''}
+                            value={meatPerWeek || ''}
                             placeholder=""
                             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setMeatPerWeek(Number(e.target.value))}
                         />
@@ -56,8 +56,13 @@ const CalculatorMeat = () => {
             {totalCO2e > 0 && (
                 <div className="calc-results">
                     <h2 className="results-header">Results</h2>
-                    <p>Your estimated CO2 emissions from meat consumption over an average human lifetime:</p>
-                        <p>{totalCO2e.toFixed(2)} kg ({(totalCO2e * 2.20462).toFixed(2)} lbs)</p>
+                    <p><b>Your estimated CO2 emissions from beef consumption over an average human lifetime:</b></p>
+                    <p>{totalCO2e.toFixed(2)} kg ({(totalCO2e * 2.20462).toFixed(2)} lbs)</p>
+                    <p>While going completely vegetarian may not be feasible for everyone, even small reductions in meat
+                        consumption can have a positive impact on the planet. Making conscious choices to eat less meat,
+                        particularly red meat, can significantly lower your carbon footprint. It's a step that's both
+                        good for you and the Earth.</p>
+                    <p>*calculation based on data from Joseph Poore and Thomas Nemecek (2018) study published in the journal Science. Calculation includes both the CO2 required to raise the stock and methane produced by cows. </p>
                 </div>
             )}
         </div>

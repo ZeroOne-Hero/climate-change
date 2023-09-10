@@ -40,16 +40,13 @@
     height: 300px;
 }
 
-
 .gallery-drops {
-    height: 150%;
-    background-image: url('../../assets/drops-background/drops-medium.webp');
+    background-image: url('../../assets/drops-background/opacity-drops-big.webp');
     background-size: cover;
-    background-position: center;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 270%;
     z-index: 1;
     opacity: 1;
     transition: opacity 700ms ease-in-out;
@@ -61,7 +58,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     transition: opacity 700ms ease-in-out;
     backdrop-filter: blur(var(--blur));
     -webkit-backdrop-filter: blur(var(--blur));
@@ -130,10 +127,10 @@
     .gallery-info h2 {
         font-size: 1.8em;
     }
-    .gallery-drops {
-        background-image: url("../../assets/drops-background/drops-medium.webp");
-    }
 
+    .gallery-drops {
+        height:100%;
+    }
 }
 
 
@@ -151,8 +148,10 @@
     .gallery-info h2 {
         font-size: 1.8em;
     }
-
-
+    .gallery-drops {
+        height: 100%;
+        background-image: url("../../assets/drops-background/opacity-drops-huge.webp");
+    }
 }
 
 
@@ -163,7 +162,7 @@
 
     .g-photo {
         width: calc(45% - 10px);
-        height: 300px;
+        /*height: 300px;*/
         margin-bottom: 3px;
     }
 
@@ -175,17 +174,27 @@
         width: 95%;
     }
     .gallery-drops {
-        height:650px
+        height:650px;
+        background-image: url("../../assets/drops-background/opacity-drops-huge.webp");
     }
     .gallery-drops {
-        background-image: url("../../assets/drops-background/drops-big.webp");
+        height: 100%;
+    }
+    .g-photo {
+        width: calc(55% - 10px);
     }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
+    .gallery-drops {
+        height: 100%;
+        background-image: url("../../assets/drops-background/opacity-drops-big.webp");
+    }
 
 }
 
 @media (min-width: 1200px) {
-
+    .gallery-drops {
+        height: 170%;
+    }
 }

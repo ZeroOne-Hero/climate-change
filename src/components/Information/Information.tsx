@@ -39,45 +39,40 @@ const Information = () => {
             </div>
             <div className="info-list background-general info-list-top">
                 <Drops/>
-                <p className="p1">Global warming is a phenomenon characterized by the long-term increase in Earth's average surface
+                <p className="p1">Global warming is a  long-term increase in Earth's
+                    average
                     temperature. While a natural occurrence to some extent, it has accelerated dramatically in recent
                     decades due to human activities. Here are some crucial facts that shed light on the alarming reality
                     of global warming:</p>
                 <ul>
                     <li><b>Deforestation:</b> Deforestation, largely fueled by activities like logging and land
                         conversion for agriculture,
-                        represents a critical disruption to the delicate carbon equilibrium of our planet. Trees play a
-                        pivotal role as natural carbon sinks, absorbing and storing vast amounts of carbon dioxide
-                        (CO2). However, when these trees are felled or destroyed, the carbon they once stored is
-                        released into the atmosphere, significantly amplifying the concentration of CO2 in the air. This
-                        process not only accelerates global warming but also undermines the Earth's ability to naturally
-                        regulate its climate.
+                        represents a critical disruption to the delicate carbon equilibrium of our planet. In the last
+                        half-century, we've lost nearly one-fifth of the Amazon rainforest. Trees act as Earth's carbon
+                        filters, capturing CO2 from the atmosphere. When we lose these trees, we not only lose the
+                        ability to capture CO2 but also release stored carbon, making climate change worse.
                     </li>
-                    <li><b>Unprecedented CO2 Levels:</b> The concentration of carbon dioxide (CO2) in the atmosphere is
-                        at its
-                        highest in 800,000 years, primarily due to the burning of fossil fuels, deforestation, and
-                        industrial processes. CO2 is a potent greenhouse gas, trapping heat and leading to global
-                        warming.
+                    <li><b>Unprecedented CO2 Levels:</b> Measurements at Mauna Loa Observatory indicated CO2 levels of
+                        419 ppm in May 2021, a record high in the last 800,000 years. Burning fossil fuels and clearing
+                        forests are the primary culprits, and they cause CO2 to trap more heat in our atmosphere.
                     </li>
-                    <li><b>Plastic Pollution:</b> The proliferation of plastic waste is a major environmental concern.
-                        Plastic
-                        pollution not only contaminates our oceans and waterways but also contributes to greenhouse gas
-                        emissions when plastics break down into smaller particles, releasing CO2 into the atmosphere.
+                    <li><b>Plastic Pollution:</b> Around 8 million tons of plastic end up in our oceans each year. Aside
+                        from the visible environmental damage, the decay process of this plastic also emits greenhouse
+                        gases, adding to the global warming issue.
                     </li>
-                    <li><b>Air Pollution:</b> Air pollution, particularly from the burning of fossil fuels, releases not
-                        only
-                        CO2 but also other harmful pollutants such as sulfur dioxide and nitrogen oxides. These
-                        pollutants worsen air quality, harm human health, and contribute to global warming.
+                    <li><b>Air Pollution:</b> The World Health Organization reports that polluted air affects 90% of the
+                        global population, leading to 7 million premature deaths annually. The pollution comes primarily
+                        from burning fossil fuels and contributes to both poor health and climate change.
                     </li>
-                    <li><b>Ocean Acidification:</b> As the concentration of CO2 in the atmosphere rises, a significant
+                    <li><b>Ocean Acidification:</b> As the amount of CO2 in the atmosphere increases, a significant
                         portion
-                        is absorbed by the oceans. This causes ocean acidification, which harms marine life, including
-                        coral reefs and shellfish, disrupting entire ocean ecosystems.
+                        is absorbed by the oceans. Since the beginning of the industrial era, ocean acidity has
+                        increased by 26%. This level of acidification puts marine ecosystems, including coral reefs that
+                        host a quarter of marine biodiversity, at high risk.
                     </li>
-                    <li><b>Positive Feedback Loops:</b> Global warming triggers positive feedback loops that exacerbate
-                        the
-                        problem. For instance, as the Arctic ice melts, it reduces the Earth's reflectivity, causing
-                        more heat to be absorbed, which, in turn, accelerates warming.
+                    <li><b>Positive Feedback Loops:</b> The pace of Arctic sea ice melting is around 13.1% per decade,
+                        according to official data. This melting decreases Earth's ability to reflect solar radiation,
+                        causing it to absorb more heat and further quicken the warming process.
                     </li>
                 </ul>
             </div>
@@ -85,7 +80,7 @@ const Information = () => {
                 <div className="info-list-item">
                     <Drops/>
                     <img className="info-img" src={bee} alt="bee" data-tooltip-id="bee-tooltip"
-                         data-tooltip-content="Bees have an extraordinary sense of smell. They can detect certain scents and pheromones from flowers up to 5 miles (8 kilometers) away, helping them locate nectar-rich blooms."
+                         data-tooltip-content="Bees have an exceptional sense of smell. They can detect certain scents and pheromones from flowers up to 5 miles (8 kilometers) away, helping them locate nectar-rich blooms."
                          data-tooltip-delay-show={50}/>
                     <p>Climate change is negatively impacting bees through altered plant scents, disrupted seasonal
                         timing, habitat loss, and increased disease risk. These factors pose a serious threat to both
@@ -107,31 +102,32 @@ const Information = () => {
                     <img className="info-img" src={whale} alt="whale" data-tooltip-id="whale-tooltip"
                          data-tooltip-content="Some whales are known to have songs that can last up to 30 minutes and can be heard by other whales from hundreds of miles away. These complex and mysterious songs are a fascinating aspect of whale communication and behavior."
                          data-tooltip-delay-show={50}/>
-                    <p> Whales play a critical role in climate mitigation. They store substantial
+                    <p> Whales store substantial
                         amounts of CO2 in their bodies and help fertilise the phytoplankton that
                         absorbs 40% of the world's CO2. Researchers suggest that if we help whales in reaching their
-                        pre-whaling population levels of 4 to 5 million they could potentially capture a 1.7 billion tonnes of CO2 annually.
+                        pre-whaling population levels of 4 to 5 million they could potentially capture a 1.7 billion
+                        tonnes of CO2 annually.
                     </p>
                 </div>
                 <div className="info-list-item">
                     <Drops/>
                     <img className="info-img" src={penguin} alt="penguin" data-tooltip-id="penguin-tooltip"
-                         data-tooltip-content="Penguins are exceptional divers, with some species capable of diving to depths of over 1,800 feet (550 meters) in search of food."
+                         data-tooltip-content="Penguins are great divers, with some species capable of diving to depths of over 1,800 feet (550 meters) in search of food."
                          data-tooltip-delay-show={50}/>
 
-                    <p>In late 2022, nearly 10,000 emperor penguin chicks died when the ice platform fractured in the Bellingshausen Sea. This event marks a
-                        disastrous setback in the reproduction of the species, which is heavily dependent on sea ice for
+                    <p>In late 2022, nearly 10,000 emperor penguin chicks died when the ice platform fractured in the
+                        Bellingshausen Sea. Penguins heavily depend on sea ice for
                         its existence. Present studies suggest that the loss of sea ice could lead to the extinction of
                         more than 90% of the emperor penguin population by century's end.
                     </p>
                 </div>
                 <div className="info-list-item">
                     <img className="info-img" src={turtle} alt="turtle" data-tooltip-id="turtle-tooltip"
-                         data-tooltip-content="Sea turtles have been around for about 110 million years! This means they shared the planet with dinosaurs and have witnessed the Earth's history unfold over countless generations."
+                         data-tooltip-content="Sea turtles exist for about 110 million years! This means they shared the planet with dinosaurs and have witnessed the Earth's history unfold over countless generations."
                          data-tooltip-delay-show={50}/>
                     <p>Recent studies show that sea turtles may not adapt their nesting habits enough to combat rising
-                        sea temperatures. The research, covering 58 global nesting sites and all seven marine turtle
-                        species, found that laying eggs earlier would offset only about 55% of a 1.5°C temperature rise.
+                        sea temperatures. The research found that laying eggs earlier would offset only about 55% of a
+                        1.5°C temperature rise.
                         Hotter nests yield more females and lower hatching success, raising extinction risks.
                     </p>
                 </div>

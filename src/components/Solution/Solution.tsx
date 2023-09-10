@@ -55,40 +55,45 @@ const Solution = () => {
                 <div className="solutions-wrapper ">
                     <div className="solutions-block block1">
                         <div className="solutions-inner solution-left background-general">
-                            <p><b>Recycle:</b> Proper recycling of materials like plastic, paper, and metal minimizes the need
+                            <p><b>Recycle:</b> Proper recycling of materials like plastic, paper, and metal minimizes
+                                the need
                                 for new production, reducing both resource extraction and emissions that contribute to
                                 global warming.</p>
                             <img className="solution-img" src={recycle} alt="recycle"/>
                         </div>
                         <div className="solutions-inner solution-left background-general">
-                            <p><b>Repair:</b> Fixing and maintaining products instead of discarding them extends their life
-                                cycle, which in turn reduces the need for new items to be manufactured, thereby saving
-                                energy and reducing emissions.</p>
-                            <img className="solution-img" src={repair} alt="repair"/>
+                            <p><b>Travel:</b> Consider eco-friendly travel options to minimize your carbon footprint. By
+                                opting for train travel, carpooling, or bicycle you're playing a
+                                part in reducing harmful emissions and mitigating climate change.</p>
+                            <img className="solution-img" src={transport} alt="transport"/>
                         </div>
                         <div className="solutions-inner solution-left background-general">
                             <Drops/>
-                            <p><b>Repair:</b> Fixing and maintaining products instead of discarding them extends their life
-                                cycle, which in turn reduces the need for new items to be manufactured, thereby saving
-                                energy and reducing emissions.</p>
-                            <img className="solution-img" src={transport} alt="transport" />
+                            <p><b>Repair:</b> Mending and upkeep of existing items, rather than throwing them away,
+                                prolongs their usability, reducing the demand for new production and subsequently
+                                lowering energy consumption and emissions.</p>
+                            <img className="solution-img" src={repair} alt="repair"/>
                         </div>
                     </div>
                     <div className="solutions-block">
                         <div className="solutions-inner solution-right background-general">
-                            <img className="solution-img" src={fashion} alt="fashion" />
-                            <p><b>Fast Fashion:</b> Ditch the one-season wonders! Rock timeless pieces that not only make you
-                                look like a style god but also give Mother Earth a well-deserved break.</p>
+                            <img className="solution-img" src={fashion} alt="fashion"/>
+                            <p><b>Fast Fashion:</b> The fashion industry is
+                                responsible for 10% of global carbon emissions. By choosing long-lasting pieces, you're
+                                contributing to the reduction of waste and
+                                energy consumption.</p>
                         </div>
                         <div className="solutions-inner solution-right background-general">
                             <Drops/>
-                            <img className="solution-img" src={litter} alt="litter" />
-                            <p><b>Do Not Litter:</b> Approximately 8 million metric tons of plastic enter the ocean each year,
+                            <img className="solution-img" src={litter} alt="litter"/>
+                            <p><b>Do Not Litter:</b> Approximately 8 million metric tons of plastic enter the ocean each
+                                year,
                                 posing a significant threat to marine life through ingestion and entanglement. </p>
                         </div>
                         <div className="solutions-inner solution-right background-general">
-                            <img className="solution-img" src={energy} alt="energy" />
-                            <p><b>Green Energy:</b> Transitioning to renewable energy sources can drastically cut greenhouse gas emissions, reducing the Earth's
+                            <img className="solution-img" src={energy} alt="energy"/>
+                            <p><b>Green Energy:</b> Transitioning to renewable energy sources can drastically cut
+                                greenhouse gas emissions, reducing the Earth's
                                 overall temperature and mitigating climate change impacts. </p>
                         </div>
                     </div>

@@ -107,8 +107,8 @@
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     padding: 7px 30px 30px 30px;
-    height: 40vh;
-    min-height: 380px;
+    height: 45vh;
+    min-height: 400px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -138,7 +138,7 @@
 
 .calc-button-wrapper {
     height: 100%;
-    width: 60%;
+    width: 67%;
     min-width: 300px;
     display: flex;
     justify-content: center;
@@ -182,7 +182,7 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
-    width: 30%;
+    width: 25%;
     margin: 20px;
 }
 
@@ -248,16 +248,23 @@ input:focus {
 }
 
 .calc-results {
-    width: 60%;
-    padding: 20px 70px;
+    width: 75%;
+    padding: 20px 20px;
     background: var(--butonsColor-background);
-    height: 80%;
+    height: 95%;
     margin-top: 20px;
     margin-left: 30px;
     border-radius: 2px;
     box-shadow: var(--calcInner-box-shadow);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: justify;
+    font-size: 1em;
 }
-
+.remark {
+    font-size: 0.7em;
+}
 @media (max-width: 576px) {
     .calculator-main {
         padding: 100px 0 10px 0;
@@ -310,10 +317,10 @@ input:focus {
 }
 
 .calc-results p {
-    font-family: Arial sans-serif;
+    font-family: Arial;
     color: var(--secondary-color);
     font-size: 1em;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 @media (min-width: 576px) and (max-width: 768px) {
     .calculator-main {
@@ -359,6 +366,7 @@ input:focus {
         padding: 20px 30px;
         margin-left: 15px;
         height: 60%;
+
     }
 }
 
@@ -406,11 +414,15 @@ input:focus {
         padding: 20px 30px;
         margin-left: 15px;
         height: 60%;
+
     }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
 
+    .calc-results {
+        font-size: 0.9em;
+    }
 }
 
 @media (min-width: 1500px) {
