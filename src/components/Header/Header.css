@@ -14,7 +14,7 @@
 }
 
 .earth-logo {
-    /* Your styling for the logo, if needed */
+
 }
 
 .menu-toggle {
@@ -53,6 +53,7 @@
 
 .nav-list.open {
     transform: translateX(0);
+    z-index: 20;
 }
 
 .nav-list li, .link {
@@ -80,6 +81,7 @@
     color: aliceblue;
     cursor: pointer;
     font-family: 'Bebas Neue', sans-serif;
+    z-index: 30;
 }
 
 
