@@ -48,7 +48,7 @@
     .graph-wrapper {
         width: 95%;
         margin:  0 0 20px 0;
-        background-color: var(--background-mobile-color);
+        /*background-color: var(--background-mobile-color);*/
     }
 
     .custom-tooltip {
@@ -65,7 +65,7 @@
     .graph-wrapper {
         width: 95%;
         margin:  0 0 20px 0;
-        background-color: var(--background-mobile-color);
+        /*background-color: var(--background-mobile-color);*/
     }
 
     .custom-tooltip {
@@ -82,7 +82,7 @@
     .graph-wrapper {
         width: 85%;
         margin:  0 0 20px 0;
-        background-color: var(--background-mobile-color);
+        /*background-color: var(--background-mobile-color);*/
     }
 
     .custom-tooltip {

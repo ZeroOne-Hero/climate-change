@@ -142,10 +142,10 @@
         margin-top: 5px;
         font-size: 1em;
         background-color: var(--background-mobile-color);
-        background-image: url('../../assets/drops-background/drops-extra-small.webp');
+        background-image: url('../../assets/drops-background/drops-small.webp');
     }
     .info p {
-        padding: 20px 30px;
+        padding: 30px;
     }
     .earth-about{
         margin: 0;
@@ -188,7 +188,7 @@
         background-color: var(--background-mobile-color);
     }
     .info p {
-        padding: 20px 30px;
+        padding: 30px;
     }
     .earth-about{
         margin: 0;
