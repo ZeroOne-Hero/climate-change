@@ -1,6 +1,6 @@
 .information {
     color: var(--primary-color);
-    padding: 0 50px 0 50px;
+    padding: 0 30px 0 30px;
     font-family: Arial, sans-serif;
     overflow: hidden;
     display: flex;
@@ -53,6 +53,7 @@
     align-items: center;
     flex-direction: column;
     padding: 30px 0;
+    border-radius: var(--primary-border-radius);
 }
 
 .info-stats p {
@@ -78,6 +79,7 @@
     margin-top: 20px;
     position: relative;
     padding: 20px 40px 20px 10px;
+    border-radius: var(--primary-border-radius);
 }
 
 .info-list-item {
@@ -155,6 +157,7 @@
     position: relative;
     padding: 30px;
     text-align: justify;
+    border-radius: var(--primary-border-radius);
 }
 
 .info-list-human p {

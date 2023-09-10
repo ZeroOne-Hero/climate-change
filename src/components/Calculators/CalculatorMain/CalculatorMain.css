@@ -21,7 +21,6 @@
     width: 100%;
     text-align: center;
     padding: 7px 20px;
-    margin: 70px 0 0;
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     box-shadow: var(--calc-box-shadow);
@@ -42,7 +41,7 @@
 }
 
 .footprint {
-    position: relative;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,6 +144,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 1;
 }
 
 .calculator-buttons button {

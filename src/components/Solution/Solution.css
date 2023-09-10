@@ -1,7 +1,7 @@
 .solution {
     position: relative;
     overflow: hidden;
-    padding: 0 50px 50px 50px;
+    padding: 0 30px 50px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,10 +36,11 @@
     align-items: center;
     text-align: justify;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 1.2em;
+    font-size: 1.15em;
     /*background-image: url('../../assets/drops-background/drops-medium.webp');*/
     position: relative;
     color: var(--primary-color);
+    border-radius: var(--primary-border-radius);
 }
 
 .solution-img {

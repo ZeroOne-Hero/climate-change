@@ -15,6 +15,7 @@
     width: 50%;
     height: 400px;
     margin-right: 10px;
+    border-radius: var(--primary-border-radius);
 }
 
 .custom-tooltip {

@@ -34,11 +34,12 @@ html
 }
 
 :root {
-    --primary-color: rgb(5, 30, 35);
+    --primary-color: rgb(2, 16, 20);
     --secondary-color: rgba(41, 23, 4);
     --background-color: rgba(255, 255, 255, 0.85);
     --background-mobile-color: rgba(255, 255, 255, 0.85) ;
     --blur: 15px;
+    --primary-border-radius: 0;
 }
 
 .background-general {

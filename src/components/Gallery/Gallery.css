@@ -107,8 +107,8 @@
 }
 
 .modal-image {
-    width:70%;
-    border: 1px solid var(--primary-color);
+    width:67%;
+    border: 5px solid white;
 }
 
  /*Media Queries */
