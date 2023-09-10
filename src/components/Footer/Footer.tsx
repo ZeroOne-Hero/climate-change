@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
         <footer className="footer">
             <div className={`top-footer ${footerClass}`}>
                 <div className={`animation ${animationClass}`}><Drops/></div>
-                <h3>Learn more about climate change here:</h3>
+                <h3>Learn more about climate change:</h3>
                 <div className="footer-logo">
                     <div className="footer-image">
                         <a href="https://climate.nasa.gov/" className="footer-link"target="_blank" rel="noopener noreferrer">
