@@ -111,26 +111,21 @@ const Gallery = () => {
             <div className="photos">
                 {galleryImages.map((image, index) => (
                     <div
-                        onClick={isExtraSmallScreen ? undefined : () => toggleModal(image)}
+                        onClick={() => toggleModal(image)}
                         className={`g-photo photo${index + 1}`}
                         key={index}
                     >
-                        {index % 2 === 0 && <Drops />}
+                        {index % 2 === 0 && <div className="gallery-drops"><Drops /></div> }
                         <div className="g-photos-wrapper">
                             <img src={image.src} alt={image.alt} />
                         </div>
-                        {isSmallScreen ? (
-                            <img src={dropsMobile} alt="drops" className="gallery-drops" />
-                        ) : (
-                            <img src={drops} alt="drops" className="gallery-drops" />
-                        )}
                         <div className="gallery-overlayer"></div>
+                        <div className="gallery-drops"></div>
                         <div className="gallery-info">
                             <h2>{image.info}</h2>
                         </div>
                     </div>
                 ))}
-
 
                 {modalOpen && selectedImage && (
                     <div className="modal" onClick={() => toggleModal(null)}>

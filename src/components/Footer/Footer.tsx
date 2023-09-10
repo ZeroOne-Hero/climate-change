@@ -16,14 +16,14 @@ const Footer: React.FC = () => {
     }
 
     return (
-        <section className="footer">
+        <footer className="footer">
             <div className={footerClass}>
                 <div className={`animation ${animationClass}`}><Drops/></div>
             </div>
             <div className="lower-footer">
                 <p>2023</p>
             </div>
-        </section>
+        </footer>
     );
 };
 

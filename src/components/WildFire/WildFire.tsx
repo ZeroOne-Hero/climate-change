@@ -3,7 +3,7 @@ import './WildFire.css';
 import fire from '../../assets/fire.webp';
 import hand1 from '../../assets/icons/hand1.webp';
 import hand2 from '../../assets/icons/hand2.webp';
-import drops from '../../assets/drops-background/drops-huge.webp';
+import drops from '../../assets/drops-background/opacity-drops-huge.webp';
 import click from '../../assets/icons/click.webp';
 import Drops from "../Drops/Drops";
 
@@ -16,7 +16,7 @@ const WildFire = () => {
             setIsClicked(true);
             setTimeout(() => {
                 setIsAnimationStarted(true);
-            }, 500); // Adjust the delay as needed
+            }, 500);
         }
     };
 

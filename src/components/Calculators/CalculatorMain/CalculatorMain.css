@@ -22,8 +22,8 @@
     text-align: center;
     padding: 7px 20px;
     margin: 70px 0 0;
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     box-shadow: var(--calc-box-shadow);
     background-image: url('../../../assets/cloudBG.webp');
     background-size: cover;
@@ -104,8 +104,8 @@
 }
 
 .calculator {
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     padding: 7px 30px 30px 30px;
     height: 40vh;
     min-height: 380px;
@@ -132,9 +132,8 @@
     width: 100%;
     padding: 5px 20px;
     box-shadow: var(--calc-box-shadow);
-    backdrop-filter: blur(30px);
-    -webkit-backdrop-filter: blur(30px);
-    /*background: var(--butonsColor-background);*/
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .calc-button-wrapper {

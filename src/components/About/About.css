@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     overflow: hidden;
-    padding: 90px 45px 0 45px;
+    padding: 80px 50px 0 50px;
 }
 
 .about-header {
@@ -29,6 +29,7 @@
 
 .info-wrapper {
     width: 50%;
+    margin-right: 10px;
     height: 80%;
     display: flex;
     justify-content: center;
@@ -46,12 +47,12 @@
 }
 
 .info p {
-    font-size: 1em;
     padding: 40px 50px;
     font-family: Arial, serif;
     text-align: justify;
     color: var(--primary-color);
     margin: 0;
+    font-size: 1.05em;
 }
 
 .slide-from-right,
@@ -99,11 +100,13 @@
 }
 
 .earth-about {
-    width: 45%;
+    width: 50%;
     animation: float 5s ease-in-out infinite;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
+    padding-left: 30px;
 }
 
 .earth-about img {
@@ -128,7 +131,7 @@
         margin-top: 5vh;
         font-size: 0.85em;
         background-color: var(--background-mobile-color);
-        background-image: url('../../assets/drops-background/drops-small.webp');
+        background-image: url('../../assets/drops-background/drops-extra-small.webp');
     }
 
     .info-wrapper {
@@ -139,14 +142,17 @@
         margin-top: 5px;
         font-size: 1em;
         background-color: var(--background-mobile-color);
-        background-image: url('../../assets/drops-background/drops-small.webp');
+        background-image: url('../../assets/drops-background/drops-extra-small.webp');
     }
     .info p {
         padding: 20px 30px;
     }
-
+    .earth-about{
+        margin: 0;
+        padding: 0;
+    }
     .earth-about img {
-        height: 300px;
+        height: 330px;
         margin-top: 60px;
     }
 }
@@ -184,9 +190,12 @@
     .info p {
         padding: 20px 30px;
     }
-
+    .earth-about{
+        margin: 0;
+        padding: 0;
+    }
     .earth-about img {
-        height: 350px;
+        height: 370px;
         margin-top: 50px;
     }
 }
@@ -213,17 +222,21 @@
 
     .info-wrapper {
         width: 85%;
-
     }
-
+    .info p {
+        padding:40px 30px;
+    }
     .info {
         margin-top: 5px;
         font-size: 1em;
         background-color: var(--background-mobile-color);
     }
-
+    .earth-about{
+        margin: 0;
+        padding: 0;
+    }
     .earth-about img {
-        height: 350px;
+        height: 370px;
         margin-top: 50px;
     }
 }

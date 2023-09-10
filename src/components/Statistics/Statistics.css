@@ -14,6 +14,7 @@
     position: relative;
     width: 50%;
     height: 400px;
+    margin-right: 10px;
 }
 
 .custom-tooltip {
@@ -46,7 +47,7 @@
 
     .graph-wrapper {
         width: 95%;
-        margin-bottom: 20px;
+        margin:  0 0 20px 0;
         background-color: var(--background-mobile-color);
     }
 
@@ -63,7 +64,7 @@
 
     .graph-wrapper {
         width: 95%;
-        margin-bottom: 20px;
+        margin:  0 0 20px 0;
         background-color: var(--background-mobile-color);
     }
 
@@ -80,7 +81,7 @@
 
     .graph-wrapper {
         width: 85%;
-        margin-bottom: 20px;
+        margin:  0 0 20px 0;
         background-color: var(--background-mobile-color);
     }
 
@@ -91,6 +92,11 @@
 
 
 @media (min-width: 992px) and (max-width: 1200px) {
+    .graph-wrapper {
+        width: 100%;
+        margin:  0 0 20px 0;
+        background-image: url("../../assets/drops-background/drops-big.webp");
+    }
 
 }
 

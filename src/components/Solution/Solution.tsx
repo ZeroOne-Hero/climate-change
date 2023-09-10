@@ -55,7 +55,6 @@ const Solution = () => {
                 <div className="solutions-wrapper ">
                     <div className="solutions-block block1">
                         <div className="solutions-inner solution-left background-general">
-                            <Drops/>
                             <p><b>Recycle:</b> Proper recycling of materials like plastic, paper, and metal minimizes the need
                                 for new production, reducing both resource extraction and emissions that contribute to
                                 global warming.</p>
@@ -68,6 +67,7 @@ const Solution = () => {
                             <img className="solution-img" src={repair} alt="repair"/>
                         </div>
                         <div className="solutions-inner solution-left background-general">
+                            <Drops/>
                             <p><b>Repair:</b> Fixing and maintaining products instead of discarding them extends their life
                                 cycle, which in turn reduces the need for new items to be manufactured, thereby saving
                                 energy and reducing emissions.</p>

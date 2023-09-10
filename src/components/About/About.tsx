@@ -1,8 +1,7 @@
 import React, {useEffect, useRef} from 'react';
-import "animate.css"
 import "./About.css";
 import Drops from "../Drops/Drops";
-import earth from "../../assets/info-images/earth.webp"
+import earth from "../../assets/info-images/earth3.webp"
 
 
 const About = () => {
@@ -58,13 +57,14 @@ const About = () => {
                 {/*</div>*/}
                 <div className="info background-general" ref={el => infoRefs.current[1] = el as HTMLDivElement}>
                     <p>
-                        Driven by human activities, global warming is causing Earth's average temperature to soar, with
-                        a host of detrimental outcomes. Sea levels have increased by about 8 inches, jeopardizing
-                        coastal
-                        regions. The accelerated decline of Arctic sea ice, at a rate of around 13% per decade, puts
-                        polar ecosystems at risk. Incidences of extreme weather like hurricanes and heatwaves are
-                        becoming more common and severe. We release roughly 40 billion metric tons of CO2 each year,
-                        worsening the situation. Urgent action is required to avert lasting damage to the planet and its
+                        Driven by human activities, global warming is fast becoming one of the most pressing challenges of our time. Sea levels have increased by about 8 inches, endangering coastal
+                        regions and millions of inhabitants. Equally concerning is the rapid disappearance of Arctic sea ice, vanishing at a
+                        staggering rate of around 13% per decade. This threatens not only polar ecosystems but also
+                        disrupts global climate patterns with far-reaching consequences. Furthermore, extreme weather
+                        events like hurricanes and heatwaves are intensifying in frequency and intensity, causing
+                        widespread devastation and economic loss. Human activities contribute significantly to this crisis, with an annual
+                        release of 40 billion metric tons of CO2 into the atmosphere, worsening the situation. Urgent
+                        action is required to avert lasting damage to the planet and its
                         future inhabitants.
                     </p>
                     <Drops/>
