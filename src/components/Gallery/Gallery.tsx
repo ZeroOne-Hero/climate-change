@@ -94,7 +94,7 @@ const Gallery = () => {
                         className={`g-photo photo${index + 1}`}
                         key={index}
                     >
-                        {index % 2 === 0 && <Drops />}
+                        {index % 2 === 0 && <div className="gallery-animation"><Drops /></div>}
                         <div className="g-photos-wrapper">
                             <img src={image.src} alt={image.alt} />
                         </div>
