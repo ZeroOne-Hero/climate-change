@@ -40,7 +40,12 @@ const Footer: React.FC = () => {
                         </a>
                         Hey there! If you spot something that doesn't look right, or if you have any questions, I'd love to hear from you. Feel free to contact me, just cklick on the logo!
                     </p>
-                    <p>Special thanks to Annie Spratt, a UK-based photographer, for generously providing this stunning iceberg photograph for free use.</p>
+
+                    <p>
+                        <a  href=" https://unsplash.com/@anniespratt"className="footer-link" target="_blank" rel="noopener noreferrer">
+                            <button className="button-footer">Annie's work</button>
+                        </a>Special thanks to Annie Spratt, a UK-based photographer, for generously providing this stunning iceberg photograph for free use.
+                        </p>
                 </div>
             </div>
             <div className="lower-footer">

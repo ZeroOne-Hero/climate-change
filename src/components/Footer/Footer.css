@@ -86,7 +86,7 @@
     margin-top: 10px;
 }
 .footer-gratitude img {
-    height: 30px;
+    height: 40px;
     padding-right: 10px;
 }
 .footer-gratitude p{
@@ -104,6 +104,19 @@
 }
 .footer-image img{
     height: 60px;
+}
+
+.button-footer {
+    font-size: 10px;
+    line-height: 1.1;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+    background: none;
+    border: 1px solid #020c0d;
+    border-radius: 5px;
+    font-family: Arial;
 }
 @media (max-width: 576px) {
     .home-page {
