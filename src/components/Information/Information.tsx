@@ -112,7 +112,7 @@ const Information = () => {
                 <div className="info-list-item">
                     <Drops/>
                     <img className="info-img" src={penguin} alt="penguin" data-tooltip-id="penguin-tooltip"
-                         data-tooltip-content="Penguins are great divers, with some species capable of diving to depths of over 1,800 feet (550 meters) in search of food."
+                         data-tooltip-content="Penguins are exceptional divers, with some species capable of diving to depths of over 1,800 feet (550 meters) in search of food."
                          data-tooltip-delay-show={50}/>
 
                     <p>In late 2022, nearly 10,000 emperor penguin chicks died when the ice platform fractured in the

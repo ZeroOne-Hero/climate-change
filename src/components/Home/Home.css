@@ -202,7 +202,7 @@
 
     .bullet {
         background-color: var(--background-mobile-color);
-        background-image: url("../../assets/drops-background/drops-medium.webp");
+        background-image: url("../../assets/drops-background/opacity-drops-medium.webp");
     }
 }
 
@@ -215,7 +215,7 @@
 
     .home-container {
         flex-direction: column;
-        width: 85%;
+        width: 90%;
         padding: 0;
         margin: 0;
     }
@@ -225,7 +225,7 @@
         font-size: 1.4em;
         width: 100%;
         background-color: var(--background-mobile-color);
-        background-image: url("../../assets/drops-background/drops-medium.webp");
+        background-image: url("../../assets/drops-background/opacity-drops-medium.webp");
     }
 
     .home-bullets {
@@ -237,7 +237,7 @@
 
     .bullet {
         background-color: var(--background-mobile-color);
-        background-image: url("../../assets/drops-background/drops-medium.webp");
+        background-image: url("../../assets/drops-background/opacity-drops-medium.webp");
     }
 }
 

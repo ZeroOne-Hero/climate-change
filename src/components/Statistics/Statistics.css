@@ -49,6 +49,7 @@
         width: 95%;
         margin:  0 0 20px 0;
         /*background-color: var(--background-mobile-color);*/
+        background-image: url("../../assets/drops-background/opacity-drops-small.webp");
     }
 
     .custom-tooltip {
@@ -80,9 +81,10 @@
     }
 
     .graph-wrapper {
-        width: 85%;
+        width: 90%;
         margin:  0 0 20px 0;
         /*background-color: var(--background-mobile-color);*/
+        background-image: url("../../assets/drops-background/opacity-drops-medium.webp");
     }
 
     .custom-tooltip {

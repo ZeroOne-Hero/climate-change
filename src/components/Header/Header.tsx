@@ -15,7 +15,9 @@ const Header: React.FC = () => {
         };
 
         window.addEventListener("resize", handleResize);
-        window.scrollTo(0, 0);
+        setTimeout(() => {
+            window.scrollTo(0, 0);
+        }, 0);
 
         return () => {
             window.removeEventListener("resize", handleResize);
@@ -58,12 +60,12 @@ const Header: React.FC = () => {
                     <>
                         <li onClick={closeMenu}>
                             <ScrollLink className="link" to="about" smooth={true} duration={500} onClick={closeMenu}>
-                                ABOUT
+                                INFO
                             </ScrollLink>
                         </li>
                         <li onClick={closeMenu}>
-                            <ScrollLink className="link" to="information" smooth={true} duration={500} onClick={closeMenu}>
-                                INFO
+                            <ScrollLink className="link" to="gallery" smooth={true} duration={500} onClick={closeMenu}>
+                                GALLERY
                             </ScrollLink>
                         </li>
                         <li onClick={closeMenu}>

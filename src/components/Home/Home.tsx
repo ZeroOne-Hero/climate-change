@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {lazy, Suspense} from 'react';
 import "./Home.css";
 import About from "../About/About";
 import dLogo1 from "../../assets/icons/bLogo1.webp";
@@ -6,9 +6,8 @@ import dLogo2 from "../../assets/icons/bLogo2.webp";
 import dLogo3 from "../../assets/icons/bLogo3.webp";
 import Drops from "../Drops/Drops";
 import SlideThrough from "../SlideThrough/SlideThrough";
-import Information from "../Information/Information";
 import Solution from "../Solution/Solution";
-
+const Information = lazy(() => import('../../components/Information/Information'));
 
 const Home: React.FC = () => {
     return (
@@ -42,8 +41,10 @@ const Home: React.FC = () => {
             </section>
             <SlideThrough h1Text={"July 2023 was Earth’s hottest month on record."}/>
             <About/>
-            <Information/>
-            <Solution/>
+            <Suspense fallback={<div>...Loading</div>}>
+                <Information/>
+            </Suspense>
+                <Solution/>
         </div>
     );
 };

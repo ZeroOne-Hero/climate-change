@@ -41,7 +41,7 @@
 @media (max-width: 576px) {
     .home-page {
         background-attachment: scroll;
-        background-image: url('../../assets/drops-background/drops-small.webp');
+        background-image: url('../../assets/drops-background/opacity-drops-extra-small.webp');
     }
 
     .calc-page {
@@ -53,7 +53,7 @@
 @media (min-width: 576px) and (max-width: 768px) {
     .home-page {
         background-attachment: scroll;
-        background-image: url('../../assets/drops-background/drops-medium.webp');
+        background-image: url('../../assets/drops-background/opacity-drops-medium.webp');
     }
 
     .calc-page {
@@ -65,7 +65,7 @@
 @media (min-width: 768px) and (max-width: 992px) {
     .home-page {
         background-attachment: scroll;
-        background-image: url('../../assets/drops-background/drops-big.webp');
+        background-image: url('../../assets/drops-background/opacity-drops-medium.webp');
     }
 
     .calc-page {

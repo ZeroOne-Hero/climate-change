@@ -368,7 +368,7 @@
     }
 
     .info-stats {
-        width: 85%;
+        width: 90%;
         margin: 20px 0 0 0;
         font-size: 1em;
         background-color: var(--background-mobile-color);
@@ -407,13 +407,13 @@
     }
 
     .info-list {
-        width: 85%;
+        width: 90%;
         background-color: var(--background-mobile-color);
         /*background-image: url('../../assets/drops-background/drops-mobile.webp');*/
     }
 
     .info-list-human {
-        width: 85%;
+        width: 90%;
         flex-direction: column;
         font-size: 1em;
         background-color: var(--background-mobile-color);
