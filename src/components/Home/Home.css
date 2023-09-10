@@ -144,7 +144,7 @@
     }
 
     .home-header {
-        margin-top: 17vh;
+        margin-top: 150px;
         font-size: 1em;
         width: 100%;
         background-color: var(--background-mobile-color);
@@ -187,7 +187,7 @@
     }
 
     .home-header {
-        margin-top: 20vh;
+        margin-top: 150px;
         font-size: 1.3em;
         width: 100%;
         background-color: var(--background-mobile-color);
@@ -202,6 +202,7 @@
 
     .bullet {
         background-color: var(--background-mobile-color);
+        background-image: url("../../assets/drops-background/drops-medium.webp");
     }
 }
 
@@ -220,20 +221,23 @@
     }
 
     .home-header {
-        margin-top: 20vh;
+        margin-top: 150px;
         font-size: 1.4em;
         width: 100%;
         background-color: var(--background-mobile-color);
+        background-image: url("../../assets/drops-background/drops-medium.webp");
     }
 
     .home-bullets {
         width: 100%;
         padding: 0 0 50px 0;
         margin-top: 80px;
+
     }
 
     .bullet {
         background-color: var(--background-mobile-color);
+        background-image: url("../../assets/drops-background/drops-medium.webp");
     }
 }
 

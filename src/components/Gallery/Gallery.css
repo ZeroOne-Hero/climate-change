@@ -174,10 +174,11 @@
         width: 95%;
     }
     .gallery-drops {
-        height:650px;
+        width:170%;
+        height: 400px;
         background-image: url("../../assets/drops-background/opacity-drops-huge.webp");
     }
-    .gallery-drops {
+    .gallery-drops img{
         height: 100%;
     }
     .g-photo {
