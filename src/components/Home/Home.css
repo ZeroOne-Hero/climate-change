@@ -226,7 +226,7 @@
 
     .home-header {
         margin-top: 150px;
-        font-size: 1.4em;
+        font-size: 1.5em;
         width: 100%;
         background-color: var(--background-mobile-color);
         background-image: url("../../assets/drops-background/opacity-drops-medium.webp");
@@ -248,7 +248,7 @@
 
 @media (min-width: 992px) and (max-width: 1200px) {
     .home-header {
-        font-size: 1.3em;
+        font-size: 1.5em;
     }
 
     .home-bullets {
@@ -259,7 +259,7 @@
 
 @media (min-width: 1200px) {
     .home-header {
-        font-size: 1.6em;
+        font-size: 1.8em;
     }
 
     .home-bullets {

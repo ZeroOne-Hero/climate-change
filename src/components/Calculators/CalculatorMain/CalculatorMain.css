@@ -260,12 +260,32 @@ input:focus {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    align-items: center;
     text-align: justify;
     font-size: 1em;
 }
 .remark {
     font-size: 0.7em;
 }
+.calc-results h2{
+    font-weight: bold;
+}
+
+::placeholder {
+    color: var(--secondary-color);
+
+}
+
+:-ms-input-placeholder {
+    color: var(--secondary-color);
+
+}
+
+::-ms-input-placeholder {
+    color: var(--secondary-color);
+
+}
+
 @media (max-width: 576px) {
     .calculator-main {
         padding: 100px 0 10px 0;
