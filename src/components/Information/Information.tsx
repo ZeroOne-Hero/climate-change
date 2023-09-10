@@ -39,7 +39,7 @@ const Information = () => {
             </div>
             <div className="info-list background-general info-list-top">
                 <Drops/>
-                <p className="p1">Global warming represents an alarming, long-term rise in Earth's average temperature—a
+                <p>Global warming represents an alarming, long-term rise in Earth's average temperature—a
                     surge that has gained dangerous momentum in recent decades due to human activities. For a deeper
                     understanding of this climatic shift, consider the following critical facts:</p>
                 <ul>
