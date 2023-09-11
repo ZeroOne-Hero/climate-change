@@ -64,11 +64,11 @@
 }
 
 .animate-from-left {
-    animation: solutionSlideFromLeft 1500ms ease forwards;
+    animation: solutionSlideFromLeft 1000ms ease forwards;
 }
 
 .animate-from-right {
-    animation: solutionSlideFromRight 1500ms ease forwards;
+    animation: solutionSlideFromRight 1000ms ease forwards;
 }
 
 @keyframes solutionSlideFromLeft {

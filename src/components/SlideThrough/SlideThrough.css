@@ -22,11 +22,11 @@
 }
 
 .animate-slider1 {
-    animation: smogsSlideInFromRight 1500ms ease-out forwards;
+    animation: smogsSlideInFromRight 1000ms ease-out forwards;
 }
 
 .animate-slider2 {
-    animation: smogSlideInFromLeft 1500ms ease-out forwards;
+    animation: smogSlideInFromLeft 1000ms ease-out forwards;
 }
 
 @keyframes smogsSlideInFromRight {

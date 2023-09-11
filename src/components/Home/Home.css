@@ -116,19 +116,19 @@
 
 
 .slideInLeft {
-    animation: slideInLeft 1200ms ease-in-out;
+    animation: slideInLeft 1000ms ease-in-out;
 }
 
 .slideInDown {
-    animation: slideInDown 1200ms ease-in-out;
+    animation: slideInDown 1000ms ease-in-out;
 }
 
 .slideInRight {
-    animation: slideInRight 1200ms ease-in-out;
+    animation: slideInRight 1000ms ease-in-out;
 }
 
 .slideInUp {
-    animation: slideInUp 1200ms ease-in-out;
+    animation: slideInUp 1000ms ease-in-out;
 }
 
 @media (max-width: 576px) {

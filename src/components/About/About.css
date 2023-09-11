@@ -63,11 +63,11 @@
 }
 
 .slide-from-right {
-    animation: slideFromRight 1500ms ease-out forwards, fadeIn 1200ms ease-out forwards;
+    animation: slideFromRight 1000ms ease-out forwards, fadeIn 1200ms ease-out forwards;
 }
 
 .slide-from-left {
-    animation: slideFromLeft 1500ms ease-out forwards, fadeIn 1200ms ease-out forwards;
+    animation: slideFromLeft 1000ms ease-out forwards, fadeIn 1200ms ease-out forwards;
 }
 
 @keyframes slideFromRight {

@@ -125,12 +125,18 @@
         background-attachment: scroll;
         background-image: url('../../assets/drops-background/opacity-drops-medium.webp');
     }
+    .footer-gratitude {
+        font-size: 11px;
+    }
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
     .home-page {
         background-attachment: scroll;
         background-image: url('../../assets/drops-background/opacity-drops-medium.webp');
+    }
+    .footer-gratitude {
+        font-size: 12px;
     }
 }
 
