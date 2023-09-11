@@ -27,7 +27,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding: 50px 0 105px 0;
+    padding: 50px 0 80px 0;
     font-size: 16px;
     font-family: 'Bebas Neue', sans-serif;
 }
@@ -35,7 +35,7 @@
     transition: transform 0.3s ease-in-out;
 }
 .footer-link:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
 }
 .lower-footer {
     width: 100%;
@@ -86,7 +86,7 @@
     margin-top: 10px;
 }
 .footer-gratitude img {
-    height: 33px;
+    height: 27px;
     padding-right: 10px;
 }
 .footer-gratitude p{
@@ -107,10 +107,10 @@
 }
 
 .button-footer {
-    font-size: 9px;
+    font-size: 7px;
     line-height: 1.1;
-    height: 33px;
-    width: 33px;
+    height: 27px;
+    width: 27px;
     margin-right: 10px;
     cursor: pointer;
     background: none;
