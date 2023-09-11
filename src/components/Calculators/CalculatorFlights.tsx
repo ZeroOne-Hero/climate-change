@@ -1,4 +1,4 @@
-import React, {ChangeEvent, FormEvent, useState} from 'react';
+import React, { ChangeEvent, FormEvent, useState } from 'react';
 import axios from 'axios';
 import flightsLogo from "../../assets/icons/flightLogo.webp";
 
@@ -39,11 +39,6 @@ const CalculatorFlights = () => {
         try {
             const response = await axios.post('https://beta4.api.climatiq.io/travel/flights', postData, requestOptions);
             setCustomerResult(response.data);
-
-            setFrom('');
-            setTo('');
-            setPassengers(1);
-            setFlightClass('unknown');
         } catch (error) {
             console.error('Error:', error);
             setError('An error occurred while calculating. Please try again.');
@@ -53,7 +48,7 @@ const CalculatorFlights = () => {
     return (
         <section className="calculator">
             <div className="calc-form">
-                <img className="calc-logo" src={flightsLogo} alt="plane"/>
+                <img className="calc-logo" src={flightsLogo} alt="plane" />
                 <form onSubmit={handleSubmit}>
                     <label>
                         From:
@@ -104,8 +99,6 @@ const CalculatorFlights = () => {
                     ) : null}
                 </div>
             )}
-
-
         </section>
     );
 };
