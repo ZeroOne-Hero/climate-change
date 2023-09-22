@@ -19,16 +19,16 @@ Features
 **Carbon Emission Calculators:**
 
 Flight Emission Calculator:
-Utilizes Climatiq API integration to accurately calculate CO2 emissions from flight activities.
-Users can input flight details such as departure and arrival locations, round trip or one way, and class of service to get a precise emission value.
+     Utilizes Climatiq API integration to accurately calculate CO2 emissions from flight activities.
+     Users can input flight details such as departure and arrival locations, round trip or one way, and class of service to get a precise emission value.
 
 Plastic Bottle Emission Calculator:
-Custom-built calculator that computes the emissions from plastic bottle usage over a lifetime.
-Allows users to visualize the impact of plastic consumption and encourages the use of eco-friendly alternatives.
+     Custom-built calculator that computes the emissions from plastic bottle usage over a lifetime.
+     Allows users to visualize the impact of plastic consumption and encourages the use of eco-friendly alternatives.
 
 Beef Consumption Emission Calculator:
-A unique calculator that educates users on the emissions from beef consumption.
-Aids in promoting a better understanding of the environmental impact of dietary choices.
+     A unique calculator that educates users on the emissions from beef consumption.
+     Aids in promoting a better understanding of the environmental impact of dietary choices.
 
 **Informative Content:**
 
