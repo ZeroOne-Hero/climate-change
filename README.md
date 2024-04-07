@@ -1,46 +1,53 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![climate-change-screenshot-1](https://github.com/DevMari999/climate-change/assets/135366781/1fcadbd3-6431-4cc4-9f24-139418cc8da6)
 
-## Available Scripts
+**Technologies Used**
 
-In the project directory, you can run:
+    Frontend: CSS, HTML, React, TypeScript
+    Data Visualization: Rechart
+    API Integration: Climatiq API for flight emission calculations
+    External Libraries: Tooltip library for additional information display
+    Data: NASA's Goddard Institute for Space Studies
+    
+**Title:**
+ClimateEd - A Comprehensive Climate Education Web Platform
 
-### `npm start`
+**Description**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ClimateEd is an educational web platform aimed at enlightening and empowering individuals to take actionable steps towards reducing their carbon footprint. By focusing on climate change education and providing tools to evaluate personal carbon emissions, the platform strives to create an informed community capable of making eco-conscious decisions. The website is engineered using cutting-edge technologies such as React and TypeScript, ensuring a performant, maintainable, and scalable application.
+Features
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Carbon Emission Calculators:**
 
-### `npm test`
+**Flight Emission Calculator:**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+    - Utilizes Climatiq API integration to accurately calculate CO2 emissions from flight activities.
+    - Users can input flight details such as departure and arrival locations, round trip or one way, and class of service to get a precise emission value.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Plastic Bottle Emission Calculator:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    - Custom-built calculator that computes the emissions from plastic bottle usage over a lifetime.
+    - Allows users to visualize the impact of plastic consumption and encourages the use of eco-friendly alternatives.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Beef Consumption Emission Calculator:**
 
-### `npm run eject`
+    - A unique calculator that educates users on the emissions from beef consumption.
+    - Aids in promoting a better understanding of the environmental impact of dietary choices.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+**Informative Content:**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ - Provides valuable insights into climate change, its causes, effects, and actionable steps towards mitigation.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**NASA Average Global Temperature Data Visualization:**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+ - Incorporates a visually appealing chart displaying the global temperature trends over the years.
+ - Utilizes the rechart library for rendering an interactive and responsive chart, aiding users in understanding global warming trends.
 
-## Learn More
+**CSS Animations:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+ - Rich CSS animations enhance the user experience, making the educational journey engaging and enjoyable.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Tooltip Integration:**
+
+  - Integrated a tooltip library to provide users with more information on various topics, aiding in their educational journey on climate change.
