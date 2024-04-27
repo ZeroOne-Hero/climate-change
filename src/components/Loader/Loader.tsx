@@ -9,7 +9,7 @@ const Loader: React.FC<{ onFadeOutComplete: () => void }> = ({ onFadeOutComplete
             setFadeOut(true);
             const removeTimer = setTimeout(onFadeOutComplete, 500);
             return () => clearTimeout(removeTimer);
-        }, 2000);
+        }, 200000000);
 
         return () => clearTimeout(fadeOutTimer);
     }, [onFadeOutComplete]);
