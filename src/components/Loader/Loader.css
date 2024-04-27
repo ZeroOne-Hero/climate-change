@@ -1,14 +1,10 @@
-
 .loader-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     height: 100vh;
     width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
+    position: relative;
     background-color: rgb(11, 11, 11);
     z-index: 9999;
     transition: opacity 0.5s ease;
@@ -62,6 +58,10 @@
     }
 }
 
+
 .loader {
-    position: absolute;
+    position: relative;
+    height: 100px;
+    width: 100px;
+
 }

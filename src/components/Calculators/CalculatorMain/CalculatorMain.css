@@ -296,7 +296,6 @@ input:focus {
 
 @media (max-width: 576px) {
     .calculator-main {
-        padding: 100px 0 10px 0;
         height: fit-content;
         min-height: 100vh;
     }
@@ -309,6 +308,7 @@ input:focus {
 
     .calc-button-wrapper {
         width: 90%;
+        margin-top: 100px;
     }
 
     .calculator {
@@ -353,7 +353,6 @@ input:focus {
 }
 @media (min-width: 576px) and (max-width: 768px) {
     .calculator-main {
-        padding: 100px 0 10px 0;
         height: fit-content;
         min-height: 100vh;
 
@@ -367,6 +366,7 @@ input:focus {
 
     .calc-button-wrapper {
         width: 90%;
+        margin-top: 100px;
     }
 
     .calculator {
@@ -400,7 +400,6 @@ input:focus {
 
 @media (min-width: 768px) and (max-width: 992px) {
     .calculator-main {
-        padding: 100px 0;
         height: fit-content;
         min-height: 100vh;
 
@@ -414,6 +413,7 @@ input:focus {
 
     .calc-button-wrapper {
         width: 90%;
+        margin-top: 100px;
     }
 
     .calculator {
