@@ -4,7 +4,15 @@
     --butonsColor-background: linear-gradient(45deg, rgba(178, 107, 35, 0.67), rgba(143, 77, 21, 0.8));
     --butonsHover-background: linear-gradient(45deg, rgba(172, 95, 36, 0.58), rgba(113, 61, 14, 0.63));
 }
-
+.calc-background {
+    position: fixed;
+    background-image: url("../../../assets/backgroundMain.webp");
+    background-position: center;
+    background-size: cover;
+    will-change: transform;
+    width: 100%;
+    height: 100%;
+}
 .calculator-main {
     height: 100vh;
     width: 100%;

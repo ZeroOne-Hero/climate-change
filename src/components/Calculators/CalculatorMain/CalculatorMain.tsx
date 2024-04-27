@@ -41,6 +41,7 @@ const CalculatorMain = () => {
     return (
         <HelmetProvider>
             <section id="calculator-main" className="calculator-main">
+                <div className="calc-background"></div>
                 <div className="calc-button-wrapper">
                     <Helmet>
                         <title>CO2 Footprint Calculator</title>

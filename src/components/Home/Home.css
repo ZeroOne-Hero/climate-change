@@ -81,55 +81,69 @@
 @keyframes slideInLeft {
     0% {
         transform: translateX(-100%);
+        opacity: 0;
     }
     100% {
         transform: translateX(0);
+        opacity: 1;
     }
 }
 
 @keyframes slideInDown {
     0% {
         transform: translateY(-100%);
+        opacity: 0;
     }
     100% {
         transform: translateY(0);
+        opacity: 1;
     }
 }
 
 @keyframes slideInRight {
     0% {
         transform: translateX(100%);
+        opacity: 0;
     }
     100% {
         transform: translateX(0);
+        opacity: 1;
     }
 }
 
 @keyframes slideInUp {
     0% {
         transform: translateY(100%);
+        opacity: 0;
     }
     100% {
         transform: translateY(0);
+        opacity: 1;
     }
 }
 
+.slideInLeft, .slideInDown, .slideInRight, .slideInUp {
+    opacity: 0;
+
+}
 
 .slideInLeft {
-    animation: slideInLeft 1000ms ease-in-out;
+    animation: slideInLeft 1200ms ease-in-out 0.1s forwards;
 }
 
 .slideInDown {
-    animation: slideInDown 1000ms ease-in-out;
+    animation: slideInDown 1200ms ease-in-out 0.1s forwards;
 }
 
 .slideInRight {
-    animation: slideInRight 1000ms ease-in-out;
+    animation: slideInRight 1200ms ease-in-out 0.1s forwards;
 }
 
 .slideInUp {
-    animation: slideInUp 1000ms ease-in-out;
+    animation: slideInUp 1200ms ease-in-out 0.1s forwards;
 }
+
+
 
 @media (max-width: 576px) {
     .home {
